@@ -9,6 +9,7 @@ import Data.Maybe
 import qualified Prelude
 
 import MAC.Util
+import MAC.Util.OneHotCounter
 import qualified MAC.Util.FullAdder as FA
 
 import Debug.Trace
@@ -40,11 +41,11 @@ data MACState (n :: Nat) (m :: Nat) counterX counterY counterAcc = MACState {
   stage :: Stage,
   x :: Unsigned n,
   y :: Unsigned m,
-  product :: BitVector (n+m), -- TODO vs. Vec
-  accumulator :: BitVector (n+m), -- TODO vs Vec
-  xCounter :: counterX, -- TODO vs. OneHot
-  yCounter :: counterY, -- TODO vs. OneHot
-  accumulateCounter :: counterAcc, -- TODO vs. OneHotCounter
+  product :: BitVector (n+m),
+  accumulator :: BitVector (n+m),
+  xCounter :: counterX,
+  yCounter :: counterY,
+  accumulateCounter :: counterAcc,
   carry :: Bit
 } deriving (Show, Generic, NFDataX)
 
@@ -60,6 +61,19 @@ initialState = MACState {
   xCounter = countMin :: Index n,
   yCounter = countMin :: Index m,
   accumulateCounter = countMin :: Index (n+m),
+  carry = 0
+}
+
+initialState' :: forall n m. (KnownNat n, 1 <= n, KnownNat m, 1 <= m) => MACState n m (OneHotCounter n) (OneHotCounter m) (OneHotCounter (n+m))
+initialState' = MACState {
+  stage = Ready,
+  x=0,
+  y=0,
+  product = 0,
+  accumulator = 0,
+  xCounter = countMin,
+  yCounter = countMin,
+  accumulateCounter = countMin,
   carry = 0
 }
 
@@ -92,14 +106,21 @@ mac' :: forall dom n m.
   KnownNat m, 1 <= m) =>
   MACConfig ->
   Signal dom (MACInput n m) -> Signal dom (MACOutput n m)
-mac' cfg = mealy @dom (macMealy @n @m cfg) (initialState @n @m)
+mac' cfg = mealy @dom (macMealy @n @m cfg) (initialState' @n @m)
 
 -- TODO herausfinden, wieso diese Spezialisierung nicht funktioniert
 -- type MACOutput n = MACOutput' n n
 -- macMealy :: forall n. (KnownNat n) => forall n. MACState n  -> MACInput n -> (MACState n, MACOutput n)
 -- macMealy = macMealy' @n @n
 
-macMealy :: forall n m. (KnownNat n, KnownNat m, 1 <= n,  1<= m) => MACConfig -> MACState n m (Index n) (Index m) (Index (n+m)) -> MACInput n m -> (MACState n m (Index n) (Index m) (Index (n+m)), MACOutput n m)
+macMealy :: forall n m counterX counterY counterAccum. (
+  KnownNat n, KnownNat m, 1 <= n,  1<= m,
+  Counter counterX, Counter counterY, Counter counterAccum
+  ) =>
+  MACConfig ->
+    MACState n m counterX counterY counterAccum ->
+    MACInput n m ->
+    (MACState n m counterX counterY counterAccum, MACOutput n m)
 macMealy MACConfig{useModuleFullAdder} state@MACState{..} MACInput{values, newAcc}  = (state', output state')
   where
     fullAdder = if useModuleFullAdder then FA.fullAdderModule else FA.fullAdder
@@ -118,21 +139,26 @@ macMealy MACConfig{useModuleFullAdder} state@MACState{..} MACInput{values, newAc
       Accumulating -> accumulate state
 
     accumulate st@MACState{..} = let
-      (carry', sum) = fullAdder (accumulator ! accumulateCounter) (product ! accumulateCounter) carry
-      accumulator' = replaceBit accumulateCounter sum accumulator
+
+      -- just naming it to avoid magic numbers
+      indexPointer = 0 :: Bit
+
+      (carry', sum) = fullAdder (accumulator ! indexPointer) (product ! indexPointer) carry
+      accumulator' = replaceBit indexPointer sum accumulator
       (stage', accumulateCounter') = case countSuccOverflow accumulateCounter of
         (True, a) -> (Ready, a)
         (False, a) -> (Accumulating, a)
       in st{
         stage=stage',
         carry=carry',
-        accumulator=accumulator',
-        accumulateCounter=accumulateCounter'
+        accumulator=accumulator' `rotateR` 1,
+        accumulateCounter=accumulateCounter',
+        product = product `rotateR` 1
         }
 
     multiply st@MACState{..} =
       let (currentRoundDone, xCounter') = countSuccOverflow xCounter
-          inLastRound = yCounter == countMax
+          (inLastRound, yCounter')  = countSuccOverflow yCounter
           multiplicationDone = currentRoundDone .&. inLastRound
 
           resetDistance = fromInteger ((natToInteger @n) - 1)
@@ -169,7 +195,7 @@ macMealy MACConfig{useModuleFullAdder} state@MACState{..} MACInput{values, newAc
             y=y',
             product = product',
             xCounter = xCounter',
-            yCounter = if currentRoundDone then countSucc yCounter else yCounter,
+            yCounter = if currentRoundDone then yCounter' else yCounter,
             carry = if currentRoundDone then 0 else carryOut,
             stage = if multiplicationDone then Accumulating else Multiplying
           }
@@ -177,7 +203,7 @@ macMealy MACConfig{useModuleFullAdder} state@MACState{..} MACInput{values, newAc
     output MACState{stage, product, accumulator} = case stage of
       Ready -> MACOutput (Just product) (Just accumulator)
       Multiplying -> MACOutput Nothing (Just accumulator)
-      Accumulating -> MACOutput (Just product) Nothing
+      Accumulating -> MACOutput Nothing Nothing
 
 is :: [MACInput 3 3]
 is = (MACInput {values = Just (1,2), newAcc = Nothing}):
