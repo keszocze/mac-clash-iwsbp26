@@ -87,6 +87,7 @@ library
   exposed-modules:
     MAC.Mealy
     MAC.Util
+    MAC.Util.OneHotCounter
     MAC.Util.FullAdder
     Example.Project
   default-language: Haskell2010
