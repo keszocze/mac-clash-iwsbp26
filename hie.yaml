@@ -1,0 +1,12 @@
+cradle:
+  cabal:
+    - path: "./src"
+      component: "lib:mac-iwsbp"
+    - path: "./tests/doctests.hs"
+      component: "mac-iwsbp:doctests"
+    - path: "./tests"
+      component: "mac-iwsbp:test-library"
+    - path: "./bin/Clashi.hs"
+      component: "mac-iwsbp:exe:clashi"
+    - path: "./bin/Clash.hs"
+      component: "mac-iwsbp:exe:clash"
