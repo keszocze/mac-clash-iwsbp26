@@ -124,6 +124,19 @@ macMealy :: forall n m counterX counterY counterAccum. (
 macMealy MACConfig{useModuleFullAdder} state@MACState{..} MACInput{values, newAcc}  = (state', output state')
   where
     fullAdder = if useModuleFullAdder then FA.fullAdderModule else FA.fullAdder
+
+    -- TODO Das hier dann von außen zuführen (und den full adder enthalten lassen)
+    accumulationFun :: (Bit -> Bit -> Bit -> (Bit, Bit)) ->BitVector (n+m) -> BitVector (n+m) -> (Bit, BitVector (n+m), BitVector (n+m))
+    accumulationFun fA prod acc =  let
+        a = lsb acc
+        b = lsb prod
+        (carry', sum) = fA a b carry
+        accumulator' = replaceBit 0 sum acc
+        accumulator''= accumulator' `rotateR` 1
+        product' = prod `rotateR` 1
+      in (carry', product', accumulator'')
+
+
     state' = compute stateStart
 
     stateStart = case values of
@@ -140,20 +153,18 @@ macMealy MACConfig{useModuleFullAdder} state@MACState{..} MACInput{values, newAc
 
     accumulate st@MACState{..} = let
 
-      -- just naming it to avoid magic numbers
-      indexPointer = 0 :: Bit
-      (carry', sum) = fullAdder (accumulator ! indexPointer) (product ! indexPointer) carry
-      accumulator' = replaceBit indexPointer sum accumulator
-      accumulator''= accumulator' `rotateR` 1
-      product' = product `rotateR` 1
+      (carry', product', accumulator') = accumulationFun fullAdder product accumulator
 
+      -- TODO gucken, ob man hier nicht einfach countSuccOverflow (xCounter,yCounter) nehmen kann
+      -- das sollte jetzt ja funktionieren, da ich hier keine variable obere Grenze habe
       (stage', accumulateCounter') = case countSuccOverflow accumulateCounter of
         (True, a) -> (Ready, a)
         (False, a) -> (Accumulating, a)
+
       in st{
         stage=stage',
         carry=carry',
-        accumulator=accumulator'',
+        accumulator=accumulator',
         accumulateCounter=accumulateCounter',
         product = product'
         }
@@ -183,22 +194,23 @@ macMealy MACConfig{useModuleFullAdder} state@MACState{..} MACInput{values, newAc
             (False, _) -> rotateFwd productWithSum
             -- we need to advance to the next bit of y and have to reset the product accordingly
             (True, False) -> rotateBack productWithSumAndCarry
-            -- let d = resetDist' x
-            --  in productWithSumAndCarry `rotateL` d
             -- the multiplication is done and we need one additional shift to put the LSB in the correct position
             (True, True) -> rotateFwd productWithSumAndCarry
 
           x' = x `rotateR` 1 -- continously shift through;
           -- only advance to the next y when one round is done
-          y' = if currentRoundDone then y `shiftR` 1 else y
+          (y', yCounter'', carry') = if currentRoundDone then
+              (y `shiftR` 1, yCounter', 0)
+            else
+              (y, yCounter, carryOut)
         in st
           {
             x=x',
             y=y',
             product = product',
             xCounter = xCounter',
-            yCounter = if currentRoundDone then yCounter' else yCounter,
-            carry = if currentRoundDone then 0 else carryOut,
+            yCounter = yCounter'',
+            carry = carry',
             stage = if multiplicationDone then Accumulating else Multiplying
           }
 
