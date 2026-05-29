@@ -142,18 +142,20 @@ macMealy MACConfig{useModuleFullAdder} state@MACState{..} MACInput{values, newAc
 
       -- just naming it to avoid magic numbers
       indexPointer = 0 :: Bit
-
       (carry', sum) = fullAdder (accumulator ! indexPointer) (product ! indexPointer) carry
       accumulator' = replaceBit indexPointer sum accumulator
+      accumulator''= accumulator' `rotateR` 1
+      product' = product `rotateR` 1
+
       (stage', accumulateCounter') = case countSuccOverflow accumulateCounter of
         (True, a) -> (Ready, a)
         (False, a) -> (Accumulating, a)
       in st{
         stage=stage',
         carry=carry',
-        accumulator=accumulator' `rotateR` 1,
+        accumulator=accumulator'',
         accumulateCounter=accumulateCounter',
-        product = product `rotateR` 1
+        product = product'
         }
 
     multiply st@MACState{..} =
