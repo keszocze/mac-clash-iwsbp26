@@ -8,9 +8,14 @@
 # Todo
 
 - [ ] Create function to generate the MAC from the config
-  - [x] works for the adder
-  - [ ] das Config Objekt sollte dann in ein spezielleres config objekt (was dann funktionen enthält) überführt werden
+  - [x] inline adder vs. module adder
+  - [x] OneHotCounter vs. Index
+  - [ ] rotating vs. indexing
+  - [ ] state vs. Mealy
+  - [ ] Vec vs BitVector
+- [x] Enum für OneHotCounter (aber wieso wollte ich das überhaupt haben?)
 - [ ] Testfälle bauen
   - [ ] hier gucken, wie/ob ich das statefull verwenden kann. das ist sicherlich lesbarer -> aber eventuell nicht so einfach
   - [X] exhaustive für kleine Werte
   - [X] random
+  - [ ] Enum OneHotCounter
