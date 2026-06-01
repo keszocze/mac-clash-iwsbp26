@@ -7,6 +7,7 @@ maintainer:          John Smith <john@example.com>
 
 common common-options
   default-extensions:
+    AllowAmbiguousTypes
     BangPatterns
     BinaryLiterals
     ConstraintKinds
@@ -139,6 +140,7 @@ test-suite test-library
     hedgehog,
     tasty >= 1.2 && < 1.6,
     tasty-hedgehog,
+    tasty-hunit,
     tasty-th,
     arrows,
     IfElse

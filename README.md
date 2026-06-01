@@ -7,5 +7,8 @@
 
 # Todo
 
-- [] Create fully generate the MAC from the config
-  - works for the adder
+- [ ] Create function to generate the MAC from the config
+  - [x] works for the adder
+  - [ ] das Config Objekt sollte dann in ein spezielleres config objekt (was dann funktionen enthält) überführ werden
+- [ ] Testfälle bauen
+  - [ ] hier gucken, wie/ob ich das statefull verwenden  kann. das ist sicherlich lesbarer

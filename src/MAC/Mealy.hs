@@ -84,6 +84,8 @@ data MACInput (n :: Nat) (m :: Nat) = MACInput {
 
 type MACInput' n = MACInput n n
 
+
+-- TODO hier natürlich unsigned ausgeben
 data MACOutput n m = MACOutput {
   product :: Maybe (BitVector (n+m)),
   accumulated :: Maybe (BitVector (n+m))
