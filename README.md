@@ -13,3 +13,4 @@
 - [ ] Testfälle bauen
   - [ ] hier gucken, wie/ob ich das statefull verwenden kann. das ist sicherlich lesbarer -> aber eventuell nicht so einfach
   - [X] exhaustive für kleine Werte
+  - [X] random

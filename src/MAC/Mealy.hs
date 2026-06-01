@@ -27,6 +27,17 @@ data MACConfig = MACConfig
   deriving (Show, Bounded)
 
 
+-- data MACFunctionConfig (n :: Nat) (m :: Nat) = MACFunctionConfig {
+--   accumulateFun :: BitVector (n+m) -> BitVector (n+m) -> (Bit, BitVector (n+m), BitVector (n+m)),
+--   multiplyFun :: MACState n m (BitVector n) (BitVector m) (BitVector (n+m))-> MACState n m (BitVector n) (BitVector m) (BitVector (n+m))
+-- }
+
+-- mkFunctionCfg :: forall n m. (KnownNat n, KnownNat m) => MACConfig -> MACFunctionConfig n m
+-- mkFunctionCfg MACConfig{..} = MACFunctionConfig {
+--     accumulateFun = accumulateRotateBitVec theFullAdder
+--   }
+--   where theFullAdder = if useModuleFullAdder then FA.fullAdderModule else FA.fullAdder
+
 --allConfigs = [ MACConfig a b c d e | a  <- [True, False], b  <- [True, False] , c  <- [True, False], d  <- [True, False] , e  <- [True, False]]
 -- TODO nachher dann wirklcih alles unterstützen
 allConfigs = [ MACConfig a b c d e | a  <- [True, False], b  <- [False] , c  <- [False], d  <- [True] , e  <- [True]]
@@ -155,50 +166,11 @@ macMealy MACConfig{useModuleFullAdder} state@MACState{..} MACInput{values, newAc
     fullAdder = if useModuleFullAdder then FA.fullAdderModule else FA.fullAdder
 
     -- TODO Das hier dann von außen zuführen (und den full adder enthalten lassen)
-    accumulationFun :: (Bit -> Bit -> Bit -> (Bit, Bit)) ->BitVector (n+m) -> BitVector (n+m) -> (Bit, BitVector (n+m), BitVector (n+m))
-    accumulationFun fA prod acc =  let
-        a = lsb acc
-        b = lsb prod
-        (carry', sum) = fA a b carry
-        accumulator' = replaceBit 0 sum acc
-        accumulator''= accumulator' `rotateR` 1
-        product' = prod `rotateR` 1
-      in (carry', product', accumulator'')
+    accumulationFun :: Bit -> BitVector (n+m) -> BitVector (n+m) -> (Bit, BitVector (n+m), BitVector (n+m))
+    accumulationFun =  accumulateRotateBitVec @n @m fullAdder
 
 
-    state' = compute stateStart
-
-    stateStart = case values of
-      Just (x,y) -> stateNewAcc{stage=Multiplying, xCounter=countMin, yCounter=countMin, accumulateCounter=countMin, x=x, y=y, product=0}
-      Nothing -> stateNewAcc
-
-
-    stateNewAcc = state{accumulator= maybe accumulator bitCoerce newAcc}
-
-    compute state@MACState{..} = case stage of
-      Ready -> state
-      Multiplying -> multiply state
-      Accumulating -> accumulate state
-
-    accumulate st@MACState{..} = let
-
-      (carry', product', accumulator') = accumulationFun fullAdder product accumulator
-
-      -- TODO gucken, ob man hier nicht einfach countSuccOverflow (xCounter,yCounter) nehmen kann
-      -- das sollte jetzt ja funktionieren, da ich hier keine variable obere Grenze habe
-      (stage', accumulateCounter') = case countSuccOverflow accumulateCounter of
-        (True, a) -> (Ready, a)
-        (False, a) -> (Accumulating, a)
-
-      in st{
-        stage=stage',
-        carry=carry',
-        accumulator=accumulator',
-        accumulateCounter=accumulateCounter',
-        product = product'
-        }
-
-    multiply st@MACState{..} =
+    multiplyFun st@MACState{..} =
       let (currentRoundDone, xCounter') = countSuccOverflow xCounter
           (inLastRound, yCounter')  = countSuccOverflow yCounter
           multiplicationDone = currentRoundDone .&. inLastRound
@@ -232,6 +204,8 @@ macMealy MACConfig{useModuleFullAdder} state@MACState{..} MACInput{values, newAc
               (y `shiftR` 1, yCounter', 0)
             else
               (y, yCounter, carryOut)
+
+          stage' = if multiplicationDone then Accumulating else Multiplying
         in st
           {
             x=x',
@@ -240,8 +214,40 @@ macMealy MACConfig{useModuleFullAdder} state@MACState{..} MACInput{values, newAc
             xCounter = xCounter',
             yCounter = yCounter'',
             carry = carry',
-            stage = if multiplicationDone then Accumulating else Multiplying
+            stage = stage'
           }
+
+    state' = compute stateStart
+
+    stateStart = case values of
+      Just (x,y) -> stateNewAcc{stage=Multiplying, xCounter=countMin, yCounter=countMin, accumulateCounter=countMin, x=x, y=y, product=0}
+      Nothing -> stateNewAcc
+
+
+    stateNewAcc = state{accumulator= maybe accumulator bitCoerce newAcc}
+
+    compute state@MACState{..} = case stage of
+      Ready -> state
+      Multiplying -> multiplyFun state
+      Accumulating -> accumulate state
+
+    accumulate st@MACState{..} = let
+
+      (carry', product', accumulator') = accumulationFun carry product accumulator
+
+      -- TODO gucken, ob man hier nicht einfach countSuccOverflow (xCounter,yCounter) nehmen kann
+      -- das sollte jetzt ja funktionieren, da ich hier keine variable obere Grenze habe
+      (stage', accumulateCounter') = case countSuccOverflow accumulateCounter of
+        (True, a) -> (Ready, a)
+        (False, a) -> (Accumulating, a)
+
+      in st{
+        stage=stage',
+        carry=carry',
+        accumulator=accumulator',
+        accumulateCounter=accumulateCounter',
+        product = product'
+        }
 
     output MACState{stage, product, accumulator} = case stage of
       Ready -> MACOutput (Just $ bitCoerce product) (Just $ bitCoerce accumulator)
@@ -254,4 +260,12 @@ is = (MACInput {values = Just (1,2), newAcc = Nothing}):
   [(MACInput {values = Just (1,2), newAcc = Nothing})] Prelude.++
   Prelude.repeat (MACInput {values = Nothing, newAcc = Nothing})
 
-
+accumulateRotateBitVec :: forall n m. (KnownNat n, KnownNat m) => (Bit -> Bit -> Bit -> (Bit, Bit)) -> Bit -> BitVector (n+m) -> BitVector (n+m) -> (Bit, BitVector (n+m), BitVector (n+m))
+accumulateRotateBitVec fA carry prod acc =  let
+    a = lsb acc
+    b = lsb prod
+    (carry', sum) = fA a b carry
+    accumulator' = replaceBit 0 sum acc
+    accumulator''= accumulator' `rotateR` 1
+    product' = prod `rotateR` 1
+  in (carry', product', accumulator'')

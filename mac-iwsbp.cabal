@@ -134,6 +134,8 @@ test-suite test-library
   other-modules:
     Tests.Example.Project
     Tests.MAC
+    Tests.MAC.Exhaustive
+    Tests.MAC.Random
     Tests.Util
   build-depends:
     mac-iwsbp,
