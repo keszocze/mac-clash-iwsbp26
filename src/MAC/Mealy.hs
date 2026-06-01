@@ -1,7 +1,7 @@
 {-# LANGUAGE DuplicateRecordFields, RecordWildCards, DerivingVia #-}
 module MAC.Mealy where
 
-import Clash.Prelude
+import Clash.Prelude hiding (sum, product)
 import Clash.Class.Counter
 
 import Data.Maybe
@@ -17,6 +17,9 @@ import Debug.Trace
 
 data Stage = Ready | Multiplying | Accumulating deriving (Show, Generic, NFDataX)
 
+type AccumFun n m = Bit -> BitVector (n+m) -> BitVector (n+m) -> (Bit, BitVector (n+m), BitVector (n+m))
+type MulFun n m counterX counterY counterAccum = MACState n m counterX counterY counterAccum-> MACState n m counterX counterY counterAccum
+
 data MACConfig = MACConfig
   { useModuleFullAdder :: Bool,
     useState :: Bool,
@@ -27,20 +30,16 @@ data MACConfig = MACConfig
   deriving (Show, Bounded)
 
 
--- data MACFunctionConfig (n :: Nat) (m :: Nat) = MACFunctionConfig {
---   accumulateFun :: BitVector (n+m) -> BitVector (n+m) -> (Bit, BitVector (n+m), BitVector (n+m)),
---   multiplyFun :: MACState n m (BitVector n) (BitVector m) (BitVector (n+m))-> MACState n m (BitVector n) (BitVector m) (BitVector (n+m))
--- }
-
--- mkFunctionCfg :: forall n m. (KnownNat n, KnownNat m) => MACConfig -> MACFunctionConfig n m
--- mkFunctionCfg MACConfig{..} = MACFunctionConfig {
---     accumulateFun = accumulateRotateBitVec theFullAdder
---   }
---   where theFullAdder = if useModuleFullAdder then FA.fullAdderModule else FA.fullAdder
 
 --allConfigs = [ MACConfig a b c d e | a  <- [True, False], b  <- [True, False] , c  <- [True, False], d  <- [True, False] , e  <- [True, False]]
 -- TODO nachher dann wirklcih alles unterstützen
-allConfigs = [ MACConfig a b c d e | a  <- [True, False], b  <- [False] , c  <- [False], d  <- [True] , e  <- [True]]
+allConfigs = [ MACConfig useModuleAdder b c d useOneHot |
+  useModuleAdder  <- [True],
+  b  <- [False] ,
+  c  <- [False],
+  d  <- [True] ,
+  useOneHot  <- [False, True]
+  ]
 
 multiplicationDelay :: forall n m. (KnownNat n, KnownNat m) => Int
 multiplicationDelay = (nInt * mInt) - 1
@@ -62,9 +61,9 @@ describe :: MACConfig -> String
 describe MACConfig {..} =
   (if useModuleFullAdder then "module adder" else "inline adder") <> " / " <>
   (if useState then "state" else "mealy machine") <> " / " <>
-  (if useVector then "Vecr" else "BitVector") <> " / " <>
-  (if useRotation then "rotate" else "pointer") <> " / " <>
-  (if useOneHot then "OneHotCounter" else "Index")
+  (if useRotation then "rotate" else "indexing") <> " / " <>
+  (if useVector then "Vec" else "BitVector") <> " / " <>
+  (if useOneHot then "OneHotCounter" else "IndexCounter")
 
 defaultConfig = MACConfig {
   useModuleFullAdder = True,
@@ -90,31 +89,24 @@ data MACState (n :: Nat) (m :: Nat) counterX counterY counterAcc = MACState {
 
 
 
-initialState :: forall n m. (KnownNat n, 1 <= n, KnownNat m, 1 <= m) => MACState n m (Index n) (Index m) (Index (n+m))
+initialState :: forall n m counterX counterY counterAccum.
+  (
+    KnownNat n, 1 <= n, KnownNat m, 1 <= m,
+    Counter counterX, Counter counterY, Counter counterAccum
+  )
+  => MACState n m counterX counterY counterAccum
 initialState = MACState {
   stage = Ready,
   x=0,
   y=0,
   product = 0,
   accumulator = 0,
-  xCounter = countMin :: Index n,
-  yCounter = countMin :: Index m,
-  accumulateCounter = countMin :: Index (n+m),
+  xCounter = countMin :: counterX,
+  yCounter = countMin :: counterY,
+  accumulateCounter = countMin :: counterAccum,
   carry = 0
 }
 
-initialState' :: forall n m. (KnownNat n, 1 <= n, KnownNat m, 1 <= m) => MACState n m (OneHotCounter n) (OneHotCounter m) (OneHotCounter (n+m))
-initialState' = MACState {
-  stage = Ready,
-  x=0,
-  y=0,
-  product = 0,
-  accumulator = 0,
-  xCounter = countMin,
-  yCounter = countMin,
-  accumulateCounter = countMin,
-  carry = 0
-}
 
 data MACInput (n :: Nat) (m :: Nat) = MACInput {
   values :: Maybe (Unsigned n, Unsigned m),
@@ -132,21 +124,27 @@ data MACOutput (n :: Nat) (m :: Nat) = MACOutput {
 instance (KnownNat n, KnownNat m) => Show (MACOutput n m) where
   show MACOutput{..} = "(product="<> maybe "" show product <> ", accumulated=" <> maybe "" show accumulated <> ")"
 
-
-mac :: forall dom n m.
-  (HiddenClockResetEnable dom,
-  KnownNat n, 1 <= n,
-  KnownNat m, 1 <= m) =>
-  Signal dom (MACInput n m) -> Signal dom (MACOutput n m)
-mac = mac' defaultConfig
-
 mac' :: forall dom n m.
-  (HiddenClockResetEnable dom,
-  KnownNat n, 1 <= n,
-  KnownNat m, 1 <= m) =>
-  MACConfig ->
-  Signal dom (MACInput n m) -> Signal dom (MACOutput n m)
-mac' cfg = mealy @dom (macMealy @n @m cfg) (initialState' @n @m)
+  (
+    HiddenClockResetEnable dom,
+    KnownNat n, 1 <= n,  KnownNat m, 1 <= m
+  )
+  =>
+    MACConfig ->
+    Signal dom (MACInput n m) ->
+    Signal dom (MACOutput n m)
+mac' MACConfig{..} = if useOneHot
+      then
+        let mFun = mulRotateBitVec @n @m @(OneHotCounter n) @(OneHotCounter m) @(OneHotCounter (n+m)) fullAdder
+        in mealy @dom (macMealy @n @m aFun mFun) (initialState @n @m)
+      else
+        let mFun = mulRotateBitVec @n @m @(Index n) @(Index m) @(Index (n+m)) fullAdder
+        in mealy @dom (macMealy @n @m aFun mFun) (initialState @n @m)
+  where
+    aFun = accumulateRotateBitVec @n @m fullAdder
+    fullAdder = if useModuleFullAdder then FA.fullAdderModule else FA.fullAdder
+
+
 
 -- TODO herausfinden, wieso diese Spezialisierung nicht funktioniert
 -- type MACOutput n = MACOutput' n n
@@ -154,68 +152,16 @@ mac' cfg = mealy @dom (macMealy @n @m cfg) (initialState' @n @m)
 -- macMealy = macMealy' @n @n
 
 macMealy :: forall n m counterX counterY counterAccum. (
-  KnownNat n, KnownNat m, 1 <= n,  1<= m,
-  Counter counterX, Counter counterY, Counter counterAccum
+    KnownNat n, KnownNat m, 1 <= n,  1<= m,
+    Counter counterX, Counter counterY, Counter counterAccum,
+    NFDataX counterX, NFDataX counterY, NFDataX counterAccum
   ) =>
-  MACConfig ->
+    AccumFun n m-> MulFun n m counterX counterY counterAccum ->
     MACState n m counterX counterY counterAccum ->
     MACInput n m ->
     (MACState n m counterX counterY counterAccum, MACOutput n m)
-macMealy MACConfig{useModuleFullAdder} state@MACState{..} MACInput{values, newAcc}  = (state', output state')
+macMealy accumulateFun multiplyFun state@MACState{..} MACInput{values, newAcc}  = (state', output state')
   where
-    fullAdder = if useModuleFullAdder then FA.fullAdderModule else FA.fullAdder
-
-    -- TODO Das hier dann von außen zuführen (und den full adder enthalten lassen)
-    accumulationFun :: Bit -> BitVector (n+m) -> BitVector (n+m) -> (Bit, BitVector (n+m), BitVector (n+m))
-    accumulationFun =  accumulateRotateBitVec @n @m fullAdder
-
-
-    multiplyFun st@MACState{..} =
-      let (currentRoundDone, xCounter') = countSuccOverflow xCounter
-          (inLastRound, yCounter')  = countSuccOverflow yCounter
-          multiplicationDone = currentRoundDone .&. inLastRound
-
-          resetDistance = fromInteger ((natToInteger @n) - 1)
-
-          rotateFwd = (`rotateR` 1)
-          rotateBack = (`rotateL` resetDistance)
-
-          a = (lsb x) .&. (lsb y)
-          b = lsb product
-          (carryOut, sum) = fullAdder a b carry
-
-          -- just naming it to avoid magic numbers
-          modifyIndex = 0 :: Bit
-
-          productWithSum = replaceBit modifyIndex sum product
-          productWithSumAndCarry = replaceBit modifyIndex carryOut (rotateFwd productWithSum)
-
-          product' = case (currentRoundDone, inLastRound) of
-            -- simply advance to the next bit within x and adjust the product accordingly
-            (False, _) -> rotateFwd productWithSum
-            -- we need to advance to the next bit of y and have to reset the product accordingly
-            (True, False) -> rotateBack productWithSumAndCarry
-            -- the multiplication is done and we need one additional shift to put the LSB in the correct position
-            (True, True) -> rotateFwd productWithSumAndCarry
-
-          x' = x `rotateR` 1 -- continously shift through;
-          -- only advance to the next y when one round is done
-          (y', yCounter'', carry') = if currentRoundDone then
-              (y `shiftR` 1, yCounter', 0)
-            else
-              (y, yCounter, carryOut)
-
-          stage' = if multiplicationDone then Accumulating else Multiplying
-        in st
-          {
-            x=x',
-            y=y',
-            product = product',
-            xCounter = xCounter',
-            yCounter = yCounter'',
-            carry = carry',
-            stage = stage'
-          }
 
     state' = compute stateStart
 
@@ -233,7 +179,7 @@ macMealy MACConfig{useModuleFullAdder} state@MACState{..} MACInput{values, newAc
 
     accumulate st@MACState{..} = let
 
-      (carry', product', accumulator') = accumulationFun carry product accumulator
+      (carry', product', accumulator') = accumulateFun carry product accumulator
 
       -- TODO gucken, ob man hier nicht einfach countSuccOverflow (xCounter,yCounter) nehmen kann
       -- das sollte jetzt ja funktionieren, da ich hier keine variable obere Grenze habe
@@ -260,12 +206,74 @@ is = (MACInput {values = Just (1,2), newAcc = Nothing}):
   [(MACInput {values = Just (1,2), newAcc = Nothing})] Prelude.++
   Prelude.repeat (MACInput {values = Nothing, newAcc = Nothing})
 
-accumulateRotateBitVec :: forall n m. (KnownNat n, KnownNat m) => (Bit -> Bit -> Bit -> (Bit, Bit)) -> Bit -> BitVector (n+m) -> BitVector (n+m) -> (Bit, BitVector (n+m), BitVector (n+m))
-accumulateRotateBitVec fA carry prod acc =  let
+
+-- kann
+-- * beide Addierer
+-- * beide Counter (wird gar nicht explicit verwendet)
+accumulateRotateBitVec :: forall n m. (KnownNat n, KnownNat m) => (Bit -> Bit -> Bit -> (Bit, Bit)) -> AccumFun n m
+accumulateRotateBitVec fullAdder carry prod acc =  let
     a = lsb acc
     b = lsb prod
-    (carry', sum) = fA a b carry
-    accumulator' = replaceBit 0 sum acc
+    (carry', sum) = fullAdder a b carry
+    accumulator' = replaceBit (0 :: Bit) sum acc
     accumulator''= accumulator' `rotateR` 1
     product' = prod `rotateR` 1
   in (carry', product', accumulator'')
+
+-- kann
+-- * beide Addierer
+-- * beide Counter
+mulRotateBitVec :: forall n m counterX counterY accumCounter.
+  (
+      KnownNat n, KnownNat m,
+      Counter counterX, Counter counterY, Counter accumCounter
+  ) =>
+  (Bit -> Bit -> Bit -> (Bit, Bit)) ->
+  MACState n m counterX counterY accumCounter ->
+  MACState n m counterX counterY accumCounter
+mulRotateBitVec fullAdder st@MACState{..} =
+  let (currentRoundDone, xCounter') = countSuccOverflow xCounter
+      (inLastRound, yCounter')  = countSuccOverflow yCounter
+      multiplicationDone = currentRoundDone .&. inLastRound
+
+      resetDistance = fromInteger ((natToInteger @n) - 1)
+
+      rotateFwd = (`rotateR` 1)
+      rotateBack = (`rotateL` resetDistance)
+
+      a = (lsb x) .&. (lsb y)
+      b = lsb product
+      (carryOut, sum) = fullAdder a b carry
+
+      -- just naming it to avoid magic numbers
+      modifyIndex = 0 :: Bit
+
+      productWithSum = replaceBit modifyIndex sum product
+      productWithSumAndCarry = replaceBit modifyIndex carryOut (rotateFwd productWithSum)
+
+      product' = case (currentRoundDone, inLastRound) of
+        -- simply advance to the next bit within x and adjust the product accordingly
+        (False, _) -> rotateFwd productWithSum
+        -- we need to advance to the next bit of y and have to reset the product accordingly
+        (True, False) -> rotateBack productWithSumAndCarry
+        -- the multiplication is done and we need one additional shift to put the LSB in the correct position
+        (True, True) -> rotateFwd productWithSumAndCarry
+
+      x' = x `rotateR` 1 -- continously shift through;
+      -- only advance to the next y when one round is done
+      (y', yCounter'', carry') = if currentRoundDone then
+          (y `shiftR` 1, yCounter', 0)
+        else
+          (y, yCounter, carryOut)
+
+      stage' = if multiplicationDone then Accumulating else Multiplying
+    in st
+      {
+        x=x',
+        y=y',
+        product = product',
+        xCounter = xCounter',
+        yCounter = yCounter'',
+        carry = carry',
+        stage = stage'
+      }

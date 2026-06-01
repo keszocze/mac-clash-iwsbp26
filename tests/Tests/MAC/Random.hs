@@ -16,7 +16,8 @@ import Tests.Util
 import MAC.Mealy
 
 -- TODO make the selection of the tests configurable
-tests = testGroup "Random Tests" smallRandomTests
+tests :: TestTree
+tests = testGroup "Random Tests" tinyRandomTests
 
 randomTestsForSize :: forall n m. (KnownNat n, KnownNat m, 1 <= n, 1 <= m) => TestTree
 randomTestsForSize = testGroup name $ map (randomTest @n @m) allConfigs
@@ -45,6 +46,14 @@ randomTest cfg = testProperty name $ withTests 200 prop
       H.annotate $ "Computing " <> show x <> " * " <> show y <> " failed"
       expectedStream === simulatedStream
 
+
+tinyRandomTests :: [TestTree]
+tinyRandomTests = [
+  randomTestsForSize @16 @16,
+  randomTestsForSize @20 @20
+  ]
+
+smallRandomTests :: [TestTree]
 smallRandomTests = [
   randomTestsForSize @16 @16,
   randomTestsForSize @20 @20,
@@ -60,6 +69,9 @@ smallRandomTests = [
   randomTestsForSize @60 @60,
   randomTestsForSize @64 @64
   ]
+
+
+smallNonIdenticalTests :: [TestTree]
 smallNonIdenticalTests = [
   randomTestsForSize @16 @16,
   randomTestsForSize @16 @20,
@@ -231,6 +243,8 @@ smallNonIdenticalTests = [
   randomTestsForSize @64 @60,
   randomTestsForSize @64 @64
   ]
+
+largeRandomTests :: [TestTree]
 largeRandomTests = [
   randomTestsForSize @16 @16,
   randomTestsForSize @18 @18,
@@ -258,6 +272,8 @@ largeRandomTests = [
   randomTestsForSize @62 @62,
   randomTestsForSize @64 @64
     ]
+
+fullRandomTests :: [TestTree]
 fullRandomTests = [
   randomTestsForSize @16 @16,
   randomTestsForSize @16 @18,

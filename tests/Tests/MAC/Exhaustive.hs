@@ -10,8 +10,8 @@ import Tests.Util
 
 import MAC.Mealy
 
-
-tests = testGroup "Exhaustive Tests" tinyExhaustiveTests
+tests :: TestTree
+tests = testGroup "Exhaustive Tests" smallExhaustiveTests
 
 exhaustiveTestsForSize ::
   forall n m.
@@ -54,6 +54,8 @@ tinyExhaustiveTests = [
       exhaustiveTestsForSize @4 @4
       ]
 
+
+smallExhaustiveTests :: [TestTree]
 smallExhaustiveTests = [
       exhaustiveTestsForSize @2 @2,
       exhaustiveTestsForSize @3 @3,
@@ -65,6 +67,8 @@ smallExhaustiveTests = [
       exhaustiveTestsForSize @9 @9,
       exhaustiveTestsForSize @10 @10
       ]
+
+bigExhaustiveTests :: [TestTree]
 bigExhaustiveTests = [
       exhaustiveTestsForSize @2 @2,
       exhaustiveTestsForSize @3 @3,
@@ -82,6 +86,9 @@ bigExhaustiveTests = [
       exhaustiveTestsForSize @15 @15,
       exhaustiveTestsForSize @16 @16
       ]
+
+
+mediumExhaustiveTests :: [TestTree]
 mediumExhaustiveTests = [
       exhaustiveTestsForSize @2 @2,
       exhaustiveTestsForSize @2 @3,
@@ -165,6 +172,9 @@ mediumExhaustiveTests = [
       exhaustiveTestsForSize @10 @9,
       exhaustiveTestsForSize @10 @10
       ]
+
+
+fullExhaustiveTests :: [TestTree]
 fullExhaustiveTests = [
       exhaustiveTestsForSize @2 @2,
       exhaustiveTestsForSize @2 @3,

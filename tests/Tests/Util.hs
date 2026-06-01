@@ -4,7 +4,7 @@ import Control.Arrow.Transformer.Automaton
 import Clash.Prelude (
   natToNum, simulateN, signalAutomaton, register, exposeClockResetEnable, enableGen, clockGen, resetGen, mul, Signal,  Unsigned, System,  KnownNat, type (<=), type (+), type System)
 
-import Prelude
+import Prelude hiding (product, pred)
 
 import MAC.Mealy
 
