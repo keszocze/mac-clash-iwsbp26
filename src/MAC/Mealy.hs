@@ -31,6 +31,21 @@ data MACConfig = MACConfig
 -- TODO nachher dann wirklcih alles unterstützen
 allConfigs = [ MACConfig a b c d e | a  <- [True, False], b  <- [False] , c  <- [False], d  <- [True] , e  <- [True]]
 
+multiplicationDelay :: forall n m. (KnownNat n, KnownNat m) => Int
+multiplicationDelay = (nInt * mInt) - 1
+  where
+    nInt = natToNum @n @Int
+    mInt = natToNum @m @Int
+
+accumulationDelay :: forall n m. (KnownNat n, KnownNat m) => Int
+accumulationDelay = nInt + mInt
+  where
+    nInt = natToNum @n @Int
+    mInt = natToNum @m @Int
+
+totalDelay :: forall n m. (KnownNat n, KnownNat m) => Int
+totalDelay = multiplicationDelay @n @m + accumulationDelay @n @m
+
 
 describe :: MACConfig -> String
 describe MACConfig {..} =
