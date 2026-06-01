@@ -1,4 +1,4 @@
-{-# LANGUAGE DuplicateRecordFields, RecordWildCards, AllowAmbiguousTypes #-}
+{-# LANGUAGE DuplicateRecordFields, RecordWildCards, DerivingVia #-}
 module MAC.Mealy where
 
 import Clash.Prelude
@@ -26,6 +26,19 @@ data MACConfig = MACConfig
   }
   deriving (Show, Bounded)
 
+
+--allConfigs = [ MACConfig a b c d e | a  <- [True, False], b  <- [True, False] , c  <- [True, False], d  <- [True, False] , e  <- [True, False]]
+-- TODO nachher dann wirklcih alles unterstützen
+allConfigs = [ MACConfig a b c d e | a  <- [True, False], b  <- [False] , c  <- [False], d  <- [True] , e  <- [True]]
+
+
+describe :: MACConfig -> String
+describe MACConfig {..} =
+  (if useModuleFullAdder then "module adder" else "inline adder") <> " / " <>
+  (if useState then "state" else "mealy machine") <> " / " <>
+  (if useVector then "Vecr" else "BitVector") <> " / " <>
+  (if useRotation then "rotate" else "pointer") <> " / " <>
+  (if useOneHot then "OneHotCounter" else "Index")
 
 defaultConfig = MACConfig {
   useModuleFullAdder = True,
@@ -85,11 +98,10 @@ data MACInput (n :: Nat) (m :: Nat) = MACInput {
 type MACInput' n = MACInput n n
 
 
--- TODO hier natürlich unsigned ausgeben
-data MACOutput n m = MACOutput {
-  product :: Maybe (BitVector (n+m)),
-  accumulated :: Maybe (BitVector (n+m))
-} deriving (Generic, NFDataX)
+data MACOutput (n :: Nat) (m :: Nat) = MACOutput {
+  product :: Maybe (Unsigned (n+m)),
+  accumulated :: Maybe (Unsigned (n+m))
+} deriving (Eq, Generic, NFDataX)
 
 instance (KnownNat n, KnownNat m) => Show (MACOutput n m) where
   show MACOutput{..} = "(product="<> maybe "" show product <> ", accumulated=" <> maybe "" show accumulated <> ")"
@@ -217,8 +229,8 @@ macMealy MACConfig{useModuleFullAdder} state@MACState{..} MACInput{values, newAc
           }
 
     output MACState{stage, product, accumulator} = case stage of
-      Ready -> MACOutput (Just product) (Just accumulator)
-      Multiplying -> MACOutput Nothing (Just accumulator)
+      Ready -> MACOutput (Just $ bitCoerce product) (Just $ bitCoerce accumulator)
+      Multiplying -> MACOutput Nothing (Just $ bitCoerce accumulator)
       Accumulating -> MACOutput Nothing Nothing
 
 is :: [MACInput 3 3]

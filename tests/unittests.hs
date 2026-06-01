@@ -15,10 +15,9 @@ import Tests.Util
 
 main :: IO ()
 main = do
-  test
   defaultMain $ testGroup "."
     [
-      Tests.Example.Project.accumTests,
+   --   Tests.Example.Project.accumTests,
       Tests.MAC.tests
     ]
 

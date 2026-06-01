@@ -1,13 +1,18 @@
 module Tests.MAC where
 
 
+import Debug.Trace
+
 import Clash.Hedgehog.Sized.Unsigned
 import Clash.Hedgehog.Sized.Index
 
-import Clash.Prelude
-import qualified Prelude as P
+
+import qualified Clash.Prelude as C
+import Clash.Prelude (natToNum, simulateN, Unsigned, System,  KnownNat, type (<=), type (+))
+import Prelude hiding (product)
 
 import qualified Hedgehog as H
+import Hedgehog ((===), withTests)
 import qualified Hedgehog.Range as Range
 
 import MAC.Mealy
@@ -21,15 +26,43 @@ import Tests.Util
 allInputVals :: forall n m. (KnownNat n, KnownNat m) =>  [(Unsigned n, Unsigned m)]
 allInputVals = [(x, y) | x <- [minBound .. maxBound], y <- [minBound .. maxBound]]
 
-mulSequence :: forall n m. (KnownNat n, KnownNat m) => (Unsigned n, Unsigned m) -> [MACInput n m]
-mulSequence (x, y) = (MACInput (Just (x,y)) Nothing) : P.repeat (MACInput Nothing Nothing)
+
+-- TODO die Dauern, wie lange welcher Teil benötigt im HW Modul berechnen und als Funktionen bereitstellen
+
+testInputs :: forall n m. (KnownNat n, KnownNat m) => (Unsigned n, Unsigned m) -> [MACInput n m]
+testInputs (x, y) = (MACInput (Just (x,y)) Nothing) : replicate  ((nInt * mInt) + nInt + mInt) (MACInput Nothing Nothing)
+  where
+    nInt = natToNum @n @Int
+    mInt = natToNum @m @Int
 
 expectedMulOutput :: forall n m. (KnownNat n, KnownNat m) => (Unsigned n, Unsigned m) -> [MACOutput n m]
-expectedMulOutput (x,y) = [] -- TODO fill, actually
+expectedMulOutput (x,y) = multiplying ++ accumulating ++ displayingResult
+  where
+    nInt = natToNum @n @Int
+    mInt = natToNum @m @Int
+    multiplying = replicate ((nInt*mInt)-1) (MACOutput Nothing (Just 0))
+    accumulating = replicate (nInt + mInt) (MACOutput Nothing Nothing)
+    displayingResult = replicate 1 (MACOutput product product) -- extend for more cycles?
+      where product = Just $ C.mul x y
+
+
+exhaustiveTests = testGroup "Exhaustive Tests" [
+    exhaustiveTestsForSize @2 @2
+  ]
+
+exhaustiveTestsForSize ::
+  forall n m.
+  ( KnownNat n,
+    1 <= n,
+    KnownNat m,
+    1 <= m
+  ) =>
+  TestTree
+exhaustiveTestsForSize = testGroup name $ map (exhaustiveTest @n @m) allConfigs
+  where name = "n=" <> prettySNat @n <> " m=" <> prettySNat @m
 
 tests = testGroup "MAC Unit" [
-    --testProperty "dummy" $ H.property H.discard,
-    exhaustiveTest @2 @4
+    exhaustiveTests
   ]
 exhaustiveTest ::
   forall n m.
@@ -38,13 +71,18 @@ exhaustiveTest ::
     KnownNat m,
     1 <= m
   ) =>
-  TestTree
-exhaustiveTest = testProperty name $ H.withTests 1 prop
+  MACConfig -> TestTree
+exhaustiveTest cfg = testCase name prop
   where
-    name = ("n=" <> prettySNat @n <> " m=" <> prettySNat @m)
+    name = describe cfg
     nInt = natToNum @n @Int
     mInt = natToNum @m @Int
-    delay = nInt * mInt
-    inputStreams = P.map (mulSequence @n @m) allInputVals
-    prop = H.property $ do
-      H.discard
+    delay = (nInt * mInt) + nInt + mInt
+    inputStreams = map (testInputs @n @m) allInputVals
+    expectedStreams = map (expectedMulOutput @n @m) allInputVals
+    simulatedStreams = map (simulateN @System delay (mac' @System @n @m cfg)) inputStreams
+    prop = do
+      mapM_ (
+          \((x,y), os, es) -> assertEqual ("Computing " <> show x <> " * " <> show y <> " failed") es os
+        )
+        $ zip3 (allInputVals @n @m) simulatedStreams expectedStreams
