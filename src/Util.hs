@@ -1,4 +1,4 @@
-module MAC.Util where
+module Util where
 
 import Clash.Prelude
 import Clash.Class.Counter

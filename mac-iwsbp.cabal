@@ -99,7 +99,7 @@ library
     MAC.Types.OneHotCounter
     MAC.Types.Stage
     MAC.Types.State
-    MAC.Util
+    Util
   default-language: Haskell2010
 
 -- Builds the executable 'clash', with mac-iwsbp project in scope

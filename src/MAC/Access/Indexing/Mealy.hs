@@ -5,7 +5,8 @@ import Clash.Class.Counter
 
 import MAC.Class.Storage
 import MAC.Types
-import MAC.Util
+
+import Util
 
 accumulateIndexing :: forall n m counterType storageType.
   (
