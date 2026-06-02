@@ -8,6 +8,9 @@ import Data.Maybe
 
 import qualified Prelude
 
+import MAC.Class.Storage
+import MAC.Types
+import MAC.Types.BVec
 import MAC.Util
 import MAC.Util.OneHotCounter
 import qualified MAC.Util.FullAdder as FA
@@ -15,42 +18,8 @@ import qualified MAC.Util.FullAdder as FA
 import Debug.Trace
 
 
-data Stage = Ready | Multiplying | Accumulating deriving (Show, Generic, NFDataX)
-
--- TODO nur eine Typdefinition draus machen
-type AccumFun n m counterType storageType = MACState n m counterType storageType -> MACState n m counterType storageType
-type MulFun n m counterType storageType = MACState n m counterType storageType -> MACState n m counterType storageType
-
-data MACConfig = MACConfig
-  { useModuleFullAdder :: Bool,
-    useState :: Bool,
-    useVector :: Bool,
-    useRotation :: Bool,
-    useOneHot :: Bool
-  }
-  deriving (Show, Bounded)
-
-class Storage a where
-  zero :: a
-  advance :: a -> a
-  reset :: Enum e => e -> a -> a
-
-newtype BVec (n :: Nat) = BVec (Vec n Bit)
-  deriving (Generic, NFDataX) via (Vec n Bit)
-  deriving (Show, BitPack) via (Vec n Bit)
 
 
-
-instance (KnownNat n) => Storage (BVec n) where
-  zero = BVec (replicate (SNat @n) (0 :: Bit))
-  advance (BVec v) = BVec $ v `rotateRight` (1 :: Bit)
-  reset e (BVec v) = BVec $ v `rotateLeft` e
-
-
-instance (KnownNat n) => Storage (BitVector n) where
-  zero = 0b0
-  advance bv = bv `rotateR` 1
-  reset e bv = bv `rotateL` (fromEnum e)
 
 --allConfigs = [ MACConfig a b c d e | a  <- [True, False], b  <- [True, False] , c  <- [True, False], d  <- [True, False] , e  <- [True, False]]
 -- TODO nachher dann wirklich alles unterstützen
@@ -96,57 +65,7 @@ defaultConfig = MACConfig {
 
 
 
-data MACState (n :: Nat) (m :: Nat) counterType storageType = MACState {
-  stage :: Stage,
-  -- TODO x,y auch in den storageType wrappen
-  x :: Unsigned n,
-  y :: Unsigned m,
-  product :: storageType (n+m),
-  accumulator :: storageType (n+m),
-  xCounter :: counterType n,
-  yCounter :: counterType m,
-  accumulateCounter :: counterType (n+m),
-  carry :: Bit
-} deriving (Generic)
 
--- Benötigt UndecidableInstances
-deriving instance (
-  KnownNat n,
-  KnownNat m,
-  NFDataX (counterType n),
-  NFDataX (counterType m),
-  NFDataX (counterType (n+m)),
-  NFDataX (storageType (n+m))
-  ) => NFDataX (MACState n m counterType storageType)
-
-deriving instance (
-  KnownNat n,
-  KnownNat m,
-  Show (counterType n),
-  Show (counterType m),
-  Show (counterType (n+m)),
-  Show (storageType (n+m))
-  ) => Show (MACState n m counterType storageType)
-
-
-initialState :: forall n m counterType storageType.
-  (
-    KnownNat n, 1 <= n, KnownNat m, 1 <= m,
-    Counter (counterType n), Counter (counterType m), Counter (counterType (n+m)),
-    Storage (storageType (n+m))
-  )
-  => MACState n m counterType storageType
-initialState = MACState {
-  stage = Ready,
-  x=0,
-  y=0,
-  product = zero,
-  accumulator = zero,
-  xCounter = countMin :: (counterType n),
-  yCounter = countMin :: (counterType m),
-  accumulateCounter = countMin :: (counterType (n+m)),
-  carry = 0
-}
 
 
 data MACInput (n :: Nat) (m :: Nat) = MACInput {

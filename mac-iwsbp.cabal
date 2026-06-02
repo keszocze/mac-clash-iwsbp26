@@ -87,6 +87,9 @@ library
   hs-source-dirs: src
   exposed-modules:
     MAC.Mealy
+    MAC.Class.Storage
+    MAC.Types
+    MAC.Types.BVec
     MAC.Util
     MAC.Util.OneHotCounter
     MAC.Util.FullAdder
