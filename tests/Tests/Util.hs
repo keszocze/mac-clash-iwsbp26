@@ -28,6 +28,44 @@ expectedMulOutput (x,y) = multiplying ++ accumulating ++ displayingResult
     displayingResult = replicate 1 (MACOutput product product) -- extend for more cycles?
       where product = Just $ mul x y
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -- TODO Herausfinden, wie ich das hier in automatisierten Tests nutzen kann
 runCycle :: (Automaton (->) a b) -> a -> (b, (Automaton (->) a b))
 runCycle (Automaton f) x = f x
