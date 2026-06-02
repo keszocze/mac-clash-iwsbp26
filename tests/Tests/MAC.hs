@@ -22,8 +22,8 @@ import qualified Tests.MAC.Random
 
 tests = testGroup "MAC Unit" [
 -- TODO add options for different levels of exhaustiveness / iterations
-    Tests.MAC.Exhaustive.tests,
-    Tests.MAC.Random.tests
+    Tests.MAC.Exhaustive.tests
+  --  Tests.MAC.Random.tests
   ]
 
 

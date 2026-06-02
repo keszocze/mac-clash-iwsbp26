@@ -133,6 +133,8 @@ test-suite test-library
   other-modules:
     Tests.MAC
     Tests.MAC.Exhaustive
+    Tests.MAC.Exhaustive.TestTrees
+    Tests.MAC.Exhaustive.Internal
     Tests.MAC.Random
     Tests.Util
   build-depends:
