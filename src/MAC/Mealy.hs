@@ -8,6 +8,8 @@ import Data.Maybe
 
 import qualified Prelude
 
+import MAC.Access.Indexing.Mealy
+import MAC.Access.Rotating.Mealy
 import MAC.Class.Storage
 import MAC.Types
 import MAC.Types.BVec
@@ -20,19 +22,6 @@ import qualified MAC.Util.FullAdder as FA
 
 import Debug.Trace
 
-
-
-
-
---allConfigs = [ Config a b c d e | a  <- [True, False], b  <- [True, False] , c  <- [True, False], d  <- [True, False] , e  <- [True, False]]
--- TODO nachher dann wirklich alles unterstützen
-allConfigs = [ Config useModuleAdder useState useVector useRotation useOneHot |
-  useModuleAdder  <- [False, True],
-  useState  <- [False] ,
-  useVector  <- [False, True],
-  useRotation  <- [False, True] ,
-  useOneHot  <- [False, True]
-  ]
 
 multiplicationDelay :: forall n m. (KnownNat n, KnownNat m) => Int
 multiplicationDelay = (nInt * mInt) - 1
@@ -48,26 +37,6 @@ accumulationDelay = nInt + mInt
 
 totalDelay :: forall n m. (KnownNat n, KnownNat m) => Int
 totalDelay = multiplicationDelay @n @m + accumulationDelay @n @m
-
-
-describe :: Config -> String
-describe Config {..} =
-  (if useModuleFullAdder then "module adder" else "inline adder") <> " / " <>
-  (if useState then "state" else "mealy machine") <> " / " <>
-  (if useRotation then "rotate" else "indexing") <> " / " <>
-  (if useVector then "Vec" else "BitVector") <> " / " <>
-  (if useOneHot then "OneHotCounter" else "IndexCounter")
-
-defaultConfig = Config {
-  useModuleFullAdder = True,
-  useState = False,
-  useVector = False,
-  useRotation = False,
-  useOneHot = False
-}
-
-
-
 
 
 
@@ -197,184 +166,3 @@ is = (MACInput {values = Just (1,1), newAcc = Nothing}):
   Prelude.repeat (MACInput {values = Nothing, newAcc = Nothing})
 
 
-accumulateIndexing :: forall n m counterType storageType.
-  (
-    KnownNat n, KnownNat m,
-    BitPack (storageType (n + m)),
-    Storage (storageType (n + m)),
-    Counter (counterType (n + m)),
-    Enum (counterType (n + m))
-  ) =>
-  (Bit -> Bit -> Bit -> (Bit, Bit)) ->
-  State n m counterType storageType ->
-  State n m counterType storageType
-accumulateIndexing fullAdder st@State{..} =  let
-    a = accumulator ! accumulateCounter
-    b = product ! accumulateCounter
-    (carry', sum) = fullAdder a b carry
-    accumulator' = replaceBit accumulateCounter sum accumulator
-
-    (stage', accumulateCounter') = case countSuccOverflow accumulateCounter of
-        (True, acc) -> (Ready, acc)
-        (False, acc) -> (Accumulating, acc)
-
-    in st{
-      stage=stage',
-      carry=carry',
-      accumulator=accumulator',
-      accumulateCounter=accumulateCounter'
-      }
-
--- * beide Addierer
--- * beide Counter (wird gar nicht explizit verwendet)
--- * beide storages
-accumulateRotate :: forall n m counterType storageType.
-  (
-    KnownNat n, KnownNat m,
-    BitPack (storageType (n + m)),
-    Storage (storageType (n + m)),
-    Counter (counterType (n + m))
-  ) =>
-  (Bit -> Bit -> Bit -> (Bit, Bit)) ->
-  State n m counterType storageType ->
-  State n m counterType storageType
-accumulateRotate fullAdder st@State{..} =  let
-    a = lsb accumulator
-    b = lsb product
-    (carry', sum) = fullAdder a b carry
-    accumulator' = replaceBit (0 :: Bit) sum accumulator
-    accumulator''= advance accumulator'
-    product' = advance product
-
-    (stage', accumulateCounter') = case countSuccOverflow accumulateCounter of
-        (True, acc) -> (Ready, acc)
-        (False, acc) -> (Accumulating, acc)
-
-    in st{
-      stage=stage',
-      carry=carry',
-      accumulator=accumulator'',
-      accumulateCounter=accumulateCounter',
-      product = product'
-      }
-
-
-
-counterToEnum :: forall n cnt. (KnownNat n, Counter cnt, Enum cnt)  => cnt -> Index n
-counterToEnum = toEnum . fromEnum
-
-mulIndexing :: forall n m counterType storageType.
-  (
-      KnownNat n, KnownNat m, 1 <= n, 1 <= m, 1 <= n + m,
-      Counter (counterType n), Counter (counterType m),
-      BitPack (storageType (n + m)),
-      Storage (storageType (n + m)),
-      Enum (counterType n), Enum (counterType m)
-  ) =>
-  (Bit -> Bit -> Bit -> (Bit, Bit)) ->
-  State n m counterType storageType ->
-  State n m counterType storageType
-mulIndexing fullAdder st@State{..} =
-  let (currentRoundDone, xCounter') = countSuccOverflow xCounter
-      (inLastRound, yCounter')  = countSuccOverflow yCounter
-      multiplicationDone = currentRoundDone .&. inLastRound
-
-      xIndex = counterToEnum @n xCounter
-      yIndex = counterToEnum @m yCounter
-      productIndex = add xIndex yIndex
-      modifyWithCarryIndex = add productIndex (1 :: Index 2)
-
-
-      a = (x ! xIndex) .&. (y ! yIndex)
-      b = product ! productIndex
-      (carryOut, sum) = fullAdder a b carry
-
-
-      productWithSum = replaceBit productIndex sum product
-      productWithSumAndCarry = replaceBit modifyWithCarryIndex carryOut productWithSum
-
-      product' = case (currentRoundDone, inLastRound) of
-        -- simply advance to the next bit within x and adjust the product accordingly
-        (False, _) -> productWithSum
-        -- we need to advance to the next bit of y and have to reset the product accordingly
-        (True, False) -> productWithSumAndCarry
-        -- the multiplication is done and we need one additional shift to put the LSB in the correct position
-        (True, True) -> productWithSumAndCarry
-
-      -- only advance to the next y when one round is done
-      (yCounter'', carry') = if currentRoundDone then
-          (yCounter', 0)
-        else
-          (yCounter, carryOut)
-
-      stage' = if multiplicationDone then Accumulating else Multiplying
-    in st
-      {
-        product = product',
-        xCounter = xCounter',
-        yCounter = yCounter'',
-        carry = carry',
-        stage = stage'
-      }
-
-
--- kann
--- * beide Addierer
--- * beide Counter
--- * beide storages
-mulRotate :: forall n m counterType storageType.
-  (
-      KnownNat n, KnownNat m,
-      Counter (counterType n), Counter (counterType m),
-      BitPack (storageType (n + m)),
-      Storage (storageType (n + m))
-  ) =>
-  (Bit -> Bit -> Bit -> (Bit, Bit)) ->
-  State n m counterType storageType ->
-  State n m counterType storageType
-mulRotate fullAdder st@State{..} =
-  let (currentRoundDone, xCounter') = countSuccOverflow xCounter
-      (inLastRound, yCounter')  = countSuccOverflow yCounter
-      multiplicationDone = currentRoundDone .&. inLastRound
-
-      resetDistance = (natToNum @n @Int) - 1
-
-      rotateFwd = advance
-      rotateBack = reset resetDistance
-
-      a = (lsb x) .&. (lsb y)
-      b = lsb product
-      (carryOut, sum) = fullAdder a b carry
-
-      -- just naming it to avoid magic numbers
-      modifyIndex = 0 :: Bit
-
-      productWithSum = replaceBit modifyIndex sum product
-      productWithSumAndCarry = replaceBit modifyIndex carryOut (rotateFwd productWithSum)
-
-      product' = case (currentRoundDone, inLastRound) of
-        -- simply advance to the next bit within x and adjust the product accordingly
-        (False, _) -> rotateFwd productWithSum
-        -- we need to advance to the next bit of y and have to reset the product accordingly
-        (True, False) -> rotateBack productWithSumAndCarry
-        -- the multiplication is done and we need one additional shift to put the LSB in the correct position
-        (True, True) -> rotateFwd productWithSumAndCarry
-
-      x' = x `rotateR` 1 -- continously shift through;
-      -- only advance to the next y when one round is done
-      (y', yCounter'', carry') = if currentRoundDone then
-          (y `shiftR` 1, yCounter', 0)
-        else
-          (y, yCounter, carryOut)
-
-      stage' = if multiplicationDone then Accumulating else Multiplying
-    in st
-      {
-        x=x',
-        y=y',
-        product = product',
-        xCounter = xCounter',
-        yCounter = yCounter'',
-        carry = carry',
-        stage = stage'
-      }

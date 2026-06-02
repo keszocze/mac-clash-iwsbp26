@@ -44,3 +44,4 @@ cabal.config
 /systemverilog
 bin/
 .vscode
+tst

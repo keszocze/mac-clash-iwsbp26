@@ -86,6 +86,8 @@ library
   import: common-options
   hs-source-dirs: src
   exposed-modules:
+    MAC.Access.Indexing.Mealy
+    MAC.Access.Rotating.Mealy
     MAC.Mealy
     MAC.Class.Storage
     MAC.Types

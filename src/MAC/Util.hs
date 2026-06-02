@@ -1,6 +1,7 @@
 module MAC.Util where
 
 import Clash.Prelude
+import Clash.Class.Counter
 
 -- | Augments a combined transition/output function with debug information
 --
@@ -82,3 +83,7 @@ prettySampleN ::
   ((HiddenClockResetEnable dom) => Signal dom a) ->
   IO ()
 prettySampleN n f = mapM_ print $ sampleN n f
+
+
+counterToEnum :: forall n cnt. (KnownNat n, Counter cnt, Enum cnt)  => cnt -> Index n
+counterToEnum = toEnum . fromEnum

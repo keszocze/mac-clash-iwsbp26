@@ -2,7 +2,7 @@ module Tests.Util where
 
 import Control.Arrow.Transformer.Automaton
 import Clash.Prelude (
-  natToNum, simulateN, signalAutomaton, register, exposeClockResetEnable, enableGen, clockGen, resetGen, mul, Signal,  Unsigned, System,  KnownNat, type (<=), type (+), type System)
+  natToNum, simulateN, signalAutomaton, register, exposeClockResetEnable, enableGen, clockGen, resetGen, mul, Index, Signal,  Unsigned, System,  KnownNat, type (<=), type (+), type System)
 
 import Prelude hiding (product, pred)
 
@@ -27,6 +27,7 @@ expectedMulOutput (x,y) = multiplying ++ accumulating ++ displayingResult
     accumulating = replicate (accumulationDelay @n @m) (MACOutput Nothing Nothing)
     displayingResult = replicate 1 (MACOutput product product) -- extend for more cycles?
       where product = Just $ mul x y
+
 
 
 
