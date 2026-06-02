@@ -42,7 +42,7 @@ randomTest cfg = testProperty name $ withTests 200 prop
       let
         inputStream = testInputs @n @m (x,y)
         expectedStream = expectedMulOutput @n @m (x,y)
-        simulatedStream = simulateN @System delay (mac' @System @n @m cfg) inputStream
+        simulatedStream = simulateN @System delay (mkMAC @System @n @m cfg) inputStream
       H.annotate $ "Computing " <> show x <> " * " <> show y <> " failed"
       expectedStream === simulatedStream
 

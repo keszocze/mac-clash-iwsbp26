@@ -94,6 +94,7 @@ library
     MAC.Types.BVec
     MAC.Types.Config
     MAC.Types.Internal
+    MAC.Types.IO
     MAC.Types.State
     MAC.Util
     MAC.Util.OneHotCounter

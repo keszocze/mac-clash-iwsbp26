@@ -16,6 +16,7 @@ import MAC.Types.BVec
 import MAC.Types.Internal
 import MAC.Types.Config
 import MAC.Types.State
+import MAC.Types.IO
 import MAC.Util
 import MAC.Util.OneHotCounter
 import qualified MAC.Util.FullAdder as FA
@@ -40,32 +41,18 @@ totalDelay = multiplicationDelay @n @m + accumulationDelay @n @m
 
 
 
-data MACInput (n :: Nat) (m :: Nat) = MACInput {
-  values :: Maybe (Unsigned n, Unsigned m),
-  newAcc :: Maybe (Unsigned (n+m))
-} deriving (Show, Generic, NFDataX)
-
-type MACInput' n = MACInput n n
 
 
-data MACOutput (n :: Nat) (m :: Nat) = MACOutput {
-  product :: Maybe (Unsigned (n+m)),
-  accumulated :: Maybe (Unsigned (n+m))
-} deriving (Eq, Generic, NFDataX)
-
-instance (KnownNat n, KnownNat m) => Show (MACOutput n m) where
-  show MACOutput{..} = "(product="<> maybe "" show product <> ", accumulated=" <> maybe "" show accumulated <> ")"
-
-mac' :: forall dom n m.
+mkMAC :: forall dom n m.
   (
     HiddenClockResetEnable dom,
     KnownNat n, 1 <= n,  KnownNat m, 1 <= m
   )
   =>
     Config ->
-    Signal dom (MACInput n m) ->
-    Signal dom (MACOutput n m)
-mac' Config{..} =
+    Signal dom (Input n m) ->
+    Signal dom (Output n m)
+mkMAC Config{..} =
   if useRotation
     then
       if useVector
@@ -117,8 +104,8 @@ mac' Config{..} =
 
 
 -- TODO herausfinden, wieso diese Spezialisierung nicht funktioniert
--- type MACOutput n = MACOutput' n n
--- macMealy :: forall n. (KnownNat n) => forall n. State n  -> MACInput n -> (State n, MACOutput n)
+-- type Output n = Output' n n
+-- macMealy :: forall n. (KnownNat n) => forall n. State n  -> Input n -> (State n, Output n)
 -- macMealy = macMealy' @n @n
 -- TODO man kann constraints in types zusammenfassen
 macMealy :: forall n m counterType storageType. (
@@ -133,10 +120,10 @@ macMealy :: forall n m counterType storageType. (
   ) =>
     AccumFun n m counterType storageType -> MulFun n m counterType storageType ->
     State n m counterType storageType->
-    MACInput n m ->
-    (State n m counterType storageType, MACOutput n m)
+    Input n m ->
+    (State n m counterType storageType, Output n m)
     -- TODO hier gucken, was ich aus dem initial State eigentlich alles wirklich brauch
-macMealy accumulateFun multiplyFun state@State{..} MACInput{values, newAcc}  = (state', output state')
+macMealy accumulateFun multiplyFun state@State{..} Input{values, newAcc}  = (state', output state')
   where
 
     state' = compute stateStart
@@ -155,14 +142,14 @@ macMealy accumulateFun multiplyFun state@State{..} MACInput{values, newAcc}  = (
 
 
     output State{stage, product, accumulator, x, y} = case stage of
-      Ready -> (MACOutput (Just $ bitCoerce product) (Just $ bitCoerce accumulator))
-      Multiplying -> MACOutput Nothing (Just $ bitCoerce accumulator)
-      Accumulating -> MACOutput Nothing Nothing
+      Ready -> (Output (Just $ bitCoerce product) (Just $ bitCoerce accumulator))
+      Multiplying -> Output Nothing (Just $ bitCoerce accumulator)
+      Accumulating -> Output Nothing Nothing
 
-is :: [MACInput 2 2]
-is = (MACInput {values = Just (1,1), newAcc = Nothing}):
-  (Prelude.replicate 15 (MACInput {values = Nothing, newAcc = Nothing})) Prelude.++
-  [(MACInput {values = Just (1,2), newAcc = Nothing})] Prelude.++
-  Prelude.repeat (MACInput {values = Nothing, newAcc = Nothing})
+is :: [Input 2 2]
+is = (Input {values = Just (1,1), newAcc = Nothing}):
+  (Prelude.replicate 15 (Input {values = Nothing, newAcc = Nothing})) Prelude.++
+  [(Input {values = Just (1,2), newAcc = Nothing})] Prelude.++
+  Prelude.repeat (Input {values = Nothing, newAcc = Nothing})
 
 

@@ -37,7 +37,7 @@ exhaustiveTest cfg = testCase name prop
     delay = (totalDelay @n @m) + 1
     inputStreams = map (testInputs @n @m) allInputVals
     expectedStreams = map (expectedMulOutput @n @m) allInputVals
-    simulatedStreams = map (simulateN @System delay (mac' @System @n @m cfg)) inputStreams
+    simulatedStreams = map (simulateN @System delay (mkMAC @System @n @m cfg)) inputStreams
     prop = do
       mapM_ (
           \((x,y), os, es) -> assertEqual ("Computing " <> show x <> " * " <> show y <> " failed") es os
