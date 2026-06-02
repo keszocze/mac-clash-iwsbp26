@@ -17,6 +17,7 @@ import Test.Tasty.Hedgehog
 import Tests.Util
 
 import MAC.Mealy
+import MAC.Types.Config
 
 randomTestsForSize :: forall n m. (KnownNat n, KnownNat m, 1 <= n, 1 <= m) => TestTree
 randomTestsForSize = testGroup name $ map (randomTest @n @m) allConfigs

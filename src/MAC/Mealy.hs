@@ -149,7 +149,7 @@ mac' Config{..} =
 
 -- TODO herausfinden, wieso diese Spezialisierung nicht funktioniert
 -- type MACOutput n = MACOutput' n n
--- macMealy :: forall n. (KnownNat n) => forall n. MACState n  -> MACInput n -> (MACState n, MACOutput n)
+-- macMealy :: forall n. (KnownNat n) => forall n. State n  -> MACInput n -> (State n, MACOutput n)
 -- macMealy = macMealy' @n @n
 -- TODO man kann constraints in types zusammenfassen
 macMealy :: forall n m counterType storageType. (
@@ -163,11 +163,11 @@ macMealy :: forall n m counterType storageType. (
     Show (counterType n), Show (counterType m), Show (counterType (n+m))
   ) =>
     AccumFun n m counterType storageType -> MulFun n m counterType storageType ->
-    MACState n m counterType storageType->
+    State n m counterType storageType->
     MACInput n m ->
-    (MACState n m counterType storageType, MACOutput n m)
-    -- TODO hier gucken, was ich aus dem initial MACState eigentlich alles wirklich brauch
-macMealy accumulateFun multiplyFun state@MACState{..} MACInput{values, newAcc}  = (state', output state')
+    (State n m counterType storageType, MACOutput n m)
+    -- TODO hier gucken, was ich aus dem initial State eigentlich alles wirklich brauch
+macMealy accumulateFun multiplyFun state@State{..} MACInput{values, newAcc}  = (state', output state')
   where
 
     state' = compute stateStart
@@ -179,13 +179,13 @@ macMealy accumulateFun multiplyFun state@MACState{..} MACInput{values, newAcc}  
 
     stateNewAcc = state{accumulator= maybe accumulator bitCoerce newAcc}
 
-    compute state@MACState{..} = case stage of
+    compute state@State{..} = case stage of
       Ready -> state
       Multiplying -> multiplyFun state
       Accumulating -> accumulateFun state
 
 
-    output MACState{stage, product, accumulator, x, y} = case stage of
+    output State{stage, product, accumulator, x, y} = case stage of
       Ready -> (MACOutput (Just $ bitCoerce product) (Just $ bitCoerce accumulator))
       Multiplying -> MACOutput Nothing (Just $ bitCoerce accumulator)
       Accumulating -> MACOutput Nothing Nothing
@@ -206,9 +206,9 @@ accumulateIndexing :: forall n m counterType storageType.
     Enum (counterType (n + m))
   ) =>
   (Bit -> Bit -> Bit -> (Bit, Bit)) ->
-  MACState n m counterType storageType ->
-  MACState n m counterType storageType
-accumulateIndexing fullAdder st@MACState{..} =  let
+  State n m counterType storageType ->
+  State n m counterType storageType
+accumulateIndexing fullAdder st@State{..} =  let
     a = accumulator ! accumulateCounter
     b = product ! accumulateCounter
     (carry', sum) = fullAdder a b carry
@@ -236,9 +236,9 @@ accumulateRotate :: forall n m counterType storageType.
     Counter (counterType (n + m))
   ) =>
   (Bit -> Bit -> Bit -> (Bit, Bit)) ->
-  MACState n m counterType storageType ->
-  MACState n m counterType storageType
-accumulateRotate fullAdder st@MACState{..} =  let
+  State n m counterType storageType ->
+  State n m counterType storageType
+accumulateRotate fullAdder st@State{..} =  let
     a = lsb accumulator
     b = lsb product
     (carry', sum) = fullAdder a b carry
@@ -272,9 +272,9 @@ mulIndexing :: forall n m counterType storageType.
       Enum (counterType n), Enum (counterType m)
   ) =>
   (Bit -> Bit -> Bit -> (Bit, Bit)) ->
-  MACState n m counterType storageType ->
-  MACState n m counterType storageType
-mulIndexing fullAdder st@MACState{..} =
+  State n m counterType storageType ->
+  State n m counterType storageType
+mulIndexing fullAdder st@State{..} =
   let (currentRoundDone, xCounter') = countSuccOverflow xCounter
       (inLastRound, yCounter')  = countSuccOverflow yCounter
       multiplicationDone = currentRoundDone .&. inLastRound
@@ -330,9 +330,9 @@ mulRotate :: forall n m counterType storageType.
       Storage (storageType (n + m))
   ) =>
   (Bit -> Bit -> Bit -> (Bit, Bit)) ->
-  MACState n m counterType storageType ->
-  MACState n m counterType storageType
-mulRotate fullAdder st@MACState{..} =
+  State n m counterType storageType ->
+  State n m counterType storageType
+mulRotate fullAdder st@State{..} =
   let (currentRoundDone, xCounter') = countSuccOverflow xCounter
       (inLastRound, yCounter')  = countSuccOverflow yCounter
       multiplicationDone = currentRoundDone .&. inLastRound

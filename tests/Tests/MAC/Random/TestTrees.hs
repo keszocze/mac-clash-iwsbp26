@@ -1,9 +1,5 @@
 module Tests.MAC.Random.TestTrees where
 
-
-import Clash.Prelude (natToNum, simulateN, Unsigned, System,  KnownNat, type (<=),)
-import Prelude hiding (product)
-
 import Test.Tasty
 import Test.Tasty.HUnit
 

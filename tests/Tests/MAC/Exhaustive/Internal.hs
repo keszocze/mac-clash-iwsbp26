@@ -8,6 +8,7 @@ import Test.Tasty.HUnit
 
 import Tests.Util
 
+import MAC.Types.Config
 import MAC.Mealy
 
 exhaustiveTestsForSize ::
