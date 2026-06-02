@@ -11,6 +11,7 @@ import qualified Prelude
 import MAC.Class.Storage
 import MAC.Types
 import MAC.Types.BVec
+import MAC.Types.Config
 import MAC.Util
 import MAC.Util.OneHotCounter
 import qualified MAC.Util.FullAdder as FA
@@ -21,9 +22,9 @@ import Debug.Trace
 
 
 
---allConfigs = [ MACConfig a b c d e | a  <- [True, False], b  <- [True, False] , c  <- [True, False], d  <- [True, False] , e  <- [True, False]]
+--allConfigs = [ Config a b c d e | a  <- [True, False], b  <- [True, False] , c  <- [True, False], d  <- [True, False] , e  <- [True, False]]
 -- TODO nachher dann wirklich alles unterstützen
-allConfigs = [ MACConfig useModuleAdder useState useVector useRotation useOneHot |
+allConfigs = [ Config useModuleAdder useState useVector useRotation useOneHot |
   useModuleAdder  <- [False, True],
   useState  <- [False] ,
   useVector  <- [False, True],
@@ -47,15 +48,15 @@ totalDelay :: forall n m. (KnownNat n, KnownNat m) => Int
 totalDelay = multiplicationDelay @n @m + accumulationDelay @n @m
 
 
-describe :: MACConfig -> String
-describe MACConfig {..} =
+describe :: Config -> String
+describe Config {..} =
   (if useModuleFullAdder then "module adder" else "inline adder") <> " / " <>
   (if useState then "state" else "mealy machine") <> " / " <>
   (if useRotation then "rotate" else "indexing") <> " / " <>
   (if useVector then "Vec" else "BitVector") <> " / " <>
   (if useOneHot then "OneHotCounter" else "IndexCounter")
 
-defaultConfig = MACConfig {
+defaultConfig = Config {
   useModuleFullAdder = True,
   useState = False,
   useVector = False,
@@ -90,10 +91,10 @@ mac' :: forall dom n m.
     KnownNat n, 1 <= n,  KnownNat m, 1 <= m
   )
   =>
-    MACConfig ->
+    Config ->
     Signal dom (MACInput n m) ->
     Signal dom (MACOutput n m)
-mac' MACConfig{..} =
+mac' Config{..} =
   if useRotation
     then
       if useVector
@@ -212,8 +213,8 @@ accumulateIndexing fullAdder st@MACState{..} =  let
     accumulator' = replaceBit accumulateCounter sum accumulator
 
     (stage', accumulateCounter') = case countSuccOverflow accumulateCounter of
-        (True, a) -> (Ready, a)
-        (False, a) -> (Accumulating, a)
+        (True, acc) -> (Ready, acc)
+        (False, acc) -> (Accumulating, acc)
 
     in st{
       stage=stage',

@@ -90,6 +90,7 @@ library
     MAC.Class.Storage
     MAC.Types
     MAC.Types.BVec
+    MAC.Types.Config
     MAC.Util
     MAC.Util.OneHotCounter
     MAC.Util.FullAdder
