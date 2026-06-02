@@ -1,4 +1,4 @@
-module MAC.Util.FullAdder where
+module FullAdder where
 
 import Clash.Prelude
 

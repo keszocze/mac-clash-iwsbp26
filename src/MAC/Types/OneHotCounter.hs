@@ -1,4 +1,4 @@
-module MAC.Util.OneHotCounter where
+module MAC.Types.OneHotCounter where
 
 import Clash.Prelude
 import Clash.Class.Counter

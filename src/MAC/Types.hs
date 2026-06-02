@@ -1,18 +1,25 @@
-{-# LANGUAGE UndecidableInstances #-}
+{-# LANGUAGE UndecidableInstances, DuplicateRecordFields #-}
 
-module MAC.Types where
+module MAC.Types (
+  module MAC.Types.BVec,
+  module MAC.Types.Config,
+  module MAC.Types.IO,
+  module MAC.Types.OneHotCounter,
+  module MAC.Types.Stage,
+  module MAC.Types.State
+  )
+  where
 
 import Clash.Prelude
 import Clash.Class.Counter
 
-import MAC.Class.Storage
-import MAC.Types.Internal
+import MAC.Types.BVec
+import MAC.Types.Config
+import MAC.Types.IO
+import MAC.Types.OneHotCounter
+import MAC.Types.Stage
 import MAC.Types.State
 
-
-
--- TODO nur eine Typdefinition draus machen
-type AccumFun n m counterType storageType = State n m counterType storageType -> State n m counterType storageType
-type MulFun n m counterType storageType = State n m counterType storageType -> State n m counterType storageType
+import MAC.Class.Storage
 
 

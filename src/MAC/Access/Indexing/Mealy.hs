@@ -4,8 +4,7 @@ import Clash.Prelude
 import Clash.Class.Counter
 
 import MAC.Class.Storage
-import MAC.Types.Internal
-import MAC.Types.State
+import MAC.Types
 import MAC.Util
 
 accumulateIndexing :: forall n m counterType storageType.
@@ -53,8 +52,8 @@ mulIndexing fullAdder st@State{..} =
       (inLastRound, yCounter')  = countSuccOverflow yCounter
       multiplicationDone = currentRoundDone .&. inLastRound
 
-      xIndex = counterToEnum @n xCounter
-      yIndex = counterToEnum @m yCounter
+      xIndex = enumCounterToIndex @n xCounter
+      yIndex = enumCounterToIndex @m yCounter
       productIndex = add xIndex yIndex
       modifyWithCarryIndex = add productIndex (1 :: Index 2)
 

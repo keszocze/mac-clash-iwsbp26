@@ -6,7 +6,7 @@ import Clash.Prelude
 import Clash.Class.Counter
 
 import MAC.Class.Storage
-import MAC.Types.Internal
+import MAC.Types.Stage
 
 data State (n :: Nat) (m :: Nat) counterType storageType = State {
   stage :: Stage,

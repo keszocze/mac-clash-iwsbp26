@@ -44,7 +44,7 @@ prettyDebugN ::
   -- | The inputs to use
   [i] ->
   IO ()
-prettyDebugN n f s is = prettySimulateN @System n ((debugMealy f) s) is
+prettyDebugN n f s is = prettySimulateN @System n (debugMealy f s) is
 
 
 -- | Pretty prints a simulation run
@@ -85,5 +85,5 @@ prettySampleN ::
 prettySampleN n f = mapM_ print $ sampleN n f
 
 
-counterToEnum :: forall n cnt. (KnownNat n, Counter cnt, Enum cnt)  => cnt -> Index n
-counterToEnum = toEnum . fromEnum
+enumCounterToIndex :: forall n cnt. (KnownNat n, Counter cnt, Enum cnt)  => cnt -> Index n
+enumCounterToIndex = toEnum . fromEnum

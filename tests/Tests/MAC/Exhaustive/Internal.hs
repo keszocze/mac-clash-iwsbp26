@@ -1,6 +1,6 @@
 module Tests.MAC.Exhaustive.Internal where
 
-import Clash.Prelude (natToNum, simulateN, Unsigned, System,  KnownNat, type (<=),)
+import Clash.Prelude (simulateN, System, KnownNat, type (<=),)
 import Prelude hiding (product)
 
 import Test.Tasty
@@ -9,7 +9,7 @@ import Test.Tasty.HUnit
 import Tests.Util
 
 import MAC.Types.Config
-import MAC.Mealy
+import MAC
 
 exhaustiveTestsForSize ::
   forall n m.

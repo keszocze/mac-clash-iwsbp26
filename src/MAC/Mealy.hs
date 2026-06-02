@@ -12,35 +12,7 @@ import MAC.Access.Indexing.Mealy
 import MAC.Access.Rotating.Mealy
 import MAC.Class.Storage
 import MAC.Types
-import MAC.Types.BVec
-import MAC.Types.Internal
-import MAC.Types.Config
-import MAC.Types.State
-import MAC.Types.IO
-import MAC.Util
-import MAC.Util.OneHotCounter
-import qualified MAC.Util.FullAdder as FA
-
-import Debug.Trace
-
-
-multiplicationDelay :: forall n m. (KnownNat n, KnownNat m) => Int
-multiplicationDelay = (nInt * mInt) - 1
-  where
-    nInt = natToNum @n @Int
-    mInt = natToNum @m @Int
-
-accumulationDelay :: forall n m. (KnownNat n, KnownNat m) => Int
-accumulationDelay = nInt + mInt
-  where
-    nInt = natToNum @n @Int
-    mInt = natToNum @m @Int
-
-totalDelay :: forall n m. (KnownNat n, KnownNat m) => Int
-totalDelay = multiplicationDelay @n @m + accumulationDelay @n @m
-
-
-
+import qualified FullAdder as FA
 
 
 mkMAC :: forall dom n m.
@@ -52,7 +24,8 @@ mkMAC :: forall dom n m.
     Config ->
     Signal dom (Input n m) ->
     Signal dom (Output n m)
-mkMAC Config{..} =
+-- we ignore the state/Mealy flag as this has been already decided here
+mkMAC Config{useModuleFullAdder, useRotation, useVector, useOneHot} =
   if useRotation
     then
       if useVector
@@ -103,6 +76,7 @@ mkMAC Config{..} =
 
 
 
+
 -- TODO herausfinden, wieso diese Spezialisierung nicht funktioniert
 -- type Output n = Output' n n
 -- macMealy :: forall n. (KnownNat n) => forall n. State n  -> Input n -> (State n, Output n)
@@ -118,7 +92,8 @@ macMealy :: forall n m counterType storageType. (
     Show (storageType (n+m)),
     Show (counterType n), Show (counterType m), Show (counterType (n+m))
   ) =>
-    AccumFun n m counterType storageType -> MulFun n m counterType storageType ->
+    (State n m counterType storageType -> State n m counterType storageType) ->
+    (State n m counterType storageType -> State n m counterType storageType) ->
     State n m counterType storageType->
     Input n m ->
     (State n m counterType storageType, Output n m)
@@ -145,11 +120,3 @@ macMealy accumulateFun multiplyFun state@State{..} Input{values, newAcc}  = (sta
       Ready -> (Output (Just $ bitCoerce product) (Just $ bitCoerce accumulator))
       Multiplying -> Output Nothing (Just $ bitCoerce accumulator)
       Accumulating -> Output Nothing Nothing
-
-is :: [Input 2 2]
-is = (Input {values = Just (1,1), newAcc = Nothing}):
-  (Prelude.replicate 15 (Input {values = Nothing, newAcc = Nothing})) Prelude.++
-  [(Input {values = Just (1,2), newAcc = Nothing})] Prelude.++
-  Prelude.repeat (Input {values = Nothing, newAcc = Nothing})
-
-

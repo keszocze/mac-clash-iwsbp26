@@ -1,4 +1,4 @@
-module MAC.Types.Internal where
+module MAC.Types.Stage where
 
 import Clash.Prelude
 

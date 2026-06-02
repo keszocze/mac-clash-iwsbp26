@@ -6,6 +6,7 @@ import Clash.Prelude (
 
 import Prelude hiding (product, pred)
 
+import MAC
 import MAC.Types.IO
 import MAC.Mealy
 
