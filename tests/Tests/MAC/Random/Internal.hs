@@ -30,7 +30,7 @@ randomTest ::
     KnownNat m,
     1 <= m
   ) =>
-  MACConfig -> TestTree
+  Config -> TestTree
 randomTest cfg = testProperty name $ withTests 200 prop
   where
     name = describe cfg

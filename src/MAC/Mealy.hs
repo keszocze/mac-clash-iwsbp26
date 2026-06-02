@@ -11,7 +11,9 @@ import qualified Prelude
 import MAC.Class.Storage
 import MAC.Types
 import MAC.Types.BVec
+import MAC.Types.Internal
 import MAC.Types.Config
+import MAC.Types.State
 import MAC.Util
 import MAC.Util.OneHotCounter
 import qualified MAC.Util.FullAdder as FA

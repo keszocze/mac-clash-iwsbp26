@@ -29,7 +29,7 @@ exhaustiveTest ::
     KnownNat m,
     1 <= m
   ) =>
-  MACConfig -> TestTree
+  Config -> TestTree
 exhaustiveTest cfg = testCase name prop
   where
     name = describe cfg
