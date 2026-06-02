@@ -12,7 +12,7 @@
   - [x] OneHotCounter vs. Index
   - [ ] rotating vs. indexing
   - [ ] state vs. Mealy
-  - [ ] Vec vs BitVector
+  - [x] Vec vs BitVector
 - [x] Enum für OneHotCounter (aber wieso wollte ich das überhaupt haben?)
 - [ ] Testfälle bauen
   - [ ] hier gucken, wie/ob ich das statefull verwenden kann. das ist sicherlich lesbarer -> aber eventuell nicht so einfach

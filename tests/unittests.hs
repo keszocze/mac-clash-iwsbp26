@@ -2,7 +2,6 @@ import Prelude
 
 import Test.Tasty
 
-import qualified Tests.Example.Project
 
 import qualified Tests.MAC
 
@@ -15,9 +14,8 @@ import Tests.Util
 
 main :: IO ()
 main = do
-  defaultMain $ testGroup "."
+  defaultMain $ testGroup "Clash MAC IWSBP 2026"
     [
-   --   Tests.Example.Project.accumTests,
       Tests.MAC.tests
     ]
 

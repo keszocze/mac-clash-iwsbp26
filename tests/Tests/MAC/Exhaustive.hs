@@ -11,7 +11,7 @@ import Tests.Util
 import MAC.Mealy
 
 tests :: TestTree
-tests = testGroup "Exhaustive Tests" smallExhaustiveTests
+tests = testGroup "Exhaustive Tests" tinyExhaustiveTests
 
 exhaustiveTestsForSize ::
   forall n m.
