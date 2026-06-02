@@ -32,6 +32,18 @@ debugMealy ::
   Signal dom (s, i, s, o)
 debugMealy f = mealy (addDebugInfo f)
 
+prettyDebugN ::
+  (HiddenClockResetEnable dom, NFDataX s, NFDataX i, NFDataX o, Show i, Show s, Show o) =>
+  -- | How many clock cycles to simulate
+  Int ->
+  -- | The combined transition/output function
+  (s -> i -> (s, o)) ->
+  -- | The initial state
+  s ->
+  -- | The inputs to use
+  [i] ->
+  IO ()
+prettyDebugN n f s is = prettySimulateN @System n ((debugMealy f) s) is
 
 
 -- | Pretty prints a simulation run
@@ -43,7 +55,6 @@ debugMealy f = mealy (addDebugInfo f)
 -- > 6
 -- > 8
 -- > 10
-
 prettySimulateN ::
   (KnownDomain dom, NFDataX a, NFDataX b, Show b) =>
   Int ->

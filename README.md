@@ -10,7 +10,7 @@
 - [ ] Create function to generate the MAC from the config
   - [x] inline adder vs. module adder
   - [x] OneHotCounter vs. Index
-  - [ ] rotating vs. indexing
+  - [x] rotating vs. indexing
   - [ ] state vs. Mealy
   - [x] Vec vs BitVector
 - [x] Enum für OneHotCounter (aber wieso wollte ich das überhaupt haben?)

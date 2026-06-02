@@ -17,7 +17,8 @@ import Debug.Trace
 
 data Stage = Ready | Multiplying | Accumulating deriving (Show, Generic, NFDataX)
 
-type AccumFun n m storageType = Bit -> storageType (n+m) -> storageType (n+m) -> (Bit, storageType (n+m), storageType (n+m))
+-- TODO nur eine Typdefinition draus machen
+type AccumFun n m counterType storageType = MACState n m counterType storageType -> MACState n m counterType storageType
 type MulFun n m counterType storageType = MACState n m counterType storageType -> MACState n m counterType storageType
 
 data MACConfig = MACConfig
@@ -57,7 +58,7 @@ allConfigs = [ MACConfig useModuleAdder useState useVector useRotation useOneHot
   useModuleAdder  <- [False, True],
   useState  <- [False] ,
   useVector  <- [False, True],
-  useRotation  <- [True] ,
+  useRotation  <- [False, True] ,
   useOneHot  <- [False, True]
   ]
 
@@ -89,7 +90,7 @@ defaultConfig = MACConfig {
   useModuleFullAdder = True,
   useState = False,
   useVector = False,
-  useRotation = True,
+  useRotation = False,
   useOneHot = False
 }
 
@@ -178,24 +179,47 @@ mac' MACConfig{..} =
     then
       if useVector
         then
-          let aFun = accumulateRotate @n @m @BVec fullAdder in
           if useOneHot
             then
-              let mFun = mulRotate @n @m @OneHotCounter @BVec fullAdder
+              let aFun = accumulateRotate @n @m @OneHotCounter @BVec fullAdder
+                  mFun = mulRotate @n @m @OneHotCounter @BVec fullAdder
               in mealy @dom (macMealy @n @m @OneHotCounter aFun mFun) (initialState @n @m)
             else
-              let mFun = mulRotate @n @m @Index fullAdder
+              let aFun = accumulateRotate @n @m @Index @BVec fullAdder
+                  mFun = mulRotate @n @m @Index fullAdder
               in mealy @dom (macMealy @n @m @Index @BVec aFun mFun) (initialState @n @m)
         else
-          let aFun = accumulateRotate @n @m @BitVector fullAdder in
           if useOneHot
             then
-              let mFun = mulRotate @n @m @OneHotCounter @BitVector fullAdder
+              let aFun = accumulateRotate @n @m @OneHotCounter @BitVector fullAdder
+                  mFun = mulRotate @n @m @OneHotCounter @BitVector fullAdder
               in mealy @dom (macMealy @n @m @OneHotCounter aFun mFun) (initialState @n @m)
             else
-              let mFun = mulRotate @n @m @Index @BitVector fullAdder
+              let aFun = accumulateRotate @n @m @Index @BitVector fullAdder
+                  mFun = mulRotate @n @m @Index @BitVector fullAdder
               in mealy @dom (macMealy @n @m @Index @BitVector aFun mFun) (initialState @n @m)
-    else undefined
+    else
+      if useVector
+        then
+          if useOneHot
+            then
+              let aFun = accumulateIndexing @n @m @OneHotCounter @BVec fullAdder
+                  mFun = mulIndexing @n @m @OneHotCounter @BVec fullAdder
+              in mealy @dom (macMealy @n @m @OneHotCounter aFun mFun) (initialState @n @m)
+            else
+              let aFun = accumulateIndexing @n @m @Index @BVec fullAdder
+                  mFun = mulIndexing @n @m @Index fullAdder
+              in mealy @dom (macMealy @n @m @Index @BVec aFun mFun) (initialState @n @m)
+        else
+          if useOneHot
+            then
+              let aFun = accumulateIndexing @n @m @OneHotCounter @BitVector fullAdder
+                  mFun = mulIndexing @n @m @OneHotCounter @BitVector fullAdder
+              in mealy @dom (macMealy @n @m @OneHotCounter aFun mFun) (initialState @n @m)
+            else
+              let aFun = accumulateIndexing @n @m @Index @BitVector fullAdder
+                  mFun = mulIndexing @n @m @Index @BitVector fullAdder
+              in mealy @dom (macMealy @n @m @Index @BitVector aFun mFun) (initialState @n @m)
   where
     fullAdder = if useModuleFullAdder then FA.fullAdderModule else FA.fullAdder
 
@@ -212,12 +236,15 @@ macMealy :: forall n m counterType storageType. (
     NFDataX (counterType n), NFDataX (counterType m), NFDataX (counterType (n+m)),
     BitSize (storageType (n + m)) ~ (n + m),
     BitPack (storageType (n+m)),
-    Storage (storageType (n+m))
+    Storage (storageType (n+m)),
+    Show (storageType (n+m)),
+    Show (counterType n), Show (counterType m), Show (counterType (n+m))
   ) =>
-    AccumFun n m storageType -> MulFun n m counterType storageType ->
+    AccumFun n m counterType storageType -> MulFun n m counterType storageType ->
     MACState n m counterType storageType->
     MACInput n m ->
     (MACState n m counterType storageType, MACOutput n m)
+    -- TODO hier gucken, was ich aus dem initial MACState eigentlich alles wirklich brauch
 macMealy accumulateFun multiplyFun state@MACState{..} MACInput{values, newAcc}  = (state', output state')
   where
 
@@ -233,56 +260,141 @@ macMealy accumulateFun multiplyFun state@MACState{..} MACInput{values, newAcc}  
     compute state@MACState{..} = case stage of
       Ready -> state
       Multiplying -> multiplyFun state
-      Accumulating -> accumulate state
+      Accumulating -> accumulateFun state
 
-    accumulate st@MACState{..} = let
 
-      (carry', product', accumulator') = accumulateFun carry product accumulator
-
-      (stage', accumulateCounter') = case countSuccOverflow accumulateCounter of
-        (True, a) -> (Ready, a)
-        (False, a) -> (Accumulating, a)
-
-      in st{
-        stage=stage',
-        carry=carry',
-        accumulator=accumulator',
-        accumulateCounter=accumulateCounter',
-        product = product'
-        }
-
-    output MACState{stage, product, accumulator} = case stage of
-      Ready -> MACOutput (Just $ bitCoerce product) (Just $ bitCoerce accumulator)
+    output MACState{stage, product, accumulator, x, y} = case stage of
+      Ready -> (MACOutput (Just $ bitCoerce product) (Just $ bitCoerce accumulator))
       Multiplying -> MACOutput Nothing (Just $ bitCoerce accumulator)
       Accumulating -> MACOutput Nothing Nothing
 
-is :: [MACInput 3 3]
-is = (MACInput {values = Just (1,2), newAcc = Nothing}):
+is :: [MACInput 2 2]
+is = (MACInput {values = Just (1,1), newAcc = Nothing}):
   (Prelude.replicate 15 (MACInput {values = Nothing, newAcc = Nothing})) Prelude.++
   [(MACInput {values = Just (1,2), newAcc = Nothing})] Prelude.++
   Prelude.repeat (MACInput {values = Nothing, newAcc = Nothing})
 
 
--- kann
--- * beide Addierer
--- * beide Counter (wird gar nicht explizit verwendet)
--- * beide storages
-accumulateRotate :: forall n m storageType.
+accumulateIndexing :: forall n m counterType storageType.
   (
     KnownNat n, KnownNat m,
     BitPack (storageType (n + m)),
-    Storage (storageType (n+m))
+    Storage (storageType (n + m)),
+    Counter (counterType (n + m)),
+    Enum (counterType (n + m))
   ) =>
   (Bit -> Bit -> Bit -> (Bit, Bit)) ->
-    AccumFun n m storageType
-accumulateRotate fullAdder carry prod acc =  let
-    a = lsb acc
-    b = lsb prod
+  MACState n m counterType storageType ->
+  MACState n m counterType storageType
+accumulateIndexing fullAdder st@MACState{..} =  let
+    a = accumulator ! accumulateCounter
+    b = product ! accumulateCounter
     (carry', sum) = fullAdder a b carry
-    accumulator' = replaceBit (0 :: Bit) sum acc
+    accumulator' = replaceBit accumulateCounter sum accumulator
+
+    (stage', accumulateCounter') = case countSuccOverflow accumulateCounter of
+        (True, a) -> (Ready, a)
+        (False, a) -> (Accumulating, a)
+
+    in st{
+      stage=stage',
+      carry=carry',
+      accumulator=accumulator',
+      accumulateCounter=accumulateCounter'
+      }
+
+-- * beide Addierer
+-- * beide Counter (wird gar nicht explizit verwendet)
+-- * beide storages
+accumulateRotate :: forall n m counterType storageType.
+  (
+    KnownNat n, KnownNat m,
+    BitPack (storageType (n + m)),
+    Storage (storageType (n + m)),
+    Counter (counterType (n + m))
+  ) =>
+  (Bit -> Bit -> Bit -> (Bit, Bit)) ->
+  MACState n m counterType storageType ->
+  MACState n m counterType storageType
+accumulateRotate fullAdder st@MACState{..} =  let
+    a = lsb accumulator
+    b = lsb product
+    (carry', sum) = fullAdder a b carry
+    accumulator' = replaceBit (0 :: Bit) sum accumulator
     accumulator''= advance accumulator'
-    product' = advance prod
-  in (carry', product', accumulator'')
+    product' = advance product
+
+    (stage', accumulateCounter') = case countSuccOverflow accumulateCounter of
+        (True, acc) -> (Ready, acc)
+        (False, acc) -> (Accumulating, acc)
+
+    in st{
+      stage=stage',
+      carry=carry',
+      accumulator=accumulator'',
+      accumulateCounter=accumulateCounter',
+      product = product'
+      }
+
+
+
+counterToEnum :: forall n cnt. (KnownNat n, Counter cnt, Enum cnt)  => cnt -> Index n
+counterToEnum = toEnum . fromEnum
+
+mulIndexing :: forall n m counterType storageType.
+  (
+      KnownNat n, KnownNat m, 1 <= n, 1 <= m, 1 <= n + m,
+      Counter (counterType n), Counter (counterType m),
+      BitPack (storageType (n + m)),
+      Storage (storageType (n + m)),
+      Enum (counterType n), Enum (counterType m)
+  ) =>
+  (Bit -> Bit -> Bit -> (Bit, Bit)) ->
+  MACState n m counterType storageType ->
+  MACState n m counterType storageType
+mulIndexing fullAdder st@MACState{..} =
+  let (currentRoundDone, xCounter') = countSuccOverflow xCounter
+      (inLastRound, yCounter')  = countSuccOverflow yCounter
+      multiplicationDone = currentRoundDone .&. inLastRound
+
+      xIndex = counterToEnum @n xCounter
+      yIndex = counterToEnum @m yCounter
+      productIndex = add xIndex yIndex
+      modifyWithCarryIndex = add productIndex (1 :: Index 2)
+
+
+      a = (x ! xIndex) .&. (y ! yIndex)
+      b = product ! productIndex
+      (carryOut, sum) = fullAdder a b carry
+
+
+      productWithSum = replaceBit productIndex sum product
+      productWithSumAndCarry = replaceBit modifyWithCarryIndex carryOut productWithSum
+
+      product' = case (currentRoundDone, inLastRound) of
+        -- simply advance to the next bit within x and adjust the product accordingly
+        (False, _) -> productWithSum
+        -- we need to advance to the next bit of y and have to reset the product accordingly
+        (True, False) -> productWithSumAndCarry
+        -- the multiplication is done and we need one additional shift to put the LSB in the correct position
+        (True, True) -> productWithSumAndCarry
+
+      -- only advance to the next y when one round is done
+      (yCounter'', carry') = if currentRoundDone then
+          (yCounter', 0)
+        else
+          (yCounter, carryOut)
+
+      stage' = if multiplicationDone then Accumulating else Multiplying
+    in st
+      {
+        product = product',
+        xCounter = xCounter',
+        yCounter = yCounter'',
+        carry = carry',
+        stage = stage'
+      }
+
 
 -- kann
 -- * beide Addierer
