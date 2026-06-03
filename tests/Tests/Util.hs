@@ -2,13 +2,12 @@ module Tests.Util where
 
 import Control.Arrow.Transformer.Automaton
 import Clash.Prelude (
-  natToNum, simulateN, signalAutomaton, register, exposeClockResetEnable, enableGen, clockGen, resetGen, mul, Index, Signal,  Unsigned, System,  KnownNat, type (<=), type (+), type System)
+  natToNum, signalAutomaton, register, exposeClockResetEnable, enableGen, clockGen, resetGen, mul, Signal,  Unsigned, System,  KnownNat,  type System)
 
 import Prelude hiding (product, pred)
 
 import MAC
 import MAC.Types.IO
-import MAC.Mealy
 
 prettySNat :: forall n. (KnownNat n) => String
 prettySNat = show $ natToNum @n @Int

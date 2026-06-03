@@ -3,6 +3,7 @@ module MAC where
 import Clash.Prelude
 
 import qualified MAC.Mealy as Mealy
+import qualified MAC.Monad as Monad
 import MAC.Types
 
 multiplicationDelay :: forall n m. (KnownNat n, KnownNat m) => Int
@@ -31,4 +32,4 @@ mkMAC :: forall dom n m.
     Config ->
     Signal dom (Input n m) ->
     Signal dom (Output n m)
-mkMAC cfg@Config{useState} = if useState then undefined else Mealy.mkMAC cfg
+mkMAC cfg@Config{useState} = if useState then Monad.mkMAC cfg else Mealy.mkMAC cfg

@@ -1,6 +1,6 @@
 module MAC.Types.IO where
 
-import Clash.Prelude
+import Clash.Prelude hiding (product)
 
 data Input (n :: Nat) (m :: Nat) = Input {
   values :: Maybe (Unsigned n, Unsigned m),

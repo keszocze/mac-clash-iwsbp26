@@ -1,6 +1,6 @@
 module MAC.Access.Indexing.Mealy where
 
-import Clash.Prelude
+import Clash.Prelude hiding (product, sum)
 import Clash.Class.Counter
 
 import MAC.Class.Storage
@@ -39,7 +39,7 @@ accumulateIndexing fullAdder st@State{..} =  let
 
 mulIndexing :: forall n m counterType storageType.
   (
-      KnownNat n, KnownNat m, 1 <= n, 1 <= m, 1 <= n + m,
+      KnownNat n, KnownNat m, 1 <= n, 1 <= m,
       Counter (counterType n), Counter (counterType m),
       BitPack (storageType (n + m)),
       Storage (storageType (n + m)),

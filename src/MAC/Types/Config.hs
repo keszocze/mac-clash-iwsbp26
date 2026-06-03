@@ -12,11 +12,10 @@ data Config = Config
   deriving (Show, Bounded)
 
 
---allConfigs = [ Config a b c d e | a  <- [True, False], b  <- [True, False] , c  <- [True, False], d  <- [True, False] , e  <- [True, False]]
--- TODO nachher dann wirklich alles unterstützen
+allConfigs :: [Config]
 allConfigs = [ Config useModuleAdder useState useVector useRotation useOneHot |
   useModuleAdder  <- [False, True],
-  useState  <- [False] ,
+  useState  <- [False, True] ,
   useVector  <- [False, True],
   useRotation  <- [False, True] ,
   useOneHot  <- [False, True]
@@ -31,6 +30,7 @@ describe Config {..} =
   (if useVector then "Vec" else "BitVector") <> " / " <>
   (if useOneHot then "OneHotCounter" else "IndexCounter")
 
+defaultConfig :: Config
 defaultConfig = Config {
   useModuleFullAdder = True,
   useState = False,

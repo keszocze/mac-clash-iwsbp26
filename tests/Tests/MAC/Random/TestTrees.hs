@@ -1,7 +1,6 @@
 module Tests.MAC.Random.TestTrees where
 
 import Test.Tasty
-import Test.Tasty.HUnit
 
 import Tests.MAC.Random.Internal
 

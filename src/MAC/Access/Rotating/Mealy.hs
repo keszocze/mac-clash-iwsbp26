@@ -1,12 +1,10 @@
 module MAC.Access.Rotating.Mealy where
 
-import Clash.Prelude
+import Clash.Prelude hiding (product, sum)
 import Clash.Class.Counter
 
 import MAC.Class.Storage
 import MAC.Types
-
-import Util
 
 -- * beide Addierer
 -- * beide Counter (wird gar nicht explizit verwendet)

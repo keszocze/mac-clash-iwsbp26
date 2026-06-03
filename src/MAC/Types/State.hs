@@ -2,11 +2,12 @@
 
 module MAC.Types.State where
 
-import Clash.Prelude
+import Clash.Prelude hiding (product)
 import Clash.Class.Counter
 
 import MAC.Class.Storage
 import MAC.Types.Stage
+import MAC.Types.IO
 
 data State (n :: Nat) (m :: Nat) counterType storageType = State {
   stage :: Stage,
@@ -59,3 +60,30 @@ initialState = State {
   accumulateCounter = countMin :: (counterType (n+m)),
   carry = 0
 }
+
+startMulState :: forall (n :: Nat) (m :: Nat) counterType storageType.
+  (
+    Counter (counterType n), Counter (counterType m), Counter (counterType (n+m)),
+    Storage (storageType (n+m))
+  ) =>
+  Unsigned n -> Unsigned m -> State n m counterType storageType -> State n m counterType storageType
+startMulState x y s = s {
+  stage = Multiplying,
+  x=x,
+  y=y,
+  product=zero,
+  xCounter = countMin,
+  yCounter = countMin,
+  accumulateCounter = countMin
+}
+
+extractOuptut :: forall (n :: Nat) (m :: Nat) counterType storageType.
+  (
+    Counter (counterType n), Counter (counterType m), Counter (counterType (n+m)),
+    Storage (storageType (n+m)), BitPack (storageType (n+m)), BitSize (storageType (n + m)) ~ (n+m)
+  ) =>
+  State n m counterType storageType -> Output n m
+extractOuptut State{stage, product, accumulator} = case stage of
+      Ready -> (Output (Just $ bitCoerce product) (Just $ bitCoerce accumulator))
+      Multiplying -> Output Nothing (Just $ bitCoerce accumulator)
+      Accumulating -> Output Nothing Nothing

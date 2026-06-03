@@ -75,11 +75,14 @@ common common-options
     base,
     Cabal,
 
+    extra,
     -- clash-prelude will set suitable version bounds for the plugins
     clash-prelude >= 1.10.0 && < 1.12,
     ghc-typelits-natnormalise,
     ghc-typelits-extra,
-    ghc-typelits-knownnat
+    ghc-typelits-knownnat,
+
+    mtl
 
 
 library
@@ -90,8 +93,10 @@ library
     MAC
     MAC.Access.Indexing.Mealy
     MAC.Access.Rotating.Mealy
-    MAC.Mealy
     MAC.Class.Storage
+    MAC.Constraints
+    MAC.Mealy
+    MAC.Monad
     MAC.Types
     MAC.Types.BVec
     MAC.Types.Config

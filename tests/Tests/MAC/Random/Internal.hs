@@ -1,6 +1,6 @@
 module Tests.MAC.Random.Internal where
 
-import Clash.Prelude (natToNum, simulateN, Unsigned, System,  KnownNat, type (<=),)
+import Clash.Prelude (simulateN, Unsigned, System,  KnownNat, type (<=),)
 import Clash.Hedgehog.Sized.Unsigned
 
 import Prelude hiding (product)

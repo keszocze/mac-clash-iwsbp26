@@ -25,10 +25,10 @@ instance (KnownNat n) => Bounded (OneHotCounter n) where
 
 -- NOTE: This is not a faithful instance as it does not throw a runtime exception when the int is too large
 instance (KnownNat n) => Enum (OneHotCounter n) where
-  toEnum :: forall n. (KnownNat n) => Int -> OneHotCounter n
+  toEnum :: Int -> OneHotCounter n
   toEnum i = OneHotCounter ((1:: BitVector n) `rotateL` i)
 
-  fromEnum :: forall n. (KnownNat n) => OneHotCounter n -> Int
+  fromEnum :: OneHotCounter n -> Int
   fromEnum (OneHotCounter val) = l - (zeros + 1)
     where
       l = natToNum @n @Int
