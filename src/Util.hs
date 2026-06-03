@@ -87,3 +87,6 @@ prettySampleN n f = mapM_ print $ sampleN n f
 
 enumCounterToIndex :: forall n cnt. (KnownNat n, Counter cnt, Enum cnt)  => cnt -> Index n
 enumCounterToIndex = toEnum . fromEnum
+
+prettySNat :: forall n. (KnownNat n) => String
+prettySNat = show $ natToNum @n @Int

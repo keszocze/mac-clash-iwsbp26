@@ -9,9 +9,6 @@ import Prelude hiding (product, pred)
 import MAC
 import MAC.Types.IO
 
-prettySNat :: forall n. (KnownNat n) => String
-prettySNat = show $ natToNum @n @Int
-
 
 allInputVals :: forall n m. (KnownNat n, KnownNat m) =>  [(Unsigned n, Unsigned m)]
 allInputVals = [(x, y) | x <- [minBound .. maxBound], y <- [minBound .. maxBound]]
