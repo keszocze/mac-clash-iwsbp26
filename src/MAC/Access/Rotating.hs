@@ -1,17 +1,16 @@
-module MAC.Access.Rotating.Mealy where
+module MAC.Access.Rotating where
 
 import Clash.Prelude hiding (product, sum)
 import Clash.Class.Counter
 
 import MAC.Class.Storage
+import MAC.Constraints
 import MAC.Types
 
--- * beide Addierer
--- * beide Counter (wird gar nicht explizit verwendet)
--- * beide storages
-accumulateRotate :: forall n m counterType storageType.
+
+accumulate :: forall n m counterType storageType.
   (
-    KnownNat n, KnownNat m,
+    NatConstraints n m,
     BitPack (storageType (n + m)),
     Storage (storageType (n + m)),
     Counter (counterType (n + m))
@@ -19,7 +18,7 @@ accumulateRotate :: forall n m counterType storageType.
   (Bit -> Bit -> Bit -> (Bit, Bit)) ->
   State n m counterType storageType ->
   State n m counterType storageType
-accumulateRotate fullAdder st@State{..} =  let
+accumulate fullAdder st@State{..} =  let
     a = lsb accumulator
     b = lsb product
     (carry', sum) = fullAdder a b carry
@@ -40,25 +39,16 @@ accumulateRotate fullAdder st@State{..} =  let
       }
 
 
-
-
-
-
--- kann
--- * beide Addierer
--- * beide Counter
--- * beide storages
-mulRotate :: forall n m counterType storageType.
+multiply :: forall n m counterType storageType.
   (
-      KnownNat n, KnownNat m,
+      NatConstraints n m,
       Counter (counterType n), Counter (counterType m),
-      BitPack (storageType (n + m)),
-      Storage (storageType (n + m))
+      StorageConstraintsNM n m storageType
   ) =>
   (Bit -> Bit -> Bit -> (Bit, Bit)) ->
   State n m counterType storageType ->
   State n m counterType storageType
-mulRotate fullAdder st@State{..} =
+multiply fullAdder st@State{..} =
   let (currentRoundDone, xCounter') = countSuccOverflow xCounter
       (inLastRound, yCounter')  = countSuccOverflow yCounter
       multiplicationDone = currentRoundDone .&. inLastRound

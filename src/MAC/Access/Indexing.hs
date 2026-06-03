@@ -1,16 +1,17 @@
-module MAC.Access.Indexing.Mealy where
+module MAC.Access.Indexing where
 
 import Clash.Prelude hiding (product, sum)
 import Clash.Class.Counter
 
 import MAC.Class.Storage
+import MAC.Constraints
 import MAC.Types
 
 import Util
 
-accumulateIndexing :: forall n m counterType storageType.
+accumulate :: forall n m counterType storageType.
   (
-    KnownNat n, KnownNat m,
+    NatConstraints n m,
     BitPack (storageType (n + m)),
     Storage (storageType (n + m)),
     Counter (counterType (n + m)),
@@ -19,7 +20,7 @@ accumulateIndexing :: forall n m counterType storageType.
   (Bit -> Bit -> Bit -> (Bit, Bit)) ->
   State n m counterType storageType ->
   State n m counterType storageType
-accumulateIndexing fullAdder st@State{..} =  let
+accumulate fullAdder st@State{..} =  let
     a = accumulator ! accumulateCounter
     b = product ! accumulateCounter
     (carry', sum) = fullAdder a b carry
@@ -37,18 +38,17 @@ accumulateIndexing fullAdder st@State{..} =  let
       }
 
 
-mulIndexing :: forall n m counterType storageType.
+multiply :: forall n m counterType storageType.
   (
-      KnownNat n, KnownNat m, 1 <= n, 1 <= m,
+      NatConstraints n m,
       Counter (counterType n), Counter (counterType m),
-      BitPack (storageType (n + m)),
-      Storage (storageType (n + m)),
+      StorageConstraintsNM n m storageType,
       Enum (counterType n), Enum (counterType m)
   ) =>
   (Bit -> Bit -> Bit -> (Bit, Bit)) ->
   State n m counterType storageType ->
   State n m counterType storageType
-mulIndexing fullAdder st@State{..} =
+multiply fullAdder st@State{..} =
   let (currentRoundDone, xCounter') = countSuccOverflow xCounter
       (inLastRound, yCounter')  = countSuccOverflow yCounter
       multiplicationDone = currentRoundDone .&. inLastRound

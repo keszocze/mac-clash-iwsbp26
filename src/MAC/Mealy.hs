@@ -5,9 +5,8 @@ import Clash.Prelude hiding (sum, product)
 import Clash.Class.Counter
 
 import MAC.Constraints
-import MAC.Access.Indexing.Mealy
-import MAC.Access.Rotating.Mealy
-import MAC.Class.Storage
+import qualified MAC.Access.Indexing as I
+import qualified MAC.Access.Rotating as R
 import MAC.Types
 import qualified FullAdder as FA
 
@@ -30,44 +29,44 @@ mkMAC Config{useModuleFullAdder, useRotation, useVector, useOneHot} =
         then
           if useOneHot
             then
-              let aFun = accumulateRotate @n @m @OneHotCounter @BVec fullAdder
-                  mFun = mulRotate @n @m @OneHotCounter @BVec fullAdder
+              let aFun = R.accumulate @n @m @OneHotCounter @BVec fullAdder
+                  mFun = R.multiply @n @m @OneHotCounter @BVec fullAdder
               in mealy @dom (macMealy @n @m @OneHotCounter aFun mFun) (initialState @n @m)
             else
-              let aFun = accumulateRotate @n @m @Index @BVec fullAdder
-                  mFun = mulRotate @n @m @Index fullAdder
+              let aFun = R.accumulate @n @m @Index @BVec fullAdder
+                  mFun = R.multiply @n @m @Index fullAdder
               in mealy @dom (macMealy @n @m @Index @BVec aFun mFun) (initialState @n @m)
         else
           if useOneHot
             then
-              let aFun = accumulateRotate @n @m @OneHotCounter @BitVector fullAdder
-                  mFun = mulRotate @n @m @OneHotCounter @BitVector fullAdder
+              let aFun = R.accumulate @n @m @OneHotCounter @BitVector fullAdder
+                  mFun = R.multiply @n @m @OneHotCounter @BitVector fullAdder
               in mealy @dom (macMealy @n @m @OneHotCounter aFun mFun) (initialState @n @m)
             else
-              let aFun = accumulateRotate @n @m @Index @BitVector fullAdder
-                  mFun = mulRotate @n @m @Index @BitVector fullAdder
+              let aFun = R.accumulate @n @m @Index @BitVector fullAdder
+                  mFun = R.multiply @n @m @Index @BitVector fullAdder
               in mealy @dom (macMealy @n @m @Index @BitVector aFun mFun) (initialState @n @m)
     else
       if useVector
         then
           if useOneHot
             then
-              let aFun = accumulateIndexing @n @m @OneHotCounter @BVec fullAdder
-                  mFun = mulIndexing @n @m @OneHotCounter @BVec fullAdder
+              let aFun = I.accumulate @n @m @OneHotCounter @BVec fullAdder
+                  mFun = I.multiply @n @m @OneHotCounter @BVec fullAdder
               in mealy @dom (macMealy @n @m @OneHotCounter aFun mFun) (initialState @n @m)
             else
-              let aFun = accumulateIndexing @n @m @Index @BVec fullAdder
-                  mFun = mulIndexing @n @m @Index fullAdder
+              let aFun = I.accumulate @n @m @Index @BVec fullAdder
+                  mFun = I.multiply @n @m @Index fullAdder
               in mealy @dom (macMealy @n @m @Index @BVec aFun mFun) (initialState @n @m)
         else
           if useOneHot
             then
-              let aFun = accumulateIndexing @n @m @OneHotCounter @BitVector fullAdder
-                  mFun = mulIndexing @n @m @OneHotCounter @BitVector fullAdder
+              let aFun = I.accumulate @n @m @OneHotCounter @BitVector fullAdder
+                  mFun = I.multiply @n @m @OneHotCounter @BitVector fullAdder
               in mealy @dom (macMealy @n @m @OneHotCounter aFun mFun) (initialState @n @m)
             else
-              let aFun = accumulateIndexing @n @m @Index @BitVector fullAdder
-                  mFun = mulIndexing @n @m @Index @BitVector fullAdder
+              let aFun = I.accumulate @n @m @Index @BitVector fullAdder
+                  mFun = I.multiply @n @m @Index @BitVector fullAdder
               in mealy @dom (macMealy @n @m @Index @BitVector aFun mFun) (initialState @n @m)
   where
     fullAdder = if useModuleFullAdder then FA.fullAdderModule else FA.fullAdder
