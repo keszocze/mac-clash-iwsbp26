@@ -1,4 +1,4 @@
-module FullAdder where
+module Util.FullAdder where
 
 import Clash.Prelude
 

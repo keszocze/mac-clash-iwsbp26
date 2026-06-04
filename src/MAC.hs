@@ -75,6 +75,11 @@ mkMAC cfg@Config{useState} = if useState then Monad.mkMAC cfg else Mealy.mkMAC c
                     , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
         ]
   }) #-}
+topEntity :: Clock System
+            -> Reset System
+            -> Enable System
+            -> Signal System (Input 2 3)
+            -> Signal System (Output 2 3)
 topEntity = exposeClockResetEnable $ mkMAC @System @2 @3 defaultConfig
 
 

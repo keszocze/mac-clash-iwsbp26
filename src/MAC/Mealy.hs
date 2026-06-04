@@ -8,7 +8,7 @@ import MAC.Constraints
 import qualified MAC.Access.Indexing as I
 import qualified MAC.Access.Rotating as R
 import MAC.Types
-import qualified FullAdder as FA
+import qualified Util.FullAdder as FA
 
 
 

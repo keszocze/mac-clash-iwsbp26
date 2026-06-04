@@ -12,7 +12,7 @@ import qualified MAC.Access.Rotating as R
 import MAC.Constraints
 import MAC.Types
 
-import qualified FullAdder as FA
+import qualified Util.FullAdder as FA
 
 type S (n :: Nat) (m :: Nat) counterType storageType = ST.State (State n m counterType storageType)
 
