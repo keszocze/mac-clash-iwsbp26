@@ -6,5 +6,6 @@ import Tests.MAC.Random.TestTrees
 
 -- TODO make the selection of the tests configurable
 tests :: TestTree
-tests = testGroup "Random Tests" tinyRandomTests
+tests = testGroup "Random Tests" bigExhaustiveTests
+
 

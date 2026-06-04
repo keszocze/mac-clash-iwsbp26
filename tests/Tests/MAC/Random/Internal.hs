@@ -19,6 +19,8 @@ import Tests.Util
 import MAC
 import MAC.Types.Config
 
+import Util
+
 randomTestsForSize :: forall n m. (KnownNat n, KnownNat m, 1 <= n, 1 <= m) => TestTree
 randomTestsForSize = testGroup name $ map (randomTest @n @m) allConfigs
   where name = "n=" <> prettySNat @n <> " m=" <> prettySNat @m

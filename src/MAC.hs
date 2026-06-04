@@ -2,7 +2,7 @@
 
 module MAC where
 
-import Clash.Prelude hiding (replicate, (++))
+import Clash.Prelude hiding (product, replicate, (++))
 import Prelude (replicate, (++))
 
 
@@ -10,7 +10,6 @@ import MAC.Constraints
 import qualified MAC.Mealy as Mealy
 import qualified MAC.Monad as Monad
 import MAC.Types
-import Util
 
 multiplicationDelay :: forall n m. (KnownNat n, KnownNat m) => Int
 multiplicationDelay = (nInt * mInt) - 1
@@ -92,13 +91,5 @@ expectedMulOutput (x,y) = multiplying ++ accumulating ++ displayingResult
       where product = Just $ mul x y
 
 
--- main :: IO ()
--- main = do
---   let cntrOut = exposeClockResetEnable (traceSample [(Input (Just (2,3)) Nothing)] (Input Nothing Nothing) $ mkMAC @System @2 @3 defaultConfig) systemClockGen systemResetGen enableGen
---   vcd <- dumpVCD (0, 100) cntrOut ["input", "output"]
---   case vcd of
---     Left msg ->
---       error msg
---     Right contents ->
---       writeFile "testing.vcd" contents
+is :: [Input 3 3]
 is = (Input Nothing Nothing) : testInputs (2 :: Unsigned 3, 3 :: Unsigned 3)

@@ -14,7 +14,7 @@ data Config = Config
 
 allConfigs :: [Config]
 allConfigs = [ Config useModuleAdder useState useVector useRotation useOneHot |
-  useModuleAdder  <- [False, True],
+  useModuleAdder  <- [False], -- we decided not to use the explicit module adder
   useState  <- [False, True] ,
   useVector  <- [False, True],
   useRotation  <- [False, True] ,
@@ -32,7 +32,7 @@ describe Config {..} =
 
 defaultConfig :: Config
 defaultConfig = Config {
-  useModuleFullAdder = True,
+  useModuleFullAdder = False,
   useState = False,
   useVector = False,
   useRotation = False,

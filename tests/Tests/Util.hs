@@ -14,20 +14,6 @@ allInputVals :: forall n m. (KnownNat n, KnownNat m) =>  [(Unsigned n, Unsigned 
 allInputVals = [(x, y) | x <- [minBound .. maxBound], y <- [minBound .. maxBound]]
 
 
-testInputs :: forall n m. (KnownNat n, KnownNat m) => (Unsigned n, Unsigned m) -> [Input n m]
-testInputs (x, y) = (Input (Just (x,y)) Nothing) : replicate  (totalDelay @n @m + 1) (Input Nothing Nothing)
-
-
-expectedMulOutput :: forall n m. (KnownNat n, KnownNat m) => (Unsigned n, Unsigned m) -> [Output n m]
-expectedMulOutput (x,y) = multiplying ++ accumulating ++ displayingResult
-  where
-    multiplying = replicate (multiplicationDelay @n @m) (Output Nothing (Just 0))
-    accumulating = replicate (accumulationDelay @n @m) (Output Nothing Nothing)
-    displayingResult = replicate 1 (Output product product) -- extend for more cycles?
-      where product = Just $ mul x y
-
-
-
 
 
 

@@ -10,6 +10,7 @@ import Tests.Util
 
 import MAC.Types.Config
 import MAC
+import Util
 
 exhaustiveTestsForSize ::
   forall n m.

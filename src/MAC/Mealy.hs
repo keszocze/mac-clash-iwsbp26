@@ -86,7 +86,7 @@ macMealy :: forall n m counterType storageType. (
     NatConstraints n m,
     ConstraintNM n m Counter counterType,
     ConstraintNM n m NFDataX counterType,
-    StorageConstraints n m storageType
+    StorageConstraintsNM n m storageType
   ) =>
     (State n m counterType storageType -> State n m counterType storageType) ->
     (State n m counterType storageType -> State n m counterType storageType) ->
