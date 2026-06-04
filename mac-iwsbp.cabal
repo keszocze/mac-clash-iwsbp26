@@ -21,6 +21,7 @@ common common-options
     DeriveLift
     DeriveTraversable
     DerivingStrategies
+    DerivingVia
     FlexibleContexts
     InstanceSigs
     KindSignatures
@@ -74,7 +75,6 @@ common common-options
   build-depends:
     base,
     Cabal,
-
     extra,
     -- clash-prelude will set suitable version bounds for the plugins
     clash-prelude >= 1.10.0 && < 1.12,
@@ -83,8 +83,8 @@ common common-options
     ghc-typelits-knownnat,
 
     mtl,
-
-    string-interpolate
+    string-interpolate,
+    text
 
 
 library

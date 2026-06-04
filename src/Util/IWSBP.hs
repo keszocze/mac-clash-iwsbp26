@@ -46,6 +46,7 @@ macEntity n' cfg = [i|
   |]
   where
     annotation = [__i'L|
+      {-\# OPAQUE topEntity \#-}
       {-\# ANN #{funName}
         (Synthesize
             { t_name = "#{funName}"

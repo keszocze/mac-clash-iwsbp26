@@ -1,10 +1,16 @@
+{-# LANGUAGE AllowAmbiguousTypes #-}
+
 module MAC where
 
-import Clash.Prelude
+import Clash.Prelude hiding (replicate, (++))
+import Prelude (replicate, (++))
 
+
+import MAC.Constraints
 import qualified MAC.Mealy as Mealy
 import qualified MAC.Monad as Monad
 import MAC.Types
+import Util
 
 multiplicationDelay :: forall n m. (KnownNat n, KnownNat m) => Int
 multiplicationDelay = (nInt * mInt) - 1
@@ -22,14 +28,77 @@ totalDelay :: forall n m. (KnownNat n, KnownNat m) => Int
 totalDelay = multiplicationDelay @n @m + accumulationDelay @n @m
 
 
+-- unMaybe :: forall dom n m. (NatConstraints n m) =>
+--   (Signal dom (Input n m) -> Signal dom (Output n m)) ->
+--   (Signal dom (UnwrappedInput n m)-> Signal dom (UnwrappedOutput n m))
+-- unMaybe f = \i ->
+--     let
+--       inStream = fmap wrapInput i
+--       outStream = fmap f inStream
+--     in fmap (unwrapOutput @n @m) outStream
+
+
 
 mkMAC :: forall dom n m.
   (
     HiddenClockResetEnable dom,
-    KnownNat n, 1 <= n,  KnownNat m, 1 <= m
+    NatConstraints n m
   )
   =>
     Config ->
     Signal dom (Input n m) ->
     Signal dom (Output n m)
 mkMAC cfg@Config{useState} = if useState then Monad.mkMAC cfg else Mealy.mkMAC cfg
+
+{-# OPAQUE topEntity #-}
+{-# ANN topEntity
+  (Synthesize
+      { t_name = "topEntityTesting"
+      , t_inputs = [ PortName "clk"
+                    , PortName "rst"
+                    , PortName "ena"
+                    , PortProduct "" [
+                        PortProduct "mulParameters" [
+                          PortName "doStartMultiplication",
+                          PortProduct "values" [
+                            PortName "x",
+                            PortName "y"
+                          ]
+                        ],
+                        PortProduct "accumulator" [
+                          PortName "doSetAccumulator",
+                          PortName "newAccumulatorValue"
+                        ]
+                      ]
+                    ]
+      , t_output =  PortProduct "" [
+                      PortProduct "product" [PortName "is_valid", PortName "value"]
+                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
+        ]
+  }) #-}
+topEntity = exposeClockResetEnable $ mkMAC @System @2 @3 defaultConfig
+
+
+testInputs :: forall n m. (KnownNat n, KnownNat m) => (Unsigned n, Unsigned m) -> [Input n m]
+testInputs (x, y) = (Input (Just (x,y)) Nothing) : replicate  (totalDelay @n @m + 1) (Input Nothing Nothing)
+
+
+expectedMulOutput :: forall n m. (KnownNat n, KnownNat m) => (Unsigned n, Unsigned m) -> [Output n m]
+expectedMulOutput (x,y) = multiplying ++ accumulating ++ displayingResult
+  where
+    multiplying = replicate (multiplicationDelay @n @m) (Output Nothing (Just 0))
+    accumulating = replicate (accumulationDelay @n @m) (Output Nothing Nothing)
+    displayingResult = replicate 1 (Output product product) -- extend for more cycles?
+      where product = Just $ mul x y
+
+
+-- main :: IO ()
+-- main = do
+--   let cntrOut = exposeClockResetEnable (traceSample [(Input (Just (2,3)) Nothing)] (Input Nothing Nothing) $ mkMAC @System @2 @3 defaultConfig) systemClockGen systemResetGen enableGen
+--   vcd <- dumpVCD (0, 100) cntrOut ["input", "output"]
+--   case vcd of
+--     Left msg ->
+--       error msg
+--     Right contents ->
+--       writeFile "testing.vcd" contents
+is = (Input Nothing Nothing) : testInputs (2 :: Unsigned 3, 3 :: Unsigned 3)
