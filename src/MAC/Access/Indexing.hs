@@ -67,13 +67,7 @@ multiply fullAdder st@State{..} =
       productWithSum = replaceBit productIndex sum product
       productWithSumAndCarry = replaceBit modifyWithCarryIndex carryOut productWithSum
 
-      product' = case (currentRoundDone, inLastRound) of
-        -- simply advance to the next bit within x and adjust the product accordingly
-        (False, _) -> productWithSum
-        -- we need to advance to the next bit of y and have to reset the product accordingly
-        (True, False) -> productWithSumAndCarry
-        -- the multiplication is done and we need one additional shift to put the LSB in the correct position
-        (True, True) -> productWithSumAndCarry
+      product' = if currentRoundDone then productWithSumAndCarry else productWithSum
 
       -- only advance to the next y when one round is done
       (yCounter'', carry') = if currentRoundDone then
