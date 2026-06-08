@@ -65,9 +65,11 @@ multiply fullAdder st@State{..} =
 
 
       productWithSum = replaceBit productIndex sum product
-      productWithSumAndCarry = replaceBit modifyWithCarryIndex carryOut productWithSum
 
-      product' = if currentRoundDone then productWithSumAndCarry else productWithSum
+      product' = if currentRoundDone
+        -- propagate carry to next position in the product (which is known to contain a 0, i.e., simply putting the carry there is fine)
+        then replaceBit modifyWithCarryIndex carryOut productWithSum
+        else productWithSum
 
       -- only advance to the next y when one round is done
       (yCounter'', carry') = if currentRoundDone then
