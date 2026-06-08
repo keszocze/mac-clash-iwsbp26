@@ -159,6 +159,7 @@ test-suite test-library
     Tests.MAC.Random
     Tests.MAC.Random.TestTrees
     Tests.MAC.Random.Internal
+    Tests.OneHot
     Tests.Util
   build-depends:
     mac-iwsbp,

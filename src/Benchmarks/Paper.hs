@@ -7,6 +7,7 @@ import MAC.Types
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -40,6 +41,7 @@ benchmark_MAC_2_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -73,6 +75,7 @@ benchmark_MAC_2_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -106,6 +109,7 @@ benchmark_MAC_2_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -139,6 +143,7 @@ benchmark_MAC_2_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -172,6 +177,7 @@ benchmark_MAC_2_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -205,6 +211,7 @@ benchmark_MAC_2_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -238,6 +245,7 @@ benchmark_MAC_2_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -271,6 +279,7 @@ benchmark_MAC_2_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -304,6 +313,7 @@ benchmark_MAC_2_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -337,6 +347,7 @@ benchmark_MAC_2_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -370,6 +381,7 @@ benchmark_MAC_2_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -403,6 +415,7 @@ benchmark_MAC_2_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -436,6 +449,7 @@ benchmark_MAC_2_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -469,6 +483,7 @@ benchmark_MAC_2_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -502,6 +517,7 @@ benchmark_MAC_2_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_2_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_2_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_2_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -535,534 +551,7 @@ benchmark_MAC_2_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRese
   
 
     
-{-# ANN benchmark_MAC_2_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_2_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_2_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_2_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_2_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_2_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_2_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_2_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_2_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_2_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_2_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_2_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_2_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_2_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_2_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_2_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_2_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_2_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 2 2) -> Signal System (Output 2 2)
-benchmark_MAC_2_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @2 @2 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -1096,6 +585,7 @@ benchmark_MAC_3_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -1129,6 +619,7 @@ benchmark_MAC_3_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -1162,6 +653,7 @@ benchmark_MAC_3_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -1195,6 +687,7 @@ benchmark_MAC_3_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -1228,6 +721,7 @@ benchmark_MAC_3_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -1261,6 +755,7 @@ benchmark_MAC_3_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -1294,6 +789,7 @@ benchmark_MAC_3_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -1327,6 +823,7 @@ benchmark_MAC_3_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -1360,6 +857,7 @@ benchmark_MAC_3_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -1393,6 +891,7 @@ benchmark_MAC_3_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -1426,6 +925,7 @@ benchmark_MAC_3_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -1459,6 +959,7 @@ benchmark_MAC_3_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -1492,6 +993,7 @@ benchmark_MAC_3_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -1525,6 +1027,7 @@ benchmark_MAC_3_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -1558,6 +1061,7 @@ benchmark_MAC_3_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_3_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_3_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_3_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -1591,534 +1095,7 @@ benchmark_MAC_3_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRese
   
 
     
-{-# ANN benchmark_MAC_3_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_3_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_3_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_3_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_3_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_3_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_3_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_3_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_3_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_3_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_3_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_3_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_3_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_3_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_3_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_3_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_3_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_3_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 3 3) -> Signal System (Output 3 3)
-benchmark_MAC_3_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @3 @3 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -2152,6 +1129,7 @@ benchmark_MAC_4_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -2185,6 +1163,7 @@ benchmark_MAC_4_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -2218,6 +1197,7 @@ benchmark_MAC_4_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -2251,6 +1231,7 @@ benchmark_MAC_4_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -2284,6 +1265,7 @@ benchmark_MAC_4_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -2317,6 +1299,7 @@ benchmark_MAC_4_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -2350,6 +1333,7 @@ benchmark_MAC_4_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -2383,6 +1367,7 @@ benchmark_MAC_4_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -2416,6 +1401,7 @@ benchmark_MAC_4_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -2449,6 +1435,7 @@ benchmark_MAC_4_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -2482,6 +1469,7 @@ benchmark_MAC_4_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -2515,6 +1503,7 @@ benchmark_MAC_4_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -2548,6 +1537,7 @@ benchmark_MAC_4_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -2581,6 +1571,7 @@ benchmark_MAC_4_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -2614,6 +1605,7 @@ benchmark_MAC_4_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_4_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_4_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_4_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -2647,534 +1639,7 @@ benchmark_MAC_4_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRese
   
 
     
-{-# ANN benchmark_MAC_4_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_4_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_4_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_4_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_4_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_4_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_4_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_4_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_4_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_4_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_4_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_4_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_4_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_4_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_4_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_4_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_4_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_4_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 4 4) -> Signal System (Output 4 4)
-benchmark_MAC_4_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @4 @4 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -3208,6 +1673,7 @@ benchmark_MAC_5_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -3241,6 +1707,7 @@ benchmark_MAC_5_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -3274,6 +1741,7 @@ benchmark_MAC_5_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -3307,6 +1775,7 @@ benchmark_MAC_5_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -3340,6 +1809,7 @@ benchmark_MAC_5_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -3373,6 +1843,7 @@ benchmark_MAC_5_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -3406,6 +1877,7 @@ benchmark_MAC_5_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -3439,6 +1911,7 @@ benchmark_MAC_5_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -3472,6 +1945,7 @@ benchmark_MAC_5_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -3505,6 +1979,7 @@ benchmark_MAC_5_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -3538,6 +2013,7 @@ benchmark_MAC_5_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -3571,6 +2047,7 @@ benchmark_MAC_5_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -3604,6 +2081,7 @@ benchmark_MAC_5_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -3637,6 +2115,7 @@ benchmark_MAC_5_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -3670,6 +2149,7 @@ benchmark_MAC_5_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_5_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_5_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_5_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -3703,534 +2183,7 @@ benchmark_MAC_5_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRese
   
 
     
-{-# ANN benchmark_MAC_5_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_5_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_5_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_5_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_5_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_5_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_5_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_5_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_5_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_5_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_5_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_5_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_5_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_5_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_5_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_5_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_5_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_5_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 5 5) -> Signal System (Output 5 5)
-benchmark_MAC_5_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @5 @5 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -4264,6 +2217,7 @@ benchmark_MAC_6_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -4297,6 +2251,7 @@ benchmark_MAC_6_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -4330,6 +2285,7 @@ benchmark_MAC_6_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -4363,6 +2319,7 @@ benchmark_MAC_6_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -4396,6 +2353,7 @@ benchmark_MAC_6_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -4429,6 +2387,7 @@ benchmark_MAC_6_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -4462,6 +2421,7 @@ benchmark_MAC_6_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -4495,6 +2455,7 @@ benchmark_MAC_6_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -4528,6 +2489,7 @@ benchmark_MAC_6_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -4561,6 +2523,7 @@ benchmark_MAC_6_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -4594,6 +2557,7 @@ benchmark_MAC_6_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -4627,6 +2591,7 @@ benchmark_MAC_6_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -4660,6 +2625,7 @@ benchmark_MAC_6_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -4693,6 +2659,7 @@ benchmark_MAC_6_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -4726,6 +2693,7 @@ benchmark_MAC_6_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_6_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_6_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_6_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -4759,534 +2727,7 @@ benchmark_MAC_6_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRese
   
 
     
-{-# ANN benchmark_MAC_6_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_6_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_6_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_6_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_6_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_6_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_6_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_6_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_6_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_6_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_6_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_6_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_6_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_6_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_6_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_6_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_6_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_6_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 6 6) -> Signal System (Output 6 6)
-benchmark_MAC_6_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @6 @6 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -5320,6 +2761,7 @@ benchmark_MAC_7_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -5353,6 +2795,7 @@ benchmark_MAC_7_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -5386,6 +2829,7 @@ benchmark_MAC_7_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -5419,6 +2863,7 @@ benchmark_MAC_7_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -5452,6 +2897,7 @@ benchmark_MAC_7_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -5485,6 +2931,7 @@ benchmark_MAC_7_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -5518,6 +2965,7 @@ benchmark_MAC_7_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -5551,6 +2999,7 @@ benchmark_MAC_7_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -5584,6 +3033,7 @@ benchmark_MAC_7_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -5617,6 +3067,7 @@ benchmark_MAC_7_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -5650,6 +3101,7 @@ benchmark_MAC_7_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -5683,6 +3135,7 @@ benchmark_MAC_7_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -5716,6 +3169,7 @@ benchmark_MAC_7_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -5749,6 +3203,7 @@ benchmark_MAC_7_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -5782,6 +3237,7 @@ benchmark_MAC_7_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_7_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_7_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_7_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -5815,534 +3271,7 @@ benchmark_MAC_7_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRese
   
 
     
-{-# ANN benchmark_MAC_7_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_7_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_7_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_7_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_7_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_7_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_7_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_7_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_7_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_7_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_7_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_7_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_7_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_7_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_7_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_7_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_7_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_7_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 7 7) -> Signal System (Output 7 7)
-benchmark_MAC_7_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @7 @7 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -6376,6 +3305,7 @@ benchmark_MAC_8_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -6409,6 +3339,7 @@ benchmark_MAC_8_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -6442,6 +3373,7 @@ benchmark_MAC_8_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -6475,6 +3407,7 @@ benchmark_MAC_8_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -6508,6 +3441,7 @@ benchmark_MAC_8_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -6541,6 +3475,7 @@ benchmark_MAC_8_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -6574,6 +3509,7 @@ benchmark_MAC_8_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -6607,6 +3543,7 @@ benchmark_MAC_8_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -6640,6 +3577,7 @@ benchmark_MAC_8_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -6673,6 +3611,7 @@ benchmark_MAC_8_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -6706,6 +3645,7 @@ benchmark_MAC_8_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -6739,6 +3679,7 @@ benchmark_MAC_8_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -6772,6 +3713,7 @@ benchmark_MAC_8_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -6805,6 +3747,7 @@ benchmark_MAC_8_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -6838,6 +3781,7 @@ benchmark_MAC_8_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_8_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_8_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_8_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -6871,534 +3815,7 @@ benchmark_MAC_8_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRese
   
 
     
-{-# ANN benchmark_MAC_8_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_8_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_8_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_8_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_8_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_8_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_8_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_8_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_8_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_8_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_8_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_8_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_8_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_8_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_8_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_8_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_8_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_8_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 8 8) -> Signal System (Output 8 8)
-benchmark_MAC_8_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @8 @8 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -7432,6 +3849,7 @@ benchmark_MAC_9_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -7465,6 +3883,7 @@ benchmark_MAC_9_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -7498,6 +3917,7 @@ benchmark_MAC_9_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -7531,6 +3951,7 @@ benchmark_MAC_9_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -7564,6 +3985,7 @@ benchmark_MAC_9_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -7597,6 +4019,7 @@ benchmark_MAC_9_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -7630,6 +4053,7 @@ benchmark_MAC_9_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEn
   
 
     
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -7663,6 +4087,7 @@ benchmark_MAC_9_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -7696,6 +4121,7 @@ benchmark_MAC_9_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -7729,6 +4155,7 @@ benchmark_MAC_9_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -7762,6 +4189,7 @@ benchmark_MAC_9_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -7795,6 +4223,7 @@ benchmark_MAC_9_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -7828,6 +4257,7 @@ benchmark_MAC_9_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -7861,6 +4291,7 @@ benchmark_MAC_9_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -7894,6 +4325,7 @@ benchmark_MAC_9_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_9_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_9_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_9_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -7927,534 +4359,7 @@ benchmark_MAC_9_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRese
   
 
     
-{-# ANN benchmark_MAC_9_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_9_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_9_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_9_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_9_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_9_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_9_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_9_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_9_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_9_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_9_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_9_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_9_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_9_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_9_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_9_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_9_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_9_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 9 9) -> Signal System (Output 9 9)
-benchmark_MAC_9_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @9 @9 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -8488,6 +4393,7 @@ benchmark_MAC_10_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -8521,6 +4427,7 @@ benchmark_MAC_10_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -8554,6 +4461,7 @@ benchmark_MAC_10_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -8587,6 +4495,7 @@ benchmark_MAC_10_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -8620,6 +4529,7 @@ benchmark_MAC_10_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -8653,6 +4563,7 @@ benchmark_MAC_10_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -8686,6 +4597,7 @@ benchmark_MAC_10_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -8719,6 +4631,7 @@ benchmark_MAC_10_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -8752,6 +4665,7 @@ benchmark_MAC_10_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -8785,6 +4699,7 @@ benchmark_MAC_10_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -8818,6 +4733,7 @@ benchmark_MAC_10_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -8851,6 +4767,7 @@ benchmark_MAC_10_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -8884,6 +4801,7 @@ benchmark_MAC_10_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -8917,6 +4835,7 @@ benchmark_MAC_10_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -8950,6 +4869,7 @@ benchmark_MAC_10_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_10_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_10_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_10_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -8983,534 +4903,7 @@ benchmark_MAC_10_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_10_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_10_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_10_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_10_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_10_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_10_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_10_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_10_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_10_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_10_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_10_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_10_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_10_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_10_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_10_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_10_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_10_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_10_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 10 10) -> Signal System (Output 10 10)
-benchmark_MAC_10_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @10 @10 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -9544,6 +4937,7 @@ benchmark_MAC_11_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -9577,6 +4971,7 @@ benchmark_MAC_11_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -9610,6 +5005,7 @@ benchmark_MAC_11_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -9643,6 +5039,7 @@ benchmark_MAC_11_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -9676,6 +5073,7 @@ benchmark_MAC_11_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -9709,6 +5107,7 @@ benchmark_MAC_11_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -9742,6 +5141,7 @@ benchmark_MAC_11_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -9775,6 +5175,7 @@ benchmark_MAC_11_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -9808,6 +5209,7 @@ benchmark_MAC_11_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -9841,6 +5243,7 @@ benchmark_MAC_11_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -9874,6 +5277,7 @@ benchmark_MAC_11_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -9907,6 +5311,7 @@ benchmark_MAC_11_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -9940,6 +5345,7 @@ benchmark_MAC_11_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -9973,6 +5379,7 @@ benchmark_MAC_11_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -10006,6 +5413,7 @@ benchmark_MAC_11_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_11_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_11_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_11_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -10039,534 +5447,7 @@ benchmark_MAC_11_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_11_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_11_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_11_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_11_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_11_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_11_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_11_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_11_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_11_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_11_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_11_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_11_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_11_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_11_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_11_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_11_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_11_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_11_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 11 11) -> Signal System (Output 11 11)
-benchmark_MAC_11_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @11 @11 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -10600,6 +5481,7 @@ benchmark_MAC_12_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -10633,6 +5515,7 @@ benchmark_MAC_12_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -10666,6 +5549,7 @@ benchmark_MAC_12_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -10699,6 +5583,7 @@ benchmark_MAC_12_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -10732,6 +5617,7 @@ benchmark_MAC_12_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -10765,6 +5651,7 @@ benchmark_MAC_12_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -10798,6 +5685,7 @@ benchmark_MAC_12_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -10831,6 +5719,7 @@ benchmark_MAC_12_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -10864,6 +5753,7 @@ benchmark_MAC_12_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -10897,6 +5787,7 @@ benchmark_MAC_12_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -10930,6 +5821,7 @@ benchmark_MAC_12_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -10963,6 +5855,7 @@ benchmark_MAC_12_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -10996,6 +5889,7 @@ benchmark_MAC_12_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -11029,6 +5923,7 @@ benchmark_MAC_12_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -11062,6 +5957,7 @@ benchmark_MAC_12_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_12_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_12_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_12_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -11095,534 +5991,7 @@ benchmark_MAC_12_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_12_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_12_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_12_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_12_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_12_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_12_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_12_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_12_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_12_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_12_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_12_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_12_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_12_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_12_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_12_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_12_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_12_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_12_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 12 12) -> Signal System (Output 12 12)
-benchmark_MAC_12_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @12 @12 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -11656,6 +6025,7 @@ benchmark_MAC_13_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -11689,6 +6059,7 @@ benchmark_MAC_13_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -11722,6 +6093,7 @@ benchmark_MAC_13_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -11755,6 +6127,7 @@ benchmark_MAC_13_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -11788,6 +6161,7 @@ benchmark_MAC_13_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -11821,6 +6195,7 @@ benchmark_MAC_13_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -11854,6 +6229,7 @@ benchmark_MAC_13_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -11887,6 +6263,7 @@ benchmark_MAC_13_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -11920,6 +6297,7 @@ benchmark_MAC_13_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -11953,6 +6331,7 @@ benchmark_MAC_13_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -11986,6 +6365,7 @@ benchmark_MAC_13_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -12019,6 +6399,7 @@ benchmark_MAC_13_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -12052,6 +6433,7 @@ benchmark_MAC_13_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -12085,6 +6467,7 @@ benchmark_MAC_13_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -12118,6 +6501,7 @@ benchmark_MAC_13_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_13_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_13_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_13_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -12151,534 +6535,7 @@ benchmark_MAC_13_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_13_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_13_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_13_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_13_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_13_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_13_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_13_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_13_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_13_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_13_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_13_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_13_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_13_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_13_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_13_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_13_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_13_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_13_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 13 13) -> Signal System (Output 13 13)
-benchmark_MAC_13_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @13 @13 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -12712,6 +6569,7 @@ benchmark_MAC_14_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -12745,6 +6603,7 @@ benchmark_MAC_14_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -12778,6 +6637,7 @@ benchmark_MAC_14_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -12811,6 +6671,7 @@ benchmark_MAC_14_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -12844,6 +6705,7 @@ benchmark_MAC_14_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -12877,6 +6739,7 @@ benchmark_MAC_14_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -12910,6 +6773,7 @@ benchmark_MAC_14_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -12943,6 +6807,7 @@ benchmark_MAC_14_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -12976,6 +6841,7 @@ benchmark_MAC_14_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -13009,6 +6875,7 @@ benchmark_MAC_14_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -13042,6 +6909,7 @@ benchmark_MAC_14_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -13075,6 +6943,7 @@ benchmark_MAC_14_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -13108,6 +6977,7 @@ benchmark_MAC_14_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -13141,6 +7011,7 @@ benchmark_MAC_14_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -13174,6 +7045,7 @@ benchmark_MAC_14_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_14_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_14_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_14_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -13207,534 +7079,7 @@ benchmark_MAC_14_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_14_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_14_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_14_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_14_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_14_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_14_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_14_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_14_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_14_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_14_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_14_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_14_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_14_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_14_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_14_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_14_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_14_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_14_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 14 14) -> Signal System (Output 14 14)
-benchmark_MAC_14_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @14 @14 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -13768,6 +7113,7 @@ benchmark_MAC_15_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -13801,6 +7147,7 @@ benchmark_MAC_15_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -13834,6 +7181,7 @@ benchmark_MAC_15_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -13867,6 +7215,7 @@ benchmark_MAC_15_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -13900,6 +7249,7 @@ benchmark_MAC_15_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -13933,6 +7283,7 @@ benchmark_MAC_15_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -13966,6 +7317,7 @@ benchmark_MAC_15_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -13999,6 +7351,7 @@ benchmark_MAC_15_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -14032,6 +7385,7 @@ benchmark_MAC_15_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -14065,6 +7419,7 @@ benchmark_MAC_15_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -14098,6 +7453,7 @@ benchmark_MAC_15_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -14131,6 +7487,7 @@ benchmark_MAC_15_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -14164,6 +7521,7 @@ benchmark_MAC_15_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -14197,6 +7555,7 @@ benchmark_MAC_15_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -14230,6 +7589,7 @@ benchmark_MAC_15_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_15_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_15_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_15_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -14263,534 +7623,7 @@ benchmark_MAC_15_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_15_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_15_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_15_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_15_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_15_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_15_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_15_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_15_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_15_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_15_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_15_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_15_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_15_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_15_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_15_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_15_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_15_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_15_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 15 15) -> Signal System (Output 15 15)
-benchmark_MAC_15_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @15 @15 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -14824,6 +7657,7 @@ benchmark_MAC_16_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -14857,6 +7691,7 @@ benchmark_MAC_16_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -14890,6 +7725,7 @@ benchmark_MAC_16_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -14923,6 +7759,7 @@ benchmark_MAC_16_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -14956,6 +7793,7 @@ benchmark_MAC_16_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -14989,6 +7827,7 @@ benchmark_MAC_16_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -15022,6 +7861,7 @@ benchmark_MAC_16_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -15055,6 +7895,7 @@ benchmark_MAC_16_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -15088,6 +7929,7 @@ benchmark_MAC_16_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -15121,6 +7963,7 @@ benchmark_MAC_16_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -15154,6 +7997,7 @@ benchmark_MAC_16_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -15187,6 +8031,7 @@ benchmark_MAC_16_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -15220,6 +8065,7 @@ benchmark_MAC_16_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -15253,6 +8099,7 @@ benchmark_MAC_16_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -15286,6 +8133,7 @@ benchmark_MAC_16_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_16_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_16_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_16_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -15319,534 +8167,7 @@ benchmark_MAC_16_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_16_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_16_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_16_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_16_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_16_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_16_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_16_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_16_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_16_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_16_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_16_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_16_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_16_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_16_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_16_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_16_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_16_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_16_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 16 16) -> Signal System (Output 16 16)
-benchmark_MAC_16_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @16 @16 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -15880,6 +8201,7 @@ benchmark_MAC_20_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -15913,6 +8235,7 @@ benchmark_MAC_20_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -15946,6 +8269,7 @@ benchmark_MAC_20_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -15979,6 +8303,7 @@ benchmark_MAC_20_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -16012,6 +8337,7 @@ benchmark_MAC_20_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -16045,6 +8371,7 @@ benchmark_MAC_20_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -16078,6 +8405,7 @@ benchmark_MAC_20_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -16111,6 +8439,7 @@ benchmark_MAC_20_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -16144,6 +8473,7 @@ benchmark_MAC_20_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -16177,6 +8507,7 @@ benchmark_MAC_20_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -16210,6 +8541,7 @@ benchmark_MAC_20_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -16243,6 +8575,7 @@ benchmark_MAC_20_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -16276,6 +8609,7 @@ benchmark_MAC_20_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -16309,6 +8643,7 @@ benchmark_MAC_20_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -16342,6 +8677,7 @@ benchmark_MAC_20_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_20_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_20_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_20_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -16375,534 +8711,7 @@ benchmark_MAC_20_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_20_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_20_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_20_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_20_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_20_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_20_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_20_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_20_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_20_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_20_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_20_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_20_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_20_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_20_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_20_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_20_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_20_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_20_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 20 20) -> Signal System (Output 20 20)
-benchmark_MAC_20_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @20 @20 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -16936,6 +8745,7 @@ benchmark_MAC_24_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -16969,6 +8779,7 @@ benchmark_MAC_24_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -17002,6 +8813,7 @@ benchmark_MAC_24_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -17035,6 +8847,7 @@ benchmark_MAC_24_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -17068,6 +8881,7 @@ benchmark_MAC_24_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -17101,6 +8915,7 @@ benchmark_MAC_24_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -17134,6 +8949,7 @@ benchmark_MAC_24_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -17167,6 +8983,7 @@ benchmark_MAC_24_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -17200,6 +9017,7 @@ benchmark_MAC_24_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -17233,6 +9051,7 @@ benchmark_MAC_24_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -17266,6 +9085,7 @@ benchmark_MAC_24_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -17299,6 +9119,7 @@ benchmark_MAC_24_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -17332,6 +9153,7 @@ benchmark_MAC_24_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -17365,6 +9187,7 @@ benchmark_MAC_24_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -17398,6 +9221,7 @@ benchmark_MAC_24_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_24_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_24_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_24_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -17431,534 +9255,7 @@ benchmark_MAC_24_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_24_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_24_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_24_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_24_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_24_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_24_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_24_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_24_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_24_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_24_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_24_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_24_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_24_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_24_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_24_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_24_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_24_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_24_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 24 24) -> Signal System (Output 24 24)
-benchmark_MAC_24_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @24 @24 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -17992,6 +9289,7 @@ benchmark_MAC_28_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -18025,6 +9323,7 @@ benchmark_MAC_28_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -18058,6 +9357,7 @@ benchmark_MAC_28_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -18091,6 +9391,7 @@ benchmark_MAC_28_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -18124,6 +9425,7 @@ benchmark_MAC_28_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -18157,6 +9459,7 @@ benchmark_MAC_28_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -18190,6 +9493,7 @@ benchmark_MAC_28_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -18223,6 +9527,7 @@ benchmark_MAC_28_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -18256,6 +9561,7 @@ benchmark_MAC_28_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -18289,6 +9595,7 @@ benchmark_MAC_28_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -18322,6 +9629,7 @@ benchmark_MAC_28_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -18355,6 +9663,7 @@ benchmark_MAC_28_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -18388,6 +9697,7 @@ benchmark_MAC_28_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -18421,6 +9731,7 @@ benchmark_MAC_28_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -18454,6 +9765,7 @@ benchmark_MAC_28_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_28_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_28_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_28_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -18487,534 +9799,7 @@ benchmark_MAC_28_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_28_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_28_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_28_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_28_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_28_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_28_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_28_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_28_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_28_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_28_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_28_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_28_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_28_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_28_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_28_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_28_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_28_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_28_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 28 28) -> Signal System (Output 28 28)
-benchmark_MAC_28_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @28 @28 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -19048,6 +9833,7 @@ benchmark_MAC_32_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -19081,6 +9867,7 @@ benchmark_MAC_32_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -19114,6 +9901,7 @@ benchmark_MAC_32_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -19147,6 +9935,7 @@ benchmark_MAC_32_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -19180,6 +9969,7 @@ benchmark_MAC_32_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -19213,6 +10003,7 @@ benchmark_MAC_32_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -19246,6 +10037,7 @@ benchmark_MAC_32_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -19279,6 +10071,7 @@ benchmark_MAC_32_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -19312,6 +10105,7 @@ benchmark_MAC_32_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -19345,6 +10139,7 @@ benchmark_MAC_32_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -19378,6 +10173,7 @@ benchmark_MAC_32_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -19411,6 +10207,7 @@ benchmark_MAC_32_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -19444,6 +10241,7 @@ benchmark_MAC_32_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -19477,6 +10275,7 @@ benchmark_MAC_32_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -19510,6 +10309,7 @@ benchmark_MAC_32_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_32_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_32_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_32_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -19543,534 +10343,7 @@ benchmark_MAC_32_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_32_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_32_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_32_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_32_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_32_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_32_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_32_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_32_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_32_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_32_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_32_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_32_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_32_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_32_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_32_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_32_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_32_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_32_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 32 32) -> Signal System (Output 32 32)
-benchmark_MAC_32_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @32 @32 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -20104,6 +10377,7 @@ benchmark_MAC_36_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -20137,6 +10411,7 @@ benchmark_MAC_36_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -20170,6 +10445,7 @@ benchmark_MAC_36_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -20203,6 +10479,7 @@ benchmark_MAC_36_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -20236,6 +10513,7 @@ benchmark_MAC_36_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -20269,6 +10547,7 @@ benchmark_MAC_36_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -20302,6 +10581,7 @@ benchmark_MAC_36_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -20335,6 +10615,7 @@ benchmark_MAC_36_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -20368,6 +10649,7 @@ benchmark_MAC_36_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -20401,6 +10683,7 @@ benchmark_MAC_36_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -20434,6 +10717,7 @@ benchmark_MAC_36_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -20467,6 +10751,7 @@ benchmark_MAC_36_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -20500,6 +10785,7 @@ benchmark_MAC_36_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -20533,6 +10819,7 @@ benchmark_MAC_36_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -20566,6 +10853,7 @@ benchmark_MAC_36_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_36_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_36_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_36_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -20599,534 +10887,7 @@ benchmark_MAC_36_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_36_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_36_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_36_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_36_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_36_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_36_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_36_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_36_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_36_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_36_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_36_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_36_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_36_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_36_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_36_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_36_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_36_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_36_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 36 36) -> Signal System (Output 36 36)
-benchmark_MAC_36_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @36 @36 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -21160,6 +10921,7 @@ benchmark_MAC_40_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -21193,6 +10955,7 @@ benchmark_MAC_40_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -21226,6 +10989,7 @@ benchmark_MAC_40_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -21259,6 +11023,7 @@ benchmark_MAC_40_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -21292,6 +11057,7 @@ benchmark_MAC_40_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -21325,6 +11091,7 @@ benchmark_MAC_40_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -21358,6 +11125,7 @@ benchmark_MAC_40_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -21391,6 +11159,7 @@ benchmark_MAC_40_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -21424,6 +11193,7 @@ benchmark_MAC_40_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -21457,6 +11227,7 @@ benchmark_MAC_40_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -21490,6 +11261,7 @@ benchmark_MAC_40_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -21523,6 +11295,7 @@ benchmark_MAC_40_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -21556,6 +11329,7 @@ benchmark_MAC_40_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -21589,6 +11363,7 @@ benchmark_MAC_40_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -21622,6 +11397,7 @@ benchmark_MAC_40_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_40_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_40_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_40_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -21655,534 +11431,7 @@ benchmark_MAC_40_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_40_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_40_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_40_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_40_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_40_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_40_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_40_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_40_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_40_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_40_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_40_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_40_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_40_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_40_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_40_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_40_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_40_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_40_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 40 40) -> Signal System (Output 40 40)
-benchmark_MAC_40_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @40 @40 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -22216,6 +11465,7 @@ benchmark_MAC_44_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -22249,6 +11499,7 @@ benchmark_MAC_44_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -22282,6 +11533,7 @@ benchmark_MAC_44_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -22315,6 +11567,7 @@ benchmark_MAC_44_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -22348,6 +11601,7 @@ benchmark_MAC_44_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -22381,6 +11635,7 @@ benchmark_MAC_44_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -22414,6 +11669,7 @@ benchmark_MAC_44_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -22447,6 +11703,7 @@ benchmark_MAC_44_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -22480,6 +11737,7 @@ benchmark_MAC_44_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -22513,6 +11771,7 @@ benchmark_MAC_44_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -22546,6 +11805,7 @@ benchmark_MAC_44_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -22579,6 +11839,7 @@ benchmark_MAC_44_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -22612,6 +11873,7 @@ benchmark_MAC_44_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -22645,6 +11907,7 @@ benchmark_MAC_44_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -22678,6 +11941,7 @@ benchmark_MAC_44_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_44_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_44_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_44_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -22711,534 +11975,7 @@ benchmark_MAC_44_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_44_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_44_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_44_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_44_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_44_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_44_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_44_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_44_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_44_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_44_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_44_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_44_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_44_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_44_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_44_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_44_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_44_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_44_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 44 44) -> Signal System (Output 44 44)
-benchmark_MAC_44_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @44 @44 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -23272,6 +12009,7 @@ benchmark_MAC_48_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -23305,6 +12043,7 @@ benchmark_MAC_48_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -23338,6 +12077,7 @@ benchmark_MAC_48_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -23371,6 +12111,7 @@ benchmark_MAC_48_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -23404,6 +12145,7 @@ benchmark_MAC_48_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -23437,6 +12179,7 @@ benchmark_MAC_48_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -23470,6 +12213,7 @@ benchmark_MAC_48_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -23503,6 +12247,7 @@ benchmark_MAC_48_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -23536,6 +12281,7 @@ benchmark_MAC_48_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -23569,6 +12315,7 @@ benchmark_MAC_48_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -23602,6 +12349,7 @@ benchmark_MAC_48_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -23635,6 +12383,7 @@ benchmark_MAC_48_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -23668,6 +12417,7 @@ benchmark_MAC_48_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -23701,6 +12451,7 @@ benchmark_MAC_48_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -23734,6 +12485,7 @@ benchmark_MAC_48_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_48_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_48_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_48_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -23767,534 +12519,7 @@ benchmark_MAC_48_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_48_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_48_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_48_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_48_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_48_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_48_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_48_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_48_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_48_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_48_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_48_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_48_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_48_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_48_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_48_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_48_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_48_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_48_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 48 48) -> Signal System (Output 48 48)
-benchmark_MAC_48_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @48 @48 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -24328,6 +12553,7 @@ benchmark_MAC_52_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -24361,6 +12587,7 @@ benchmark_MAC_52_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -24394,6 +12621,7 @@ benchmark_MAC_52_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -24427,6 +12655,7 @@ benchmark_MAC_52_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -24460,6 +12689,7 @@ benchmark_MAC_52_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -24493,6 +12723,7 @@ benchmark_MAC_52_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -24526,6 +12757,7 @@ benchmark_MAC_52_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -24559,6 +12791,7 @@ benchmark_MAC_52_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -24592,6 +12825,7 @@ benchmark_MAC_52_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -24625,6 +12859,7 @@ benchmark_MAC_52_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -24658,6 +12893,7 @@ benchmark_MAC_52_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -24691,6 +12927,7 @@ benchmark_MAC_52_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -24724,6 +12961,7 @@ benchmark_MAC_52_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -24757,6 +12995,7 @@ benchmark_MAC_52_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -24790,6 +13029,7 @@ benchmark_MAC_52_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_52_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_52_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_52_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -24823,534 +13063,7 @@ benchmark_MAC_52_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_52_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_52_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_52_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_52_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_52_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_52_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_52_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_52_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_52_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_52_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_52_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_52_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_52_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_52_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_52_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_52_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_52_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_52_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 52 52) -> Signal System (Output 52 52)
-benchmark_MAC_52_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @52 @52 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -25384,6 +13097,7 @@ benchmark_MAC_56_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -25417,6 +13131,7 @@ benchmark_MAC_56_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -25450,6 +13165,7 @@ benchmark_MAC_56_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -25483,6 +13199,7 @@ benchmark_MAC_56_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -25516,6 +13233,7 @@ benchmark_MAC_56_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -25549,6 +13267,7 @@ benchmark_MAC_56_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -25582,6 +13301,7 @@ benchmark_MAC_56_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -25615,6 +13335,7 @@ benchmark_MAC_56_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -25648,6 +13369,7 @@ benchmark_MAC_56_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -25681,6 +13403,7 @@ benchmark_MAC_56_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -25714,6 +13437,7 @@ benchmark_MAC_56_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -25747,6 +13471,7 @@ benchmark_MAC_56_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -25780,6 +13505,7 @@ benchmark_MAC_56_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -25813,6 +13539,7 @@ benchmark_MAC_56_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -25846,6 +13573,7 @@ benchmark_MAC_56_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_56_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_56_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_56_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -25879,534 +13607,7 @@ benchmark_MAC_56_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_56_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_56_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_56_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_56_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_56_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_56_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_56_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_56_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_56_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_56_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_56_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_56_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_56_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_56_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_56_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_56_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_56_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_56_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 56 56) -> Signal System (Output 56 56)
-benchmark_MAC_56_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @56 @56 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -26440,6 +13641,7 @@ benchmark_MAC_60_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -26473,6 +13675,7 @@ benchmark_MAC_60_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -26506,6 +13709,7 @@ benchmark_MAC_60_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -26539,6 +13743,7 @@ benchmark_MAC_60_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -26572,6 +13777,7 @@ benchmark_MAC_60_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -26605,6 +13811,7 @@ benchmark_MAC_60_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -26638,6 +13845,7 @@ benchmark_MAC_60_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -26671,6 +13879,7 @@ benchmark_MAC_60_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -26704,6 +13913,7 @@ benchmark_MAC_60_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -26737,6 +13947,7 @@ benchmark_MAC_60_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -26770,6 +13981,7 @@ benchmark_MAC_60_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -26803,6 +14015,7 @@ benchmark_MAC_60_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -26836,6 +14049,7 @@ benchmark_MAC_60_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -26869,6 +14083,7 @@ benchmark_MAC_60_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -26902,6 +14117,7 @@ benchmark_MAC_60_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_60_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_60_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_60_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -26935,534 +14151,7 @@ benchmark_MAC_60_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockRes
   
 
     
-{-# ANN benchmark_MAC_60_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_60_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_60_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_60_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_60_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_60_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_60_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_60_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_60_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_60_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_60_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_60_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_60_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_60_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_60_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_60_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_60_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_60_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 60 60) -> Signal System (Output 60 60)
-benchmark_MAC_60_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @60 @60 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Mealy_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Mealy_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Mealy_BitVector_Indexing_IndexCounter"
@@ -27496,6 +14185,7 @@ benchmark_MAC_64_InlineFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Mealy_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Mealy_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Mealy_BitVector_Indexing_OneHotCounter"
@@ -27529,6 +14219,7 @@ benchmark_MAC_64_InlineFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Mealy_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Mealy_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Mealy_BitVector_Rotating_IndexCounter"
@@ -27562,6 +14253,7 @@ benchmark_MAC_64_InlineFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Mealy_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Mealy_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Mealy_BitVector_Rotating_OneHotCounter"
@@ -27595,6 +14287,7 @@ benchmark_MAC_64_InlineFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockRe
   
 
     
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Mealy_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Mealy_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Mealy_Vector_Indexing_IndexCounter"
@@ -27628,6 +14321,7 @@ benchmark_MAC_64_InlineFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Mealy_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Mealy_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Mealy_Vector_Indexing_OneHotCounter"
@@ -27661,6 +14355,7 @@ benchmark_MAC_64_InlineFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Mealy_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Mealy_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Mealy_Vector_Rotating_IndexCounter"
@@ -27694,6 +14389,7 @@ benchmark_MAC_64_InlineFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetE
   
 
     
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Mealy_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Mealy_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Mealy_Vector_Rotating_OneHotCounter"
@@ -27727,6 +14423,7 @@ benchmark_MAC_64_InlineFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockReset
   
 
     
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Monadic_BitVector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Monadic_BitVector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Monadic_BitVector_Indexing_IndexCounter"
@@ -27760,6 +14457,7 @@ benchmark_MAC_64_InlineFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Monadic_BitVector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Monadic_BitVector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Monadic_BitVector_Indexing_OneHotCounter"
@@ -27793,6 +14491,7 @@ benchmark_MAC_64_InlineFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Monadic_BitVector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Monadic_BitVector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Monadic_BitVector_Rotating_IndexCounter"
@@ -27826,6 +14525,7 @@ benchmark_MAC_64_InlineFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockR
   
 
     
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Monadic_BitVector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Monadic_BitVector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Monadic_BitVector_Rotating_OneHotCounter"
@@ -27859,6 +14559,7 @@ benchmark_MAC_64_InlineFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClock
   
 
     
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Monadic_Vector_Indexing_IndexCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Monadic_Vector_Indexing_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Monadic_Vector_Indexing_IndexCounter"
@@ -27892,6 +14593,7 @@ benchmark_MAC_64_InlineFA_Monadic_Vector_Indexing_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Monadic_Vector_Indexing_OneHotCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Monadic_Vector_Indexing_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Monadic_Vector_Indexing_OneHotCounter"
@@ -27925,6 +14627,7 @@ benchmark_MAC_64_InlineFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockRes
   
 
     
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Monadic_Vector_Rotating_IndexCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Monadic_Vector_Rotating_IndexCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Monadic_Vector_Rotating_IndexCounter"
@@ -27958,6 +14661,7 @@ benchmark_MAC_64_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
   
 
     
+{-# OPAQUE  benchmark_MAC_64_InlineFA_Monadic_Vector_Rotating_OneHotCounter #-}
 {-# ANN benchmark_MAC_64_InlineFA_Monadic_Vector_Rotating_OneHotCounter
   (Synthesize
       { t_name = "benchmark_MAC_64_InlineFA_Monadic_Vector_Rotating_OneHotCounter"
@@ -27987,533 +14691,5 @@ benchmark_MAC_64_InlineFA_Monadic_Vector_Rotating_IndexCounter = exposeClockRese
     
 benchmark_MAC_64_InlineFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
 benchmark_MAC_64_InlineFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = False, useState = True, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Mealy_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Mealy_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Mealy_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Mealy_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Mealy_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Mealy_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Mealy_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Mealy_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Mealy_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Mealy_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = False, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Mealy_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Mealy_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Mealy_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Mealy_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Mealy_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Mealy_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Mealy_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Mealy_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Mealy_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Mealy_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Mealy_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Mealy_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Mealy_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Mealy_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Mealy_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Mealy_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = False, useVector = True, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Monadic_BitVector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Monadic_BitVector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Monadic_BitVector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Monadic_BitVector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Monadic_BitVector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Monadic_BitVector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Monadic_BitVector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Monadic_BitVector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Monadic_BitVector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Monadic_BitVector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = True, useVector = False, useRotation = True, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Monadic_Vector_Indexing_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Monadic_Vector_Indexing_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Monadic_Vector_Indexing_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Monadic_Vector_Indexing_IndexCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Monadic_Vector_Indexing_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Monadic_Vector_Indexing_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Monadic_Vector_Indexing_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Monadic_Vector_Indexing_OneHotCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = False, useOneHot = True})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Monadic_Vector_Rotating_IndexCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Monadic_Vector_Rotating_IndexCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Monadic_Vector_Rotating_IndexCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Monadic_Vector_Rotating_IndexCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = False})
-      
-  
-
-    
-{-# ANN benchmark_MAC_64_ModuleFA_Monadic_Vector_Rotating_OneHotCounter
-  (Synthesize
-      { t_name = "benchmark_MAC_64_ModuleFA_Monadic_Vector_Rotating_OneHotCounter"
-      , t_inputs = [ PortName "clk"
-                    , PortName "rst"
-                    , PortName "ena"
-                    , PortProduct "" [
-                        PortProduct "mulParameters" [
-                          PortName "doStartMultiplication",
-                          PortProduct "values" [
-                            PortName "x",
-                            PortName "y"
-                          ]
-                        ],
-                        PortProduct "accumulator" [
-                          PortName "doSetAccumulator",
-                          PortName "newAccumulatorValue"
-                        ]
-                      ]
-                    ]
-      , t_output =  PortProduct "" [
-                      PortProduct "product" [PortName "is_valid", PortName "value"]
-                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
-        ]
-  }) #-}
-      
-    
-benchmark_MAC_64_ModuleFA_Monadic_Vector_Rotating_OneHotCounter :: Clock System -> Reset System -> Enable System -> Signal System (Input 64 64) -> Signal System (Output 64 64)
-benchmark_MAC_64_ModuleFA_Monadic_Vector_Rotating_OneHotCounter = exposeClockResetEnable $ mkMAC @System @64 @64 (Config {useModuleFullAdder = True, useState = True, useVector = True, useRotation = True, useOneHot = True})
       
   

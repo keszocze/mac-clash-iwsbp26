@@ -2,17 +2,21 @@
 
 module Util.IWSBP where
 
+
+
+
+import qualified Control.Monad.State.Strict as ST
+import Control.Monad.Extra
+
+
 import Clash.Prelude
 import qualified Prelude as P
 
-import Data.String.Interpolate ( i, __i, __i'L )
+import Data.String.Interpolate ( i, __i'L )
 
-import MAC
 import MAC.Types
 
 import System.IO
-
-import Util
 
 import Data.List (intercalate)
 
@@ -26,8 +30,10 @@ benchmarkName n Config{useModuleFullAdder, useState, useVector, useRotation, use
     accessing = if useRotation then "Rotating" else "Indexing"
     counting = if useOneHot then "OneHotCounter" else "IndexCounter"
 
+paperBenchmarks :: IO ()
 paperBenchmarks = benchmarkFile "Paper" [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,20,24,28,32,36,40,44,48,52,56,60,64] allConfigs
 
+fullBenchmarks :: IO ()
 fullBenchmarks = benchmarkFile "Full" [2..64] allConfigs
 
 
@@ -46,7 +52,7 @@ macEntity n' cfg = [i|
   |]
   where
     annotation = [__i'L|
-      {-\# OPAQUE topEntity \#-}
+      {-\# OPAQUE  #{funName} \#-}
       {-\# ANN #{funName}
         (Synthesize
             { t_name = "#{funName}"
@@ -80,6 +86,7 @@ macEntity n' cfg = [i|
         #{funName} = exposeClockResetEnable $ mkMAC @System @#{n} @#{n} (#{show cfg})
       |] :: String
 
+moduleName :: String -> String
 moduleName name = "module Benchmarks." <> name <> " where"
 
 header :: String
@@ -89,3 +96,15 @@ header = [__i'L|
   import MAC
   import MAC.Types
   |] :: String
+
+
+
+
+
+cntMonad :: Int -> ST.State Int Bool
+cntMonad i = do
+  if i == 1
+    then (ST.modify' (+1))
+    else (ST.put 0)
+  cnt <- ST.get
+  return $ cnt > 3

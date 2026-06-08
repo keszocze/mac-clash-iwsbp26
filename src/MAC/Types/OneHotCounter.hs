@@ -21,8 +21,6 @@ instance (KnownNat n) => Bounded (OneHotCounter n) where
   maxBound = OneHotCounter ((1 :: BitVector n) `rotateR` 1)
 
 
--- TODO Test the tripping behaviour etc. for this counter
-
 -- NOTE: This is not a faithful instance as it does not throw a runtime exception when the int is too large
 instance (KnownNat n) => Enum (OneHotCounter n) where
   toEnum :: Int -> OneHotCounter n

@@ -14,8 +14,6 @@ import qualified Hedgehog.Range as Range
 import Test.Tasty
 import Test.Tasty.Hedgehog
 
-import Tests.Util
-
 import MAC
 import MAC.Types.Config
 

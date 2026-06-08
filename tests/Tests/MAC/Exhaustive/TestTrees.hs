@@ -24,9 +24,7 @@ smallExhaustiveTests = [
       exhaustiveTestsForSize @5 @5,
       exhaustiveTestsForSize @6 @6,
       exhaustiveTestsForSize @7 @7,
-      exhaustiveTestsForSize @8 @8,
-      exhaustiveTestsForSize @9 @9,
-      exhaustiveTestsForSize @10 @10
+      exhaustiveTestsForSize @8 @8
       ]
 
 bigExhaustiveTests :: [TestTree]

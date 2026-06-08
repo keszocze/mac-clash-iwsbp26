@@ -2,13 +2,9 @@ module Tests.Util where
 
 import Control.Arrow.Transformer.Automaton
 import Clash.Prelude (
-  natToNum, signalAutomaton, register, exposeClockResetEnable, enableGen, clockGen, resetGen, mul, Signal,  Unsigned, System,  KnownNat,  type System)
+  signalAutomaton, register, exposeClockResetEnable, enableGen, clockGen, resetGen,  Signal,  Unsigned, System,  KnownNat,  type System)
 
 import Prelude hiding (product, pred)
-
-import MAC
-import MAC.Types.IO
-
 
 allInputVals :: forall n m. (KnownNat n, KnownNat m) =>  [(Unsigned n, Unsigned m)]
 allInputVals = [(x, y) | x <- [minBound .. maxBound], y <- [minBound .. maxBound]]
