@@ -11,7 +11,6 @@ import MAC.Types.IO
 
 data State (n :: Nat) (m :: Nat) counterType storageType = State {
   stage :: Stage,
-  -- TODO x,y auch in den storageType wrappen
   x :: Unsigned n,
   y :: Unsigned m,
   product :: storageType (n+m),
