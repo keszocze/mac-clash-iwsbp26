@@ -87,3 +87,14 @@ multiply fullAdder st@State{..} =
         carry = carry',
         stage = stage'
       }
+
+endRound :: forall n m counterType storageType.
+  (
+      NatConstraints n m,
+      Counter (counterType n), Counter (counterType m),
+      StorageConstraintsNM n m storageType
+  ) =>
+  (Bit -> Bit -> Bit -> (Bit, Bit)) ->
+  State n m counterType storageType ->
+  State n m counterType storageType
+endRound _ = id
