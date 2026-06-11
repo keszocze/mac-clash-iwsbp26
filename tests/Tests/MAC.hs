@@ -2,14 +2,14 @@ module Tests.MAC where
 
 import Test.Tasty
 
-import qualified Tests.MAC.Exhaustive
-import qualified Tests.MAC.Random
+import qualified Tests.MAC.Simple.Exhaustive
+import qualified Tests.MAC.Simple.Random
 
 tests :: TestTree
 tests = testGroup "MAC Unit" [
 -- TODO add options for different levels of exhaustiveness / iterations
-    Tests.MAC.Exhaustive.tests,
-    Tests.MAC.Random.tests
+    Tests.MAC.Simple.Exhaustive.tests,
+    Tests.MAC.Simple.Random.tests
   ]
 
 
