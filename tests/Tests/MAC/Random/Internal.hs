@@ -14,8 +14,8 @@ import qualified Hedgehog.Range as Range
 import Test.Tasty
 import Test.Tasty.Hedgehog
 
-import MAC
-import MAC.Types.Config
+import MAC.Simple
+import MAC.Config
 
 import Util
 
@@ -35,7 +35,7 @@ randomTest ::
 randomTest cfg = testProperty name $ withTests 200 prop
   where
     name = describe cfg
-    delay = (totalDelay' @n @m) 
+    delay = (totalDelay @n @m)
     prop = H.property $ do
       x <- H.forAll $ genUnsigned (Range.linear (minBound :: Unsigned n) maxBound)
       y <- H.forAll $ genUnsigned (Range.linear (minBound :: Unsigned m) maxBound)

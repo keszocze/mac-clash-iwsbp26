@@ -8,8 +8,8 @@ import Test.Tasty.HUnit
 
 import Tests.Util
 
-import MAC.Types.Config
-import MAC
+import MAC.Config
+import MAC.Simple
 import Util
 
 exhaustiveTestsForSize ::

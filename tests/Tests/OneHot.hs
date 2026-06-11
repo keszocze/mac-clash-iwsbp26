@@ -8,7 +8,7 @@ import Clash.Class.Counter
 
 import Control.Monad
 
-import MAC.Types.OneHotCounter
+import MAC.OneHotCounter
 import Util
 
 tests :: TestTree
