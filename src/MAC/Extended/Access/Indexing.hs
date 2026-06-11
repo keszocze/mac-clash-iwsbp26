@@ -51,13 +51,12 @@ multiply :: forall n m counterType storageType.
   State n m counterType storageType
 multiply fullAdder st@State{..} =
   let (currentRoundDone, xCounter') = countSuccOverflow xCounter
-      (inLastRound, yCounter')  = countSuccOverflow yCounter
-      multiplicationDone = currentRoundDone .&. inLastRound
+
 
       xIndex = enumCounterToIndex @n xCounter
       yIndex = enumCounterToIndex @m yCounter
       productIndex = add xIndex yIndex
-      modifyWithCarryIndex = add productIndex (1 :: Index 2)
+
 
 
       a = (x ! xIndex) .&. (y ! yIndex)
@@ -65,26 +64,14 @@ multiply fullAdder st@State{..} =
       (carryOut, sum) = fullAdder a b carry
 
 
-      productWithSum = replaceBit productIndex sum product
+      product' = replaceBit productIndex sum product
 
-      product' = if currentRoundDone
-        -- propagate carry to next position in the product (which is known to contain a 0, i.e., simply putting the carry there is fine)
-        then replaceBit modifyWithCarryIndex carryOut productWithSum
-        else productWithSum
-
-      -- only advance to the next y when one round is done
-      (yCounter'', carry') = if currentRoundDone then
-          (yCounter', 0)
-        else
-          (yCounter, carryOut)
-
-      stage' = if multiplicationDone then Accumulating else Multiplying
+      stage' = if currentRoundDone then EndRound else Multiplying
     in st
       {
         product = product',
         xCounter = xCounter',
-        yCounter = yCounter'',
-        carry = carry',
+        carry = carryOut,
         stage = stage'
       }
 
@@ -92,9 +79,26 @@ endRound :: forall n m counterType storageType.
   (
       NatConstraints n m,
       Counter (counterType n), Counter (counterType m),
+      Enum (counterType n), Enum (counterType m),
       StorageConstraintsNM n m storageType
   ) =>
-  (Bit -> Bit -> Bit -> (Bit, Bit)) ->
   State n m counterType storageType ->
   State n m counterType storageType
-endRound _ = id
+endRound st@State{..} =
+  let
+      xIndex = enumCounterToIndex @n xCounter
+      yIndex = enumCounterToIndex @m yCounter
+      carryIndex = add (add xIndex yIndex) (1 :: Index 2)
+      product' = replaceBit carryIndex carry product
+
+      (inLastRound, yCounter'')  = countSuccOverflow yCounter
+      (stage', yCounter') = if inLastRound
+        then (Accumulating, countMin)
+        else (Multiplying, yCounter'')
+
+  in st{
+      carry = 0,
+      stage=stage',
+      product=product',
+      yCounter=yCounter'
+    }
