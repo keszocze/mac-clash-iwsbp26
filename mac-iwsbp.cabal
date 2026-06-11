@@ -95,14 +95,20 @@ library
     Benchmarks.Full
     Benchmarks.Paper
     Benchmarks.Test
-    MAC.Simple
     MAC.BVec
+    MAC.Class.Storage
     MAC.Config
     MAC.Constraints
+    MAC.Extended
+    MAC.Extended.Access.Indexing
+    MAC.Extended.Access.Rotating
+    MAC.Extended.Mealy
+    MAC.Extended.Monad
+    MAC.Extended.Stage
+    MAC.Extended.State
     MAC.IO
     MAC.OneHotCounter
-    MAC.Class.Storage
-    MAC.Extended.Types.Stage
+    MAC.Simple
     MAC.Simple.Access.Indexing
     MAC.Simple.Access.Rotating
     MAC.Simple.Mealy
