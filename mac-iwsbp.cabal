@@ -22,6 +22,7 @@ common common-options
     DeriveTraversable
     DerivingStrategies
     DerivingVia
+    DuplicateRecordFields
     FlexibleContexts
     InstanceSigs
     KindSignatures
@@ -94,20 +95,20 @@ library
     Benchmarks.Full
     Benchmarks.Paper
     Benchmarks.Test
-    MAC
-    MAC.Access.Indexing
-    MAC.Access.Rotating
-    MAC.Class.Storage
+    MAC.Simple
+    MAC.BVec
+    MAC.Config
     MAC.Constraints
-    MAC.Mealy
-    MAC.Monad
-    MAC.Types
-    MAC.Types.BVec
-    MAC.Types.Config
-    MAC.Types.IO
-    MAC.Types.OneHotCounter
-    MAC.Types.Stage
-    MAC.Types.State
+    MAC.IO
+    MAC.OneHotCounter
+    MAC.Class.Storage
+    MAC.Extended.Types.Stage
+    MAC.Simple.Access.Indexing
+    MAC.Simple.Access.Rotating
+    MAC.Simple.Mealy
+    MAC.Simple.Monad
+    MAC.Simple.Stage
+    MAC.Simple.State
     Util
     Util.FullAdder
     Util.IWSBP

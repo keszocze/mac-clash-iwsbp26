@@ -14,7 +14,7 @@ import qualified Prelude as P
 
 import Data.String.Interpolate ( i, __i'L )
 
-import MAC.Types
+import MAC.Config
 
 import System.IO
 
