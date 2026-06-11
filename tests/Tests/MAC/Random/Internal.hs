@@ -35,13 +35,13 @@ randomTest ::
 randomTest cfg = testProperty name $ withTests 200 prop
   where
     name = describe cfg
-    delay = (totalDelay' @n @m) + 1
+    delay = (totalDelay' @n @m) 
     prop = H.property $ do
       x <- H.forAll $ genUnsigned (Range.linear (minBound :: Unsigned n) maxBound)
       y <- H.forAll $ genUnsigned (Range.linear (minBound :: Unsigned m) maxBound)
       let
-        inputStream = testInputs' @n @m (x,y)
-        expectedStream = expectedMulOutput' @n @m (x,y)
+        inputStream = testInputs @n @m (x,y)
+        expectedStream = expectedMulOutput @n @m (x,y)
         simulatedStream = simulateN @System delay (mkMAC @System @n @m cfg) inputStream
       H.annotate $ "Computing " <> show x <> " * " <> show y <> " failed"
       expectedStream === simulatedStream

@@ -11,14 +11,14 @@ import qualified MAC.Mealy as Mealy
 import qualified MAC.Monad as Monad
 import MAC.Types
 
-multiplicationDelay :: forall n m. (KnownNat n, KnownNat m) => Int
-multiplicationDelay = (nInt * mInt) - 1
+multiplicationDelay' :: forall n m. (KnownNat n, KnownNat m) => Int
+multiplicationDelay' = (nInt * mInt) - 1
   where
     nInt = natToNum @n @Int
     mInt = natToNum @m @Int
 
-multiplicationDelay' :: forall n m. (KnownNat n, KnownNat m) => Int
-multiplicationDelay' = (nInt * mInt)
+multiplicationDelay :: forall n m. (KnownNat n, KnownNat m) => Int
+multiplicationDelay = (nInt * mInt)
   where
     nInt = natToNum @n @Int
     mInt = natToNum @m @Int
@@ -29,11 +29,11 @@ accumulationDelay = nInt + mInt
     nInt = natToNum @n @Int
     mInt = natToNum @m @Int
 
-totalDelay :: forall n m. (KnownNat n, KnownNat m) => Int
-totalDelay = multiplicationDelay @n @m + accumulationDelay @n @m
-
 totalDelay' :: forall n m. (KnownNat n, KnownNat m) => Int
-totalDelay' = multiplicationDelay @n @m + accumulationDelay @n @m + 1
+totalDelay' = multiplicationDelay @n @m + accumulationDelay @n @m
+
+totalDelay :: forall n m. (KnownNat n, KnownNat m) => Int
+totalDelay = multiplicationDelay @n @m + accumulationDelay @n @m + 1
 
 -- unMaybe :: forall dom n m. (NatConstraints n m) =>
 --   (Signal dom (Input n m) -> Signal dom (Output n m)) ->
@@ -46,19 +46,6 @@ totalDelay' = multiplicationDelay @n @m + accumulationDelay @n @m + 1
 
 
 
-mkMAC :: forall dom n m.
-  (
-    HiddenClockResetEnable dom,
-    NatConstraints n m
-  )
-  =>
-    Config ->
-    Signal dom (Input n m) ->
-    Signal dom (Output n m)
-mkMAC cfg@Config{useState} = if useState then Monad.mkMAC cfg else Mealy.mkMAC cfg
-
-
--- version with a delay for the multiplication
 mkMAC' :: forall dom n m.
   (
     HiddenClockResetEnable dom,
@@ -69,6 +56,19 @@ mkMAC' :: forall dom n m.
     Signal dom (Input n m) ->
     Signal dom (Output n m)
 mkMAC' cfg@Config{useState} = if useState then Monad.mkMAC' cfg else Mealy.mkMAC' cfg
+
+
+-- version with a delay for the multiplication
+mkMAC :: forall dom n m.
+  (
+    HiddenClockResetEnable dom,
+    NatConstraints n m
+  )
+  =>
+    Config ->
+    Signal dom (Input n m) ->
+    Signal dom (Output n m)
+mkMAC cfg@Config{useState} = if useState then Monad.mkMAC cfg else Mealy.mkMAC cfg
 
 
 
@@ -106,26 +106,25 @@ topEntity :: Clock System
 topEntity = exposeClockResetEnable $ mkMAC @System @2 @3 defaultConfig
 
 
+testInputs' :: forall n m. (KnownNat n, KnownNat m) => (Unsigned n, Unsigned m) -> [Input n m]
+testInputs' (x, y) = (Input (Just (x,y)) Nothing) : replicate  (totalDelay' @n @m + 1) (Input Nothing Nothing)
+
 testInputs :: forall n m. (KnownNat n, KnownNat m) => (Unsigned n, Unsigned m) -> [Input n m]
-testInputs (x, y) = (Input (Just (x,y)) Nothing) : replicate  (totalDelay @n @m + 1) (Input Nothing Nothing)
+testInputs (x, y) = (Input (Just (x,y)) Nothing) : replicate  (totalDelay @n @m) (Input Nothing Nothing)
+
+expectedMulOutput' :: forall n m. (KnownNat n, KnownNat m) => (Unsigned n, Unsigned m) -> [Output n m]
+expectedMulOutput' (x,y) = multiplying ++ accumulating ++ displayingResult
+  where
+    multiplying = replicate (multiplicationDelay' @n @m) (Output Nothing (Just 0))
+    accumulating = replicate (accumulationDelay @n @m) (Output Nothing Nothing)
+    displayingResult = replicate 1 (Output product product) -- extend for more cycles?
+      where product = Just $ mul x y
 
 
 expectedMulOutput :: forall n m. (KnownNat n, KnownNat m) => (Unsigned n, Unsigned m) -> [Output n m]
 expectedMulOutput (x,y) = multiplying ++ accumulating ++ displayingResult
   where
     multiplying = replicate (multiplicationDelay @n @m) (Output Nothing (Just 0))
-    accumulating = replicate (accumulationDelay @n @m) (Output Nothing Nothing)
-    displayingResult = replicate 1 (Output product product) -- extend for more cycles?
-      where product = Just $ mul x y
-
-testInputs' :: forall n m. (KnownNat n, KnownNat m) => (Unsigned n, Unsigned m) -> [Input n m]
-testInputs' (x, y) = (Input (Just (x,y)) Nothing) : replicate  (totalDelay @n @m + 1) (Input Nothing Nothing)
-
-
-expectedMulOutput' :: forall n m. (KnownNat n, KnownNat m) => (Unsigned n, Unsigned m) -> [Output n m]
-expectedMulOutput' (x,y) = multiplying ++ accumulating ++ displayingResult
-  where
-    multiplying = replicate (multiplicationDelay' @n @m) (Output Nothing (Just 0))
     accumulating = replicate (accumulationDelay @n @m) (Output Nothing Nothing)
     displayingResult = replicate 1 (Output product product) -- extend for more cycles?
       where product = Just $ mul x y
