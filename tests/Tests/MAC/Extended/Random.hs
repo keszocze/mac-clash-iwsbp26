@@ -1,8 +1,8 @@
-module Tests.MAC.Simple.Random where
+module Tests.MAC.Extended.Random where
 
 import Test.Tasty
 
-import Tests.MAC.Simple.Random.TestTrees
+import Tests.MAC.Extended.Random.TestTrees
 
 -- TODO make the selection of the tests configurable
 tests :: TestTree

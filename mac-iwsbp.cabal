@@ -160,6 +160,14 @@ test-suite test-library
   main-is: unittests.hs
   other-modules:
     Tests.MAC
+    Tests.MAC.Extended
+    Tests.MAC.Extended.Exhaustive
+    Tests.MAC.Extended.Exhaustive.Internal
+    Tests.MAC.Extended.Exhaustive.TestTrees
+    Tests.MAC.Extended.Random
+    Tests.MAC.Extended.Random.Internal
+    Tests.MAC.Extended.Random.TestTrees
+    Tests.MAC.Simple
     Tests.MAC.Simple.Exhaustive
     Tests.MAC.Simple.Exhaustive.TestTrees
     Tests.MAC.Simple.Exhaustive.Internal
