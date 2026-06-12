@@ -3,7 +3,9 @@ module MAC.Config where
 import Prelude
 
 data Config = Config
-  { useModuleFullAdder :: Bool,
+  {
+    useExtraRoundStage ::  Bool,
+    useModuleFullAdder :: Bool,
     useState :: Bool,
     useVector :: Bool,
     useRotation :: Bool,
@@ -13,7 +15,8 @@ data Config = Config
 
 
 allConfigs :: [Config]
-allConfigs = [ Config useModuleAdder useState useVector useRotation useOneHot |
+allConfigs = [ Config useExtraStage useModuleAdder useState useVector useRotation useOneHot |
+  useExtraStage <- [False, True],
   useModuleAdder  <- [False], -- we decided not to use the explicit module adder
   useState  <- [False, True] ,
   useVector  <- [False, True],
@@ -24,7 +27,16 @@ allConfigs = [ Config useModuleAdder useState useVector useRotation useOneHot |
 
 describe :: Config -> String
 describe Config {..} =
+  (if useExtraRoundStage then "withEndoundStage" else "noEndRoundStage") <> " / " <>
   (if useModuleFullAdder then "module adder" else "inline adder") <> " / " <>
+  (if useState then "state" else "mealy machine") <> " / " <>
+  (if useRotation then "rotate" else "indexing") <> " / " <>
+  (if useVector then "Vec" else "BitVector") <> " / " <>
+  (if useOneHot then "OneHotCounter" else "IndexCounter")
+
+describe' :: Config -> String
+describe' Config {..} =
+  (if useExtraRoundStage then "withEndoundStage" else "noEndRoundStage") <> " / " <>
   (if useState then "state" else "mealy machine") <> " / " <>
   (if useRotation then "rotate" else "indexing") <> " / " <>
   (if useVector then "Vec" else "BitVector") <> " / " <>
@@ -32,6 +44,7 @@ describe Config {..} =
 
 defaultConfig :: Config
 defaultConfig = Config {
+  useExtraRoundStage = False,
   useModuleFullAdder = False,
   useState = False,
   useVector = False,
