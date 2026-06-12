@@ -95,6 +95,7 @@ library
     Benchmarks.Full
     Benchmarks.Paper
     Benchmarks.Test
+    MAC
     MAC.BVec
     MAC.Class.Storage
     MAC.Config
