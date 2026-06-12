@@ -31,10 +31,10 @@ benchmarkName n Config{useModuleFullAdder, useState, useVector, useRotation, use
     counting = if useOneHot then "OneHotCounter" else "IndexCounter"
 
 paperBenchmarks :: IO ()
-paperBenchmarks = benchmarkFile "Paper" [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,20,24,28,32,36,40,44,48,52,56,60,64] allConfigs
+paperBenchmarks = benchmarkFile "Paper" [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,20,24,28,32,36,40,44,48,52,56,60,64] configsIWSBP26
 
 fullBenchmarks :: IO ()
-fullBenchmarks = benchmarkFile "Full" [2..64] allConfigs
+fullBenchmarks = benchmarkFile "Full" [2..64] configsIWSBP26
 
 
 benchmarkFile :: String -> [Int] -> [Config] -> IO ()

@@ -20,7 +20,7 @@ exhaustiveTestsForSize ::
     1 <= m
   ) =>
   TestTree
-exhaustiveTestsForSize = testGroup name $ map (exhaustiveTest @n @m) allConfigs
+exhaustiveTestsForSize = testGroup name $ map (exhaustiveTest @n @m) configsIWSBP26
   where name = "n=" <> prettySNat @n <> " m=" <> prettySNat @m
 
 
@@ -34,7 +34,7 @@ exhaustiveTest ::
   Config -> TestTree
 exhaustiveTest cfg = testCase name prop
   where
-    name = describe cfg
+    name = describe' cfg
     delay = (totalDelay @n @m)
     inputStreams = map (testInputs @n @m) allInputVals
     expectedStreams = map (expectedMulOutput @n @m) allInputVals

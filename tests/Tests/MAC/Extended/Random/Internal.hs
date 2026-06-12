@@ -20,7 +20,7 @@ import MAC.Config
 import Util
 
 randomTestsForSize :: forall n m. (KnownNat n, KnownNat m, 1 <= n, 1 <= m) => TestTree
-randomTestsForSize = testGroup name $ map (randomTest @n @m) allConfigs
+randomTestsForSize = testGroup name $ map (randomTest @n @m) configsIWSBP26
   where name = "n=" <> prettySNat @n <> " m=" <> prettySNat @m
 
 
@@ -34,7 +34,7 @@ randomTest ::
   Config -> TestTree
 randomTest cfg = testProperty name $ withTests 200 prop
   where
-    name = describe cfg
+    name = describe' cfg
     delay = (totalDelay @n @m)
     prop = H.property $ do
       x <- H.forAll $ genUnsigned (Range.linear (minBound :: Unsigned n) maxBound)

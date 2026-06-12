@@ -17,6 +17,17 @@ data Config = Config
 allConfigs :: [Config]
 allConfigs = [ Config useExtraStage useModuleAdder useState useVector useRotation useOneHot |
   useExtraStage <- [False, True],
+  useModuleAdder  <- [False, True], -- we decided not to use the explicit module adder
+  useState  <- [False, True] ,
+  useVector  <- [False, True],
+  useRotation  <- [False, True] ,
+  useOneHot  <- [False, True]
+  ]
+
+
+configsIWSBP26 :: [Config]
+configsIWSBP26 = [ Config useExtraStage useModuleAdder useState useVector useRotation useOneHot |
+  useExtraStage <- [False, True],
   useModuleAdder  <- [False], -- we decided not to use the explicit module adder
   useState  <- [False, True] ,
   useVector  <- [False, True],
@@ -25,20 +36,21 @@ allConfigs = [ Config useExtraStage useModuleAdder useState useVector useRotatio
   ]
 
 
+
 describe :: Config -> String
 describe Config {..} =
-  (if useExtraRoundStage then "withEndoundStage" else "noEndRoundStage") <> " / " <>
+  (if useExtraRoundStage then "with EndRound tage" else "no EndRound stage") <> " / " <>
   (if useModuleFullAdder then "module adder" else "inline adder") <> " / " <>
-  (if useState then "state" else "mealy machine") <> " / " <>
-  (if useRotation then "rotate" else "indexing") <> " / " <>
+  (if useState then "state monad" else "mealy machine") <> " / " <>
+  (if useRotation then "rotating" else "indexing") <> " / " <>
   (if useVector then "Vec" else "BitVector") <> " / " <>
   (if useOneHot then "OneHotCounter" else "IndexCounter")
 
 describe' :: Config -> String
 describe' Config {..} =
-  (if useExtraRoundStage then "withEndoundStage" else "noEndRoundStage") <> " / " <>
-  (if useState then "state" else "mealy machine") <> " / " <>
-  (if useRotation then "rotate" else "indexing") <> " / " <>
+  (if useExtraRoundStage then "with EndRound stage" else "no EndRound stage") <> " / " <>
+  (if useState then "state monad" else "mealy machine") <> " / " <>
+  (if useRotation then "rotating" else "indexing") <> " / " <>
   (if useVector then "Vec" else "BitVector") <> " / " <>
   (if useOneHot then "OneHotCounter" else "IndexCounter")
 

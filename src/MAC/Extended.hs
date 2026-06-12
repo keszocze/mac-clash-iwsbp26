@@ -91,8 +91,5 @@ expectedMulOutput (x,y) = multiplying ++ accumulating ++ displayingResult
       where product = Just $ mul x y
 
 
-
-
-
 is :: [Input 3 2]
 is = (Input Nothing Nothing) : testInputs (3,1)
