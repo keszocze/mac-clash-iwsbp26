@@ -5,11 +5,13 @@ import Test.Tasty
 import Tests.MAC.Extended
 import Tests.MAC.Simple
 
+-- TODO unify test case generation (see the mkMAC functions)
+
 tests :: TestTree
 tests = testGroup "MAC Unit" [
 -- TODO add options for different levels of exhaustiveness / iterations
-    Tests.MAC.Extended.tests
-    --Tests.MAC.Simple.tests
+    Tests.MAC.Extended.tests,
+    Tests.MAC.Simple.tests
   ]
 
 

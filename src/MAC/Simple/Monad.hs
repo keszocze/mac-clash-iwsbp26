@@ -5,7 +5,6 @@ import Clash.Prelude hiding (sum, product)
 import Clash.Class.Counter
 
 import qualified Control.Monad.State.Strict as ST
-import Control.Monad.Extra
 
 import qualified MAC.Simple.Access.Indexing as I
 import qualified MAC.Simple.Access.Rotating as R
@@ -94,33 +93,19 @@ macMonad :: forall n m counterType storageType.
   Input n m -> S n m counterType storageType (Output n m)
 macMonad accumulateFun multiplyFun Input{values, newAcc} = do
   -- conditionally set the accumulator to a new value
-  setAccumulator newAcc
+  case newAcc of
+    (Just acc) -> ST.modify' (\s -> s{accumulator=bitCoerce acc})
+    Nothing -> pure ()
 
   -- either start a new multiplication (discarding an ongoing one, breaking an ongoing accumulation)
   -- or continue with what is currently being done (nothing, multiplying, accumulating)
   case values of
-    Just (x,y) -> ST.modify' (\s -> startMulState x y s)
-    Nothing -> regularOperation
-
-  generateOutput
-
-
-  where
-    setAccumulator newAcc' = modifyWhenJust newAcc' (\s acc -> s{accumulator=bitCoerce acc})
-    startMultiplication vals = modifyWhenJust vals (\s (x,y) -> startMulState x y s)
-    generateOutput = ST.gets extractOuptut
-    modifyWhenJust mV f = whenJust mV (\v -> ST.modify' (\s -> f s v))
-    regularOperation = do
+    Just (x,y) -> ST.modify' (startMulState x y)
+    Nothing -> do
       stage <- ST.gets stage
       case stage of
         Ready -> pure () -- do nothing
         Multiplying -> ST.modify' multiplyFun
         Accumulating -> ST.modify' accumulateFun
 
-    -- whenStage st f = do
-    --   stage' <- ST.gets stage
-    --   when (stage' == st) $ ST.modify' f
-
-    -- ifJust m f g = case m of
-    --   (Just v) -> f v
-    --   _ -> g
+  ST.gets extractOuptut

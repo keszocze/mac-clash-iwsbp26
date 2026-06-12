@@ -16,7 +16,6 @@ import qualified MAC.Extended.Access.Rotating as R
 
 import qualified Util.FullAdder as FA
 
-import Debug.Trace
 
 mkMAC :: forall dom n m.
   (

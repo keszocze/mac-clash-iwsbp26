@@ -8,7 +8,6 @@ import MAC.Constraints
 import MAC.Extended.Stage
 import MAC.Extended.State
 
-import Debug.Trace
 
 accumulate :: forall n m counterType storageType.
   (
