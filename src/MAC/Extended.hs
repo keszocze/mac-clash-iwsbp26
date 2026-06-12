@@ -15,7 +15,7 @@ import qualified MAC.Extended.Monad as Monad
 -- TODO hier ist noch nichts auf Neue umgeändert!
 
 multiplicationDelay :: forall n m. (KnownNat n, KnownNat m) => Int
-multiplicationDelay = (nInt * mInt)
+multiplicationDelay = (nInt * mInt) + mInt
   where
     nInt = natToNum @n @Int
     mInt = natToNum @m @Int
@@ -92,5 +92,7 @@ expectedMulOutput (x,y) = multiplying ++ accumulating ++ displayingResult
 
 
 
-is :: [Input 3 3]
-is = (Input Nothing Nothing) : testInputs (2 :: Unsigned 3, 3 :: Unsigned 3)
+
+
+is :: [Input 3 2]
+is = (Input Nothing Nothing) : testInputs (3,1)

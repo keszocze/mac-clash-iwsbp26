@@ -16,7 +16,7 @@ import qualified MAC.Extended.Access.Rotating as R
 
 import qualified Util.FullAdder as FA
 
-
+import Debug.Trace
 
 mkMAC :: forall dom n m.
   (
@@ -37,7 +37,7 @@ mkMAC Config{useModuleFullAdder, useRotation, useVector, useOneHot} =
             then
               let aFun = R.accumulate @n @m @OneHotCounter @BVec fullAdder
                   mFun = R.multiply @n @m @OneHotCounter @BVec fullAdder
-                  eFun = R.endRound @n @m @OneHotCounter @BVec 
+                  eFun = R.endRound @n @m @OneHotCounter @BVec
               in mealy @dom (macMealy @n @m @OneHotCounter aFun mFun eFun) (initialState @n @m)
             else
               let aFun = R.accumulate @n @m @Index @BVec fullAdder
@@ -87,14 +87,12 @@ mkMAC Config{useModuleFullAdder, useRotation, useVector, useOneHot} =
 
 
 
-
-
-
-
 macMealy :: forall n m counterType storageType. (
     NatConstraints n m,
     ConstraintNM n m Counter counterType,
     ConstraintNM n m NFDataX counterType,
+    ConstraintNM n m Show counterType,
+    ConstraintNM n m Show storageType,
     StorageConstraintsNM n m storageType
   ) =>
     (State n m counterType storageType -> State n m counterType storageType) ->
@@ -103,7 +101,7 @@ macMealy :: forall n m counterType storageType. (
     State n m counterType storageType->
     Input n m ->
     (State n m counterType storageType, Output n m)
-macMealy accumulateFun multiplyFun endRoundFun state@State{accumulator=initialAccumulator} Input{values, newAcc}  = (state', extractOuptut state')
+macMealy accumulateFun multiplyFun endRoundFun state@State{accumulator=initialAccumulator} inp@Input{values, newAcc}  = (state', extractOuptut state')
   where
     stateNewAcc = state{accumulator= maybe initialAccumulator bitCoerce newAcc}
 

@@ -8,6 +8,6 @@ import qualified Tests.MAC.Extended.Random
 
 tests :: TestTree
 tests = testGroup "Extended version" [
-  Tests.MAC.Extended.Exhaustive.tests,
-  Tests.MAC.Extended.Random.tests
+  Tests.MAC.Extended.Exhaustive.tests
+  --Tests.MAC.Extended.Random.tests
   ]

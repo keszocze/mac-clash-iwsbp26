@@ -87,4 +87,4 @@ extractOuptut State{stage, product, accumulator} = case stage of
       Multiplying -> Output Nothing (Just $ bitCoerce accumulator)
       -- TODO das in einem _ sammeln?
       Accumulating -> Output Nothing Nothing
-      EndRound -> Output Nothing Nothing
+      EndRound -> Output Nothing (Just $ bitCoerce accumulator)

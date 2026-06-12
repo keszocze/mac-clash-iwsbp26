@@ -88,5 +88,5 @@ expectedMulOutput (x,y) = multiplying ++ accumulating ++ displayingResult
     displayingResult = replicate 1 (Output product product) -- extend for more cycles?
       where product = Just $ mul x y
 
-is :: [Input 3 3]
-is = (Input Nothing Nothing) : testInputs (2 :: Unsigned 3, 3 :: Unsigned 3)
+is :: [Input 2 2]
+is = (Input Nothing Nothing) : testInputs (2 :: Unsigned 2, 1 :: Unsigned 2)

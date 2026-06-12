@@ -8,6 +8,8 @@ import MAC.Constraints
 import MAC.Extended.Stage
 import MAC.Extended.State
 
+import Debug.Trace
+
 import Util
 
 accumulate :: forall n m counterType storageType.
@@ -44,13 +46,14 @@ multiply :: forall n m counterType storageType.
       NatConstraints n m,
       Counter (counterType n), Counter (counterType m),
       StorageConstraintsNM n m storageType,
-      Enum (counterType n), Enum (counterType m)
+      Enum (counterType n), Enum (counterType m),
+      Show (counterType n), Show (counterType m)
   ) =>
   (Bit -> Bit -> Bit -> (Bit, Bit)) ->
   State n m counterType storageType ->
   State n m counterType storageType
 multiply fullAdder st@State{..} =
-  let (currentRoundDone, xCounter') = countSuccOverflow xCounter
+  let (currentRoundDone, xCounterSucc) = countSuccOverflow xCounter
 
 
       xIndex = enumCounterToIndex @n xCounter
@@ -66,7 +69,9 @@ multiply fullAdder st@State{..} =
 
       product' = replaceBit productIndex sum product
 
-      stage' = if currentRoundDone then EndRound else Multiplying
+      (stage',xCounter') = if currentRoundDone
+        then (EndRound,xCounter)
+        else (Multiplying,xCounterSucc)
     in st
       {
         product = product',
@@ -80,6 +85,7 @@ endRound :: forall n m counterType storageType.
       NatConstraints n m,
       Counter (counterType n), Counter (counterType m),
       Enum (counterType n), Enum (counterType m),
+      Show (storageType (n+m)),
       StorageConstraintsNM n m storageType
   ) =>
   State n m counterType storageType ->
@@ -89,6 +95,8 @@ endRound st@State{..} =
       xIndex = enumCounterToIndex @n xCounter
       yIndex = enumCounterToIndex @m yCounter
       carryIndex = add (add xIndex yIndex) (1 :: Index 2)
+      -- c = trace ("in carry: " <> show carry) carry
+      -- p = trace ("in product: " <> show product) product
       product' = replaceBit carryIndex carry product
 
       (inLastRound, yCounter'')  = countSuccOverflow yCounter
@@ -99,6 +107,7 @@ endRound st@State{..} =
   in st{
       carry = 0,
       stage=stage',
-      product=product',
+      product={-trace ("out product" <> product')-} product',
+      xCounter = countSucc xCounter,
       yCounter=yCounter'
     }
