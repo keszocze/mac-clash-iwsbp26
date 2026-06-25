@@ -2,12 +2,7 @@
 
 module Util.IWSBP where
 
-
-
-
-import qualified Control.Monad.State.Strict as ST
 import Control.Monad.Extra
-
 
 import Clash.Prelude
 import qualified Prelude as P
@@ -99,3 +94,4 @@ header = [__i'L|
   import MAC.Config
   import MAC.IO
   |] :: String
+

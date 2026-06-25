@@ -100,7 +100,7 @@ macMealy :: forall n m counterType storageType. (
     State n m counterType storageType->
     Input n m ->
     (State n m counterType storageType, Output n m)
-macMealy accumulateFun multiplyFun endRoundFun state@State{accumulator=initialAccumulator} inp@Input{values, newAcc}  = (state', extractOuptut state')
+macMealy accumulateFun multiplyFun endRoundFun state@State{accumulator=initialAccumulator} Input{values, newAcc}  = (state', extractOuptut state')
   where
     stateNewAcc = state{accumulator= maybe initialAccumulator bitCoerce newAcc}
 
