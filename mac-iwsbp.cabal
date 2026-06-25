@@ -166,11 +166,8 @@ test-suite test-library
     Tests.MAC.Extended.Exhaustive.TestTrees
     Tests.MAC.Extended.Random
     Tests.MAC.Extended.Random.TestTrees
-    Tests.MAC.Simple
     Tests.MAC.Simple.Exhaustive
-    Tests.MAC.Simple.Exhaustive.TestTrees
     Tests.MAC.Simple.Random
-    Tests.MAC.Simple.Random.TestTrees
     Tests.MAC.Util
     Tests.OneHot
   build-depends:
