@@ -14,11 +14,12 @@ tests :: TestTree
 tests = testGroup "MAC Unit" [
 -- TODO add options for different levels of exhaustiveness / iterations
     Tests.MAC.Extended.tests,
-    testGroup "Simple version" [
-      testGroup "Exhaustive Tests" SE.singleExhaustiveTest,
-      testGroup "Random Tests" SR.tinyRandomTests
-      ]
+    simpleTests
   ]
 
 
-
+simpleTests :: TestTree
+simpleTests =  testGroup "Simple version" [
+    testGroup "Exhaustive Tests" SE.singleExhaustiveTest,
+    testGroup "Random Tests" SR.tinyRandomTests
+    ]
