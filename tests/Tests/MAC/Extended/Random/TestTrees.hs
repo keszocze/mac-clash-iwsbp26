@@ -2,7 +2,7 @@ module Tests.MAC.Extended.Random.TestTrees where
 
 import Test.Tasty
 
-import Tests.MAC.Extended.Random.Internal
+import Tests.MAC.Util
 
 tinyRandomTests :: [TestTree]
 tinyRandomTests = [

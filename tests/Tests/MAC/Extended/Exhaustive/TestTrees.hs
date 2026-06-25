@@ -2,7 +2,7 @@ module Tests.MAC.Extended.Exhaustive.TestTrees where
 
 import Test.Tasty
 
-import Tests.MAC.Extended.Exhaustive.Internal
+import Tests.MAC.Util
 
 
 singleExhaustiveTest :: [TestTree]

@@ -163,20 +163,16 @@ test-suite test-library
     Tests.MAC
     Tests.MAC.Extended
     Tests.MAC.Extended.Exhaustive
-    Tests.MAC.Extended.Exhaustive.Internal
     Tests.MAC.Extended.Exhaustive.TestTrees
     Tests.MAC.Extended.Random
-    Tests.MAC.Extended.Random.Internal
     Tests.MAC.Extended.Random.TestTrees
     Tests.MAC.Simple
     Tests.MAC.Simple.Exhaustive
     Tests.MAC.Simple.Exhaustive.TestTrees
-    Tests.MAC.Simple.Exhaustive.Internal
     Tests.MAC.Simple.Random
     Tests.MAC.Simple.Random.TestTrees
-    Tests.MAC.Simple.Random.Internal
+    Tests.MAC.Util
     Tests.OneHot
-    Tests.Util
   build-depends:
     mac-iwsbp,
     QuickCheck,
