@@ -1,27 +1,28 @@
 module Tests.MAC.Util where
 
-import Control.Arrow.Transformer.Automaton
+--import Control.Arrow.Transformer.Automaton # temporarily unused
 import Clash.Prelude hiding (zip3, map, delay)
-import Clash.Hedgehog.Sized.Unsigned
+import Clash.Hedgehog.Sized.Unsigned ( genUnsigned )
 
 import Prelude hiding (product, pred)
 
-import Test.Tasty
-import Test.Tasty.HUnit
-import Test.Tasty.Hedgehog
+import Test.Tasty ( testGroup, TestTree )
+import Test.Tasty.HUnit ( testCase, assertEqual )
+import Test.Tasty.Hedgehog ( testProperty )
 
 import qualified Hedgehog as H
-import Hedgehog (withTests, (===), checkParallel)
+import Hedgehog (withTests, (===))
 import qualified Hedgehog.Range as Range
 
 import qualified MAC.Simple as S
 import qualified MAC.Extended as E
-import MAC
-import MAC.IO
+import MAC ( mkMAC )
+import MAC.IO ( Input, Output )
 
-import Util
+import Util ( prettySNat )
 
 import MAC.Config
+    ( configsIWSBP26, describe', Config(useExtraRoundStage) )
 
 allInputVals :: forall n m. (KnownNat n, KnownNat m) =>  [(Unsigned n, Unsigned m)]
 allInputVals = [(x, y) | x <- [minBound .. maxBound], y <- [minBound .. maxBound]]
@@ -128,26 +129,26 @@ randomTest cfg = testProperty name $ withTests 200 prop
 
 
 
--- TODO Herausfinden, wie ich das hier in automatisierten Tests nutzen kann
-runCycle :: (Automaton (->) a b) -> a -> (b, (Automaton (->) a b))
-runCycle (Automaton f) x = f x
+-- Testing ignore everything below
+-- runCycle :: (Automaton (->) a b) -> a -> (b, (Automaton (->) a b))
+-- runCycle (Automaton f) x = f x
 
-whileM :: Monad m => (a -> Bool) -> (a -> m a) -> a -> m ()
-whileM pred step value = do
-  if pred value
-    then step value >>= whileM pred step
-    else pure ()
+-- whileM :: Monad m => (a -> Bool) -> (a -> m a) -> a -> m ()
+-- whileM pred step value = do
+--   if pred value
+--     then step value >>= whileM pred step
+--     else pure ()
 
-dut :: Signal System Int -> Signal System Int
-dut = exposeClockResetEnable (register 0) clockGen resetGen enableGen
+-- dut :: Signal System Int -> Signal System Int
+-- dut = exposeClockResetEnable (register 0) clockGen resetGen enableGen
 
-test :: IO ()
-test = do
-  whileM
-    ((< 10) . fst)
-    (\(i, auto) -> do
-      let (output, nextAuto) = runCycle auto (output + 2)
-      print $ show i <> ": " <> show output
-      return (i + 1, nextAuto)
-    )
-    (0 :: Int, signalAutomaton dut)
+-- test :: IO ()
+-- test = do
+--   whileM
+--     ((< 10) . fst)
+--     (\(i, auto) -> do
+--       let (output, nextAuto) = runCycle auto (output + 2)
+--       print $ show i <> ": " <> show output
+--       return (i + 1, nextAuto)
+--     )
+--     (0 :: Int, signalAutomaton dut)

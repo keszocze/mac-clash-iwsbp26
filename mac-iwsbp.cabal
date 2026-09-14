@@ -176,5 +176,5 @@ test-suite test-library
     tasty-hedgehog,
     tasty-hunit,
     tasty-th,
-    arrows,
+    -- arrows,
     IfElse
