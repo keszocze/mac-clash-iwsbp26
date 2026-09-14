@@ -17,7 +17,7 @@ data Config = Config
 allConfigs :: [Config]
 allConfigs = [ Config useExtraStage useModuleAdder useState useVector useRotation useOneHot |
   useExtraStage <- [False, True],
-  useModuleAdder  <- [False, True], -- we decided not to use the explicit module adder
+  useModuleAdder  <- [False, True],
   useState  <- [False, True] ,
   useVector  <- [False, True],
   useRotation  <- [False, True] ,
@@ -27,7 +27,7 @@ allConfigs = [ Config useExtraStage useModuleAdder useState useVector useRotatio
 
 configsIWSBP26 :: [Config]
 configsIWSBP26 = [ Config useExtraStage useModuleAdder useState useVector useRotation useOneHot |
-  useExtraStage <- [False, True],
+  useExtraStage <- [True],
   useModuleAdder  <- [False], -- we decided not to use the explicit module adder
   useState  <- [False, True] ,
   useVector  <- [False, True],
