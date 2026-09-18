@@ -163,8 +163,8 @@ test-suite test-library
   main-is: unittests.hs
   other-modules:
     Tests.MAC
-    Tests.MAC.Extended.Exhaustive
-    Tests.MAC.Extended.Random
+    Tests.MAC.Exhaustive
+    Tests.MAC.Random
     Tests.MAC.Util
     Tests.OneHot
   build-depends:

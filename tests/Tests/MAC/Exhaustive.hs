@@ -1,4 +1,4 @@
-module Tests.MAC.Extended.Exhaustive where
+module Tests.MAC.Exhaustive where
 
 import Test.Tasty
 

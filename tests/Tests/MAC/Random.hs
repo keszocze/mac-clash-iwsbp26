@@ -1,4 +1,4 @@
-module Tests.MAC.Extended.Random where
+module Tests.MAC.Random where
 
 import Test.Tasty
 
