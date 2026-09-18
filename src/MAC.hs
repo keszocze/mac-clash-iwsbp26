@@ -23,7 +23,7 @@ mkMAC :: forall dom n m.
 mkMAC cfg@Config{useExtraRoundStage} = if useExtraRoundStage then E.mkMAC cfg else S.mkMAC cfg
 
 helper :: HiddenClockResetEnable System => Config -> IO ()
-helper cfg = mapM_ myShow $ P.zip3 [1..] results (P.tail input)
+helper cfg = mapM_ myShow $ P.zip3 [1 :: Int ..] results (P.tail input)
   where
     input = E.is
     mac = mkMAC @System cfg
