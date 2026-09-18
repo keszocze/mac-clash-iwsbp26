@@ -4,7 +4,6 @@ import Clash.Prelude
 
 import qualified Prelude as P
 
-import qualified MAC.Simple as S
 import qualified MAC.Extended as E
 
 import MAC.Constraints

@@ -14,7 +14,6 @@ import qualified Hedgehog as H
 import Hedgehog (withTests, (===))
 import qualified Hedgehog.Range as Range
 
-import qualified MAC.Simple as S
 import qualified MAC.Extended as E
 import MAC ( mkMAC )
 import MAC.IO ( Input, Output )
@@ -22,10 +21,20 @@ import MAC.IO ( Input, Output )
 import Util ( prettySNat )
 
 import MAC.Config
-    ( configsIWSBP26, describe', Config(useExtraRoundStage) )
+    ( describe', Config(..) )
 
 allInputVals :: forall n m. (KnownNat n, KnownNat m) =>  [(Unsigned n, Unsigned m)]
 allInputVals = [(x, y) | x <- [minBound .. maxBound], y <- [minBound .. maxBound]]
+
+
+configsIWSBP26 :: [Config]
+configsIWSBP26 = [ Config useModuleAdder useState useVector useRotation useOneHot |
+  useModuleAdder  <- [False], -- we decided not to use the explicit module adder
+  useState  <- [False, True] ,
+  useVector  <- [False, True],
+  useRotation  <- [False, True] ,
+  useOneHot  <- [False, True]
+  ]
 
 
 exhaustiveTestsForSize ::
@@ -39,15 +48,17 @@ exhaustiveTestsForSize ::
 exhaustiveTestsForSize = testGroup name $ map (exhaustiveTest @n @m) configsIWSBP26
   where name = "n=" <> prettySNat @n <> " m=" <> prettySNat @m
 
-
+-- TODO simplify/remove
 getInputGenFun :: forall  n m. (KnownNat n, KnownNat m) => Config -> (Unsigned n, Unsigned m) -> [Input n m]
-getInputGenFun cfg = if (useExtraRoundStage cfg) then (E.testInputs @n @m) else (S.testInputs @n @m)
+getInputGenFun cfg = E.testInputs @n @m
 
+-- TODO simplify/remove
 getOutputGenFun :: forall  n m. (KnownNat n, KnownNat m) =>  Config -> (Unsigned n, Unsigned m) -> [Output n m]
-getOutputGenFun cfg = if (useExtraRoundStage cfg) then (E.expectedMulOutput @n @m) else (S.expectedMulOutput @n @m)
+getOutputGenFun cfg = E.expectedMulOutput @n @m
 
+-- TODO simplify/remove
 getTotalDelay :: forall n m. (KnownNat n, KnownNat m) =>  Config -> Int
-getTotalDelay cfg =  if (useExtraRoundStage cfg) then (E.totalDelay @n @m) else (S.totalDelay @n @m)
+getTotalDelay cfg =  E.totalDelay @n @m
 
 exhaustiveTest ::
   forall n m.

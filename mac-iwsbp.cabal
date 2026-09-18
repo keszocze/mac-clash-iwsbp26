@@ -106,13 +106,6 @@ library
     MAC.Extended.State
     MAC.IO
     MAC.OneHotCounter
-    MAC.Simple
-    MAC.Simple.Access.Indexing
-    MAC.Simple.Access.Rotating
-    MAC.Simple.Mealy
-    MAC.Simple.Monad
-    MAC.Simple.Stage
-    MAC.Simple.State
     Util
     Util.FullAdder
   default-language: Haskell2010
@@ -172,8 +165,6 @@ test-suite test-library
     Tests.MAC
     Tests.MAC.Extended.Exhaustive
     Tests.MAC.Extended.Random
-    Tests.MAC.Simple.Exhaustive
-    Tests.MAC.Simple.Random
     Tests.MAC.Util
     Tests.OneHot
   build-depends:
