@@ -1,25 +1,20 @@
 {-# LANGUAGE DuplicateRecordFields, RecordWildCards, DerivingVia, AllowAmbiguousTypes, UndecidableInstances, FlexibleInstances #-}
-module MAC.Extended.Monad where
+module MAC.Mealy where
 
 import Clash.Prelude hiding (sum, product)
 import Clash.Class.Counter
 
-import qualified Control.Monad.State.Strict as ST
-
-import qualified MAC.Extended.Access.Indexing as I
-import qualified MAC.Extended.Access.Rotating as R
+import MAC.Constraints
+import MAC.BVec
 import MAC.Config
 import MAC.IO
-import MAC.BVec
 import MAC.OneHotCounter
-import MAC.Extended.Stage
-import MAC.Extended.State
-import MAC.Constraints
-
+import MAC.Stage
+import MAC.State
+import qualified MAC.Access.Indexing as I
+import qualified MAC.Access.Rotating as R
 
 import qualified Util.FullAdder as FA
-
-type S (n :: Nat) (m :: Nat) counterType storageType = ST.State (State n m counterType storageType)
 
 
 mkMAC :: forall dom n m.
@@ -42,24 +37,24 @@ mkMAC Config{useModuleFullAdder, useRotation, useVector, useOneHot} =
               let aFun = R.accumulate @n @m @OneHotCounter @BVec fullAdder
                   mFun = R.multiply @n @m @OneHotCounter @BVec fullAdder
                   eFun = R.endRound @n @m @OneHotCounter @BVec
-              in mealyS @dom (macMonad @n @m @OneHotCounter aFun mFun eFun) (initialState @n @m)
+              in mealy @dom (macMealy @n @m @OneHotCounter aFun mFun eFun) (initialState @n @m)
             else
               let aFun = R.accumulate @n @m @Index @BVec fullAdder
-                  mFun = R.multiply @n @m @Index @BVec fullAdder
-                  eFun = R.endRound @n @m @Index @BVec
-              in mealyS @dom (macMonad @n @m @Index @BVec aFun mFun eFun) (initialState @n @m)
+                  mFun = R.multiply @n @m @Index fullAdder
+                  eFun = R.endRound @n @m @Index
+              in mealy @dom (macMealy @n @m @Index @BVec aFun mFun eFun) (initialState @n @m)
         else
           if useOneHot
             then
               let aFun = R.accumulate @n @m @OneHotCounter @BitVector fullAdder
                   mFun = R.multiply @n @m @OneHotCounter @BitVector fullAdder
                   eFun = R.endRound @n @m @OneHotCounter @BitVector
-              in mealyS @dom (macMonad @n @m @OneHotCounter @BitVector aFun mFun eFun) (initialState @n @m)
+              in mealy @dom (macMealy @n @m @OneHotCounter aFun mFun eFun) (initialState @n @m)
             else
               let aFun = R.accumulate @n @m @Index @BitVector fullAdder
                   mFun = R.multiply @n @m @Index @BitVector fullAdder
                   eFun = R.endRound @n @m @Index @BitVector
-              in mealyS @dom (macMonad @n @m @Index @BitVector aFun mFun eFun) (initialState @n @m)
+              in mealy @dom (macMealy @n @m @Index @BitVector aFun mFun eFun) (initialState @n @m)
     else
       if useVector
         then
@@ -68,57 +63,54 @@ mkMAC Config{useModuleFullAdder, useRotation, useVector, useOneHot} =
               let aFun = I.accumulate @n @m @OneHotCounter @BVec fullAdder
                   mFun = I.multiply @n @m @OneHotCounter @BVec fullAdder
                   eFun = I.endRound @n @m @OneHotCounter @BVec
-              in mealyS @dom (macMonad @n @m @OneHotCounter @BVec aFun mFun eFun) (initialState @n @m)
+              in mealy @dom (macMealy @n @m @OneHotCounter aFun mFun eFun) (initialState @n @m)
             else
               let aFun = I.accumulate @n @m @Index @BVec fullAdder
                   mFun = I.multiply @n @m @Index fullAdder
-                  eFun = I.endRound @n @m @Index @BVec
-              in mealyS @dom (macMonad @n @m @Index @BVec aFun mFun eFun) (initialState @n @m)
+                  eFun = I.endRound @n @m @Index
+              in mealy @dom (macMealy @n @m @Index @BVec aFun mFun eFun) (initialState @n @m)
         else
           if useOneHot
             then
               let aFun = I.accumulate @n @m @OneHotCounter @BitVector fullAdder
                   mFun = I.multiply @n @m @OneHotCounter @BitVector fullAdder
                   eFun = I.endRound @n @m @OneHotCounter @BitVector
-              in mealyS @dom (macMonad @n @m @OneHotCounter @BitVector aFun mFun eFun) (initialState @n @m)
+              in mealy @dom (macMealy @n @m @OneHotCounter aFun mFun eFun) (initialState @n @m)
             else
               let aFun = I.accumulate @n @m @Index @BitVector fullAdder
                   mFun = I.multiply @n @m @Index @BitVector fullAdder
                   eFun = I.endRound @n @m @Index @BitVector
-              in mealyS @dom (macMonad @n @m @Index @BitVector aFun mFun eFun) (initialState @n @m)
+              in mealy @dom (macMealy @n @m @Index @BitVector aFun mFun eFun) (initialState @n @m)
   where
     fullAdder = if useModuleFullAdder then FA.fullAdderModule else FA.fullAdder
 
 
-macMonad :: forall n m counterType storageType.
-  (
+
+macMealy :: forall n m counterType storageType. (
     NatConstraints n m,
     ConstraintNM n m Counter counterType,
+    ConstraintNM n m NFDataX counterType,
     ConstraintNM n m Show counterType,
     ConstraintNM n m Show storageType,
     StorageConstraintsNM n m storageType
   ) =>
-  (State n m counterType storageType -> State n m counterType storageType) ->
-  (State n m counterType storageType -> State n m counterType storageType) ->
-  (State n m counterType storageType -> State n m counterType storageType) ->
-  Input n m -> S n m counterType storageType (Output n m)
-macMonad accumulateFun multiplyFun endRoundFun Input{values, newAcc} = do
-  -- conditionally set the accumulator to a new value
-  case newAcc of
-      (Just acc) -> ST.modify' (\s -> s{accumulator=bitCoerce acc})
-      Nothing -> pure ()
+    (State n m counterType storageType -> State n m counterType storageType) ->
+    (State n m counterType storageType -> State n m counterType storageType) ->
+    (State n m counterType storageType -> State n m counterType storageType) ->
+    State n m counterType storageType->
+    Input n m ->
+    (State n m counterType storageType, Output n m)
+macMealy accumulateFun multiplyFun endRoundFun state@State{accumulator=initialAccumulator} Input{values, newAcc}  = (state', extractOuptut state')
+  where
+    stateNewAcc = state{accumulator= maybe initialAccumulator bitCoerce newAcc}
 
-  -- either start a new multiplication (discarding an ongoing one, breaking an ongoing accumulation)
-  -- or continue with what is currently being done (nothing, multiplying, accumulating, ending the round)
+    state' = case values of
+      Just (x,y) -> startMulState x y stateNewAcc
+      Nothing -> compute stateNewAcc
 
-  case values of
-    Just (x,y) -> ST.modify'  (startMulState x y)
-    Nothing -> do
-      stage <- ST.gets stage
-      case stage of
-        Ready -> pure () -- do nothing
-        Multiplying -> ST.modify' multiplyFun
-        Accumulating -> ST.modify' accumulateFun
-        EndRound -> ST.modify' endRoundFun
+    compute compState@State{stage} = case stage of
+      Ready -> compState
+      Multiplying -> multiplyFun compState
+      Accumulating -> accumulateFun compState
+      EndRound -> endRoundFun compState
 
-  ST.gets extractOuptut

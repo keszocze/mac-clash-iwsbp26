@@ -14,9 +14,7 @@ import qualified Hedgehog as H
 import Hedgehog (withTests, (===))
 import qualified Hedgehog.Range as Range
 
--- TODO remove this imput
-import MAC.Extended
-import MAC ( mkMAC )
+import MAC
 
 import Util ( prettySNat )
 

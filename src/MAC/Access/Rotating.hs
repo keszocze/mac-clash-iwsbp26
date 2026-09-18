@@ -1,12 +1,12 @@
-module MAC.Extended.Access.Rotating where
+module MAC.Access.Rotating where
 
 import Clash.Prelude hiding (product, sum)
 import Clash.Class.Counter
 
 import MAC.Class.Storage
 import MAC.Constraints
-import MAC.Extended.Stage
-import MAC.Extended.State
+import MAC.Stage
+import MAC.State
 
 
 accumulate :: forall n m counterType storageType.

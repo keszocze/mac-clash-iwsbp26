@@ -97,13 +97,12 @@ library
     MAC.Class.Storage
     MAC.Config
     MAC.Constraints
-    MAC.Extended
-    MAC.Extended.Access.Indexing
-    MAC.Extended.Access.Rotating
-    MAC.Extended.Mealy
-    MAC.Extended.Monad
-    MAC.Extended.Stage
-    MAC.Extended.State
+    MAC.Access.Indexing
+    MAC.Access.Rotating
+    MAC.Mealy
+    MAC.Monad
+    MAC.Stage
+    MAC.State
     MAC.IO
     MAC.OneHotCounter
     Util

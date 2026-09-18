@@ -1,15 +1,34 @@
+{-# LANGUAGE AllowAmbiguousTypes #-}
+
 module MAC where
 
-import Clash.Prelude
 
-import qualified Prelude as P
+import Clash.Prelude hiding (product, replicate, (++))
+import Prelude (replicate, (++))
 
-import qualified MAC.Extended as E
 
 import MAC.Constraints
 import MAC.Config
 import MAC.IO
+import qualified MAC.Mealy as Mealy
+import qualified MAC.Monad as Monad
 
+multiplicationDelay :: forall n m. (KnownNat n, KnownNat m) => Int
+multiplicationDelay = (nInt * mInt) + mInt
+  where
+    nInt = natToNum @n @Int
+    mInt = natToNum @m @Int
+
+accumulationDelay :: forall n m. (KnownNat n, KnownNat m) => Int
+accumulationDelay = nInt + mInt
+  where
+    nInt = natToNum @n @Int
+    mInt = natToNum @m @Int
+
+totalDelay :: forall n m. (KnownNat n, KnownNat m) => Int
+totalDelay = multiplicationDelay @n @m + accumulationDelay @n @m + 1
+
+-- version with a delay for the multiplication
 mkMAC :: forall dom n m.
   (
     HiddenClockResetEnable dom,
@@ -19,25 +38,57 @@ mkMAC :: forall dom n m.
     Config ->
     Signal dom (Input n m) ->
     Signal dom (Output n m)
-mkMAC = E.mkMAC
+mkMAC cfg@Config{useState} = if useState then Monad.mkMAC cfg else Mealy.mkMAC cfg
 
--- TODO das hier kann alles weg(=)
-helper :: HiddenClockResetEnable System => Config -> IO ()
-helper cfg = mapM_ myShow $ P.zip3 [1 :: Int ..] results (P.tail input)
+
+
+{-# OPAQUE topEntity #-}
+{-# ANN topEntity
+  (Synthesize
+      { t_name = "topEntityTesting"
+      , t_inputs = [ PortName "clk"
+                    , PortName "rst"
+                    , PortName "ena"
+                    , PortProduct "" [
+                        PortProduct "mulParameters" [
+                          PortName "doStartMultiplication",
+                          PortProduct "values" [
+                            PortName "x",
+                            PortName "y"
+                          ]
+                        ],
+                        PortProduct "accumulator" [
+                          PortName "doSetAccumulator",
+                          PortName "newAccumulatorValue"
+                        ]
+                      ]
+                    ]
+      , t_output =  PortProduct "" [
+                      PortProduct "product" [PortName "is_valid", PortName "value"]
+                    , PortProduct "accumulator" [PortName "is_valid", PortName "accumulator"]
+        ]
+  }) #-}
+topEntity :: Clock System
+            -> Reset System
+            -> Enable System
+            -> Signal System (Input 2 3)
+            -> Signal System (Output 2 3)
+topEntity = exposeClockResetEnable $ mkMAC @System @2 @3 defaultConfig
+
+
+
+testInputs :: forall n m. (KnownNat n, KnownNat m) => (Unsigned n, Unsigned m) -> [Input n m]
+testInputs (x, y) = (Input (Just (x,y)) Nothing) : replicate  (totalDelay @n @m) (Input Nothing Nothing)
+
+
+expectedMulOutput :: forall n m. (KnownNat n, KnownNat m) => (Unsigned n, Unsigned m) -> [Output n m]
+expectedMulOutput (x,y) = multiplying ++ accumulating ++ displayingResult
   where
-    input = E.is
-    mac = mkMAC @System cfg
-    n = P.length input
-    results = simulateN @System n mac input
+    multiplying = replicate (multiplicationDelay @n @m) (Output Nothing (Just 0))
+    accumulating = replicate (accumulationDelay @n @m) (Output Nothing Nothing)
+    displayingResult = replicate 1 (Output product product) -- extend for more cycles?
+      where product = Just $ mul x y
 
-myShow :: Show a => (a, Output n1 m1, Input n2 m2) -> IO ()
-myShow (m,r,i) = putStrLn $ show m <> ":\t" <> myShow' r <> "\t" <> myShow'' i
-myShow' :: Output n m -> String
-myShow' (Output (Just p) _) = "Ready: product=" <> show p
-myShow' (Output Nothing (Just _)) = "Multiplying"
-myShow' (Output Nothing Nothing) = "Accumulating"
 
-myShow'' :: Input n m -> String
-myShow'' (Input (Just (x,y)) _) = "Start multiplying " <> show x <> " * " <> show y
-myShow'' _ = ""
-
+is :: [Input 3 2]
+is = (Input Nothing Nothing) : testInputs (3,1)

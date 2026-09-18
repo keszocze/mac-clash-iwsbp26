@@ -1,12 +1,12 @@
-module MAC.Extended.Access.Indexing where
+module MAC.Access.Indexing where
 
 import Clash.Prelude hiding (product, sum)
 import Clash.Class.Counter
 
 import MAC.Class.Storage
 import MAC.Constraints
-import MAC.Extended.Stage
-import MAC.Extended.State
+import MAC.Stage
+import MAC.State
 
 
 import Util

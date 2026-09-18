@@ -1,12 +1,12 @@
 {-# LANGUAGE DerivingVia, UndecidableInstances #-}
 
-module MAC.Extended.State where
+module MAC.State where
 
 import Clash.Prelude hiding (product)
 import Clash.Class.Counter
 
 import MAC.Class.Storage
-import MAC.Extended.Stage
+import MAC.Stage
 import MAC.IO
 
 data State (n :: Nat) (m :: Nat) counterType storageType = State {
