@@ -141,6 +141,19 @@ executable clashi
     ghc-options: -dynamic
   build-depends: base, clash-ghc, mac-iwsbp
 
+
+executable iwsbp26
+  import: common-options
+  main-is: bin/IWSBP26.hs
+  default-language: Haskell2010
+  ghc-options: "-with-rtsopts=-K512M -H -I5 -T"
+  if !os(Windows)
+    ghc-options: -dynamic
+  build-depends: base, clash-ghc, mac-iwsbp
+
+
+
+
 test-suite doctests
   type:             exitcode-stdio-1.0
   default-language: Haskell2010
