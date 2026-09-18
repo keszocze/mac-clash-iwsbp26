@@ -1,16 +1,14 @@
 module Tests.MAC where
 
-import Test.Tasty
+import Test.Tasty ( testGroup, TestTree )
 
 
 
-import Tests.MAC.Simple.Exhaustive as SE
-import Tests.MAC.Simple.Random as SR
-import Tests.MAC.Extended.Exhaustive as EE
-import Tests.MAC.Extended.Random as ER
+import Tests.MAC.Simple.Exhaustive as SE ( singleExhaustiveTest )
+import Tests.MAC.Simple.Random as SR ( tinyRandomTests )
+import Tests.MAC.Extended.Exhaustive as EE ( singleExhaustiveTest )
+import Tests.MAC.Extended.Random as ER ( tinyRandomTests )
 
-
--- TODO unify test case generation (see the mkMAC functions) -- halfway done :)
 
 tests :: TestTree
 tests = testGroup "MAC Unit" [

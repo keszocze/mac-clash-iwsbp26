@@ -85,8 +85,16 @@ prettySampleN ::
 prettySampleN n f = mapM_ print $ sampleN n f
 
 
+-- | Converts a `Counter` with an additional `Enum` instance to an `Index` storting the counter's current value.
+-- >
+-- > clashi> enumCounterToIndex @6 (4 :: Unsigned 8)
+-- > 4
 enumCounterToIndex :: forall n cnt. (KnownNat n, Counter cnt, Enum cnt)  => cnt -> Index n
 enumCounterToIndex = toEnum . fromEnum
 
+-- | Transforms a type level natural number to its string representation
+--
+-- > clashi> prettySNat @4
+-- > "4
 prettySNat :: forall n. (KnownNat n) => String
 prettySNat = show $ natToNum @n @Int

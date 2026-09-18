@@ -30,14 +30,14 @@ helper cfg = mapM_ myShow $ P.zip3 [1..] results (P.tail input)
     n = P.length input
     results = simulateN @System n mac input
 
+myShow :: Show a => (a, Output n1 m1, Input n2 m2) -> IO ()
 myShow (m,r,i) = putStrLn $ show m <> ":\t" <> myShow' r <> "\t" <> myShow'' i
+myShow' :: Output n m -> String
 myShow' (Output (Just p) _) = "Ready: product=" <> show p
 myShow' (Output Nothing (Just _)) = "Multiplying"
 myShow' (Output Nothing Nothing) = "Accumulating"
 
+myShow'' :: Input n m -> String
 myShow'' (Input (Just (x,y)) _) = "Start multiplying " <> show x <> " * " <> show y
 myShow'' _ = ""
 
-
-foo :: IO ()
-foo = putStrLn "Dinge"
