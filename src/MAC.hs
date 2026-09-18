@@ -20,8 +20,9 @@ mkMAC :: forall dom n m.
     Config ->
     Signal dom (Input n m) ->
     Signal dom (Output n m)
-mkMAC cfg@Config{useExtraRoundStage} = if useExtraRoundStage then E.mkMAC cfg else S.mkMAC cfg
+mkMAC = E.mkMAC
 
+-- TODO das hier kann alles weg(=)
 helper :: HiddenClockResetEnable System => Config -> IO ()
 helper cfg = mapM_ myShow $ P.zip3 [1 :: Int ..] results (P.tail input)
   where

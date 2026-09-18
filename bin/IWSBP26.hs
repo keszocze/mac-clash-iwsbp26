@@ -3,8 +3,7 @@ import Prelude
 import Data.String.Interpolate ( i, __i'L )
 
 import MAC.Config
-    ( configsIWSBP26,
-      Config(useOneHot, Config, useExtraRoundStage, useState, useVector,
+    ( Config(useOneHot, Config, useState, useVector,
              useRotation) )
 
 import System.IO ( hClose, hPutStrLn, openFile, IOMode(WriteMode) )
@@ -16,6 +15,16 @@ main = generateBenchmarks "IWSBP26" iwsbp26BitWidths configsIWSBP26
 
 iwsbp26BitWidths :: [Int]
 iwsbp26BitWidths = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,20,24,28,32,36,40,44,48,52,56,60,64]
+
+configsIWSBP26 :: [Config]
+configsIWSBP26 = [ Config useModuleAdder useState useVector useRotation useOneHot |
+  useModuleAdder  <- [False], -- we decided not to use the explicit module adder
+  useState  <- [False, True] ,
+  useVector  <- [False, True],
+  useRotation  <- [False, True] ,
+  useOneHot  <- [False, True]
+  ]
+
 
 
 generateBenchmarks :: String -> [Int] -> [Config] -> IO ()
@@ -88,10 +97,9 @@ benchmarkName :: Show a => String -> a -> String
 benchmarkName name width = name <> "_BitWidth_" <> show width
 
 benchmarkFunName :: String -> Int ->  Config -> String
-benchmarkFunName name n Config{useExtraRoundStage, useState, useVector, useRotation, useOneHot} =
-  intercalate "_" ["benchmark", "MAC", name, show n, extra, approach, storage, accessing, counting]
+benchmarkFunName name n Config{useState, useVector, useRotation, useOneHot} =
+  intercalate "_" ["benchmark", "MAC", name, show n, approach, storage, accessing, counting]
   where
-    extra = if useExtraRoundStage then "withEndRound" else "noEndRound"
     approach = if useState then "Monadic" else "Mealy"
     storage = if useVector then "Vector" else "BitVector"
     accessing = if useRotation then "Rotating" else "Indexing"
