@@ -46,3 +46,4 @@ bin/
 .vscode
 tst
 benchmarks_iwsbp26/generated_clash/clash/*.hs
+benchmarks_iwsbp26/handwritten-verilog/iwsbp26_verilog/
